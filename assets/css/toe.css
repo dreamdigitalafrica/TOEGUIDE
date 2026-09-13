@@ -263,7 +263,7 @@ body,
 }
 
 .toe-mobile-menu-toggle {
-	display: none;
+	display: none !important;
 }
 
 .tt-ol-menu-ghost,
@@ -1942,17 +1942,35 @@ textarea.tt-form-control {
 		padding-bottom: 12px;
 	}
 
-	.toe-main-nav {
-		display: none;
-	}
-
-	.toe-mobile-menu-toggle {
-		display: flex;
-		align-items: center;
-	}
-
 	.toe-nav-brand {
 		font-size: 24px;
+	}
+
+	.toe-nav-brand img {
+		width: 42px;
+		max-height: 42px;
+	}
+
+	.toe-header-inner {
+		align-items: flex-start;
+		gap: 14px;
+	}
+
+	.toe-main-nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		gap: 12px 18px;
+		padding-top: 9px;
+	}
+
+	.toe-main-nav a {
+		font-size: 13px;
+		font-weight: 700;
+	}
+
+	.toe-main-nav a::after {
+		bottom: -6px;
 	}
 
 	.toe-vendor-grid {
