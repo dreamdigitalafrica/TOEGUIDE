@@ -121,48 +121,48 @@ body,
 	background: var(--toe-burnt-orange);
 	pointer-events: none;
 	opacity: 0;
-	transform: scale(0.45);
+	transform: scale(0.5);
 	transform-origin: center;
-	box-shadow: 0 0 10px rgba(185, 106, 80, 0.42);
+	box-shadow: 0 0 12px rgba(185, 106, 80, 0.48);
 }
 
 .toe-loader-dot:nth-child(2) {
-	left: 19.6%;
-	top: 16.1%;
-	width: 4.2%;
-	height: 4%;
+	left: 20.3%;
+	top: 20.3%;
+	width: 4.5%;
+	height: 6.6%;
 	animation: toe-loader-dot-1 1.55s linear infinite;
 }
 
 .toe-loader-dot:nth-child(3) {
-	left: 25.8%;
-	top: 13.6%;
-	width: 5.4%;
-	height: 5.2%;
+	left: 27.1%;
+	top: 16%;
+	width: 5.5%;
+	height: 8%;
 	animation: toe-loader-dot-2 1.55s linear infinite;
 }
 
 .toe-loader-dot:nth-child(4) {
-	left: 33.1%;
-	top: 11.5%;
-	width: 6.8%;
-	height: 6.4%;
+	left: 35.4%;
+	top: 13%;
+	width: 7.3%;
+	height: 9.8%;
 	animation: toe-loader-dot-3 1.55s linear infinite;
 }
 
 .toe-loader-dot:nth-child(5) {
-	left: 42.3%;
-	top: 9.6%;
-	width: 8.1%;
-	height: 7.8%;
+	left: 45.3%;
+	top: 10.7%;
+	width: 9.6%;
+	height: 12.3%;
 	animation: toe-loader-dot-4 1.55s linear infinite;
 }
 
 .toe-loader-dot:nth-child(6) {
-	left: 53.2%;
-	top: 8.6%;
-	width: 10.2%;
-	height: 9.8%;
+	left: 57.3%;
+	top: 11.4%;
+	width: 12%;
+	height: 14.6%;
 	animation: toe-loader-dot-5 1.55s linear infinite;
 }
 
@@ -200,6 +200,7 @@ body,
 .toe-nav-brand {
 	display: inline-flex;
 	align-items: center;
+	justify-content: center;
 	min-height: 42px;
 	padding: 0 0;
 	color: var(--toe-ivory) !important;
@@ -208,6 +209,14 @@ body,
 	font-weight: 600;
 	letter-spacing: 0.03em;
 	white-space: nowrap;
+}
+
+.toe-nav-brand img {
+	display: block;
+	width: 54px;
+	height: auto;
+	max-height: 54px;
+	object-fit: contain;
 }
 
 .toe-main-nav {
