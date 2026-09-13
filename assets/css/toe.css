@@ -591,9 +591,11 @@ textarea.tt-form-control {
 
 .toe-onboarding {
 	display: grid;
-	grid-template-columns: 0.75fr 1.25fr;
+	grid-template-columns: minmax(0, 1fr);
 	gap: 28px;
 	align-items: start;
+	max-width: 1480px;
+	margin-inline: auto;
 }
 
 .toe-onboarding-panel,
