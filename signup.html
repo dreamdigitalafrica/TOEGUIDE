@@ -28,8 +28,9 @@
 						<a href="index.html" class="toe-nav-brand magnetic-item"><img src="assets/img/toe/toe-logo-transparent.png" alt="T.O.E"></a>
 						<nav class="toe-main-nav" aria-label="Primary navigation">
 							<a href="index.html">Home</a>
+							<a href="about-us.html">About</a>
 							<a href="discover.html">Discover</a>
-							<a href="signup.html#toe-signup-form" class="active">Get Started</a>
+							<a href="signup.html" class="active">Get Started</a>
 							<a href="toe-blog.html">Blog</a>
 							<a href="contact.html">Contact Us</a>
 						</nav>
@@ -42,8 +43,9 @@
 							<div class="tt-ol-menu-holder"><div class="tt-ol-menu-inner tt-wrap"><div class="tt-ol-menu-content">
 								<ul class="tt-ol-menu-list">
 									<li><a href="index.html">Home</a></li>
+									<li><a href="about-us.html">About</a></li>
 									<li><a href="discover.html">Discover</a></li>
-									<li class="active"><a href="signup.html#toe-signup-form">Get Started</a></li>
+									<li class="active"><a href="signup.html">Get Started</a></li>
 									<li><a href="toe-blog.html">Blog</a></li>
 									<li><a href="contact.html">Contact Us</a></li>
 								</ul>
@@ -62,71 +64,112 @@
 					</section>
 
 					<section class="tt-section bg-white-accent-3 padding-top-120 padding-bottom-120">
-						<div class="tt-section-inner tt-wrap">
-							<div class="toe-onboarding">
-								<form class="toe-onboarding-form tt-form-filled" id="toe-signup-form" action="#" method="post">
-									<h2>Onboarding request</h2>
-									<p class="toe-form-note">Use this for restaurants, hotels, lounges, spas, home services, errand support, experiences, fashion, beauty and hospitality partners.</p>
-
-									<div class="tt-row">
-										<div class="tt-col-md-6">
-											<div class="tt-form-group">
-												<label>Listing type</label>
-												<select class="tt-form-control" name="listing_type" required>
-													<option value="">Choose one</option>
-													<option>Business profile</option>
-													<option>Vendor quick listing</option>
-													<option>Hospitality partner</option>
-												</select>
-											</div>
+							<div class="tt-section-inner tt-wrap">
+								<div class="toe-onboarding">
+									<div class="toe-route-picker" aria-label="Choose onboarding type">
+										<div>
+											<p class="toe-page-kicker">Choose your route</p>
+											<h2>Start as a vendor or business.</h2>
 										</div>
-										<div class="tt-col-md-6">
+										<div class="toe-route-options">
+											<button class="toe-route-card" type="button" data-route="vendor" aria-controls="toe-signup-form" aria-expanded="false">
+												<span>Vendor</span>
+												<strong>Personal service provider</strong>
+												<small>Drivers, chefs, errand assistants, cleaners, home support and individual service providers.</small>
+											</button>
+											<button class="toe-route-card" type="button" data-route="business" aria-controls="toe-signup-form" aria-expanded="false">
+												<span>Business</span>
+												<strong>Registered company or venue</strong>
+												<small>Hotels, restaurants, lounges, spas, boutiques, companies and hospitality brands.</small>
+											</button>
+										</div>
+									</div>
+
+									<form class="toe-onboarding-form tt-form-filled" id="toe-signup-form" action="#" method="post" data-route="" hidden>
+										<h2>Onboarding request</h2>
+										<p class="toe-form-note" id="toe-route-note">Vendor onboarding is lighter. Share your service, contact details and a valid means of identification so T.O.E can review your listing.</p>
+										<input type="hidden" name="listing_type" id="toe-listing-type" value="Vendor quick listing">
+
+										<div class="tt-row">
+											<div class="tt-col-md-6">
+												<div class="tt-form-group">
+													<label id="toe-name-label">Vendor name</label>
+													<input class="tt-form-control" type="text" name="business_name" required>
+												</div>
+											</div>
+											<div class="tt-col-md-6">
 											<div class="tt-form-group">
 												<label>Category</label>
 												<select class="tt-form-control" name="category" required>
-													<option value="">Choose category</option>
-													<option>Eat & Drink</option>
-													<option>Stay & Unwind</option>
-													<option>Home & Domestic Services</option>
+														<option value="">Choose category</option>
+														<option>Driver / transport</option>
+														<option>Private chef</option>
+														<option>Cleaning / housekeeping</option>
+														<option>Laundry / ironing</option>
+														<option>Errands / grocery shopping</option>
+														<option>Home & domestic support</option>
+														<option>Eat & Drink</option>
+														<option>Stay & Unwind</option>
+														<option>Home & Domestic Services</option>
 													<option>Events & Experiences</option>
 													<option>Shop & Style</option>
 													<option>Essential Services</option>
 												</select>
 											</div>
 										</div>
-									</div>
+										</div>
 
-									<div class="tt-row">
-										<div class="tt-col-md-6"><div class="tt-form-group"><label>Business or vendor name</label><input class="tt-form-control" type="text" name="business_name" required></div></div>
-										<div class="tt-col-md-6"><div class="tt-form-group"><label>Contact person</label><input class="tt-form-control" type="text" name="contact_name" required></div></div>
-									</div>
+										<div class="tt-row">
+											<div class="tt-col-md-6"><div class="tt-form-group"><label>Contact person</label><input class="tt-form-control" type="text" name="contact_name" required></div></div>
+											<div class="tt-col-md-6"><div class="tt-form-group"><label>WhatsApp / phone number</label><input class="tt-form-control" type="tel" name="phone" required></div></div>
+										</div>
 
-									<div class="tt-row">
-										<div class="tt-col-md-6"><div class="tt-form-group"><label>Email address</label><input class="tt-form-control" type="email" name="email" required></div></div>
-										<div class="tt-col-md-6"><div class="tt-form-group"><label>WhatsApp / phone number</label><input class="tt-form-control" type="tel" name="phone" required></div></div>
-									</div>
+										<div class="tt-row">
+											<div class="tt-col-md-6"><div class="tt-form-group"><label>Email address</label><input class="tt-form-control" type="email" name="email" required></div></div>
+											<div class="tt-col-md-6"><div class="tt-form-group"><label id="toe-area-label">Base area in Abuja</label><input class="tt-form-control" type="text" name="area" placeholder="Maitama, Wuse 2, Asokoro..." required></div></div>
+										</div>
 
-									<div class="tt-row">
-										<div class="tt-col-md-6"><div class="tt-form-group"><label>Area in Abuja</label><input class="tt-form-control" type="text" name="area" placeholder="Maitama, Wuse 2, Asokoro..." required></div></div>
-										<div class="tt-col-md-6"><div class="tt-form-group"><label>Google Maps link</label><input class="tt-form-control" type="url" name="maps" placeholder="https://maps.google.com/..."></div></div>
-									</div>
+										<div class="tt-row toe-business-only" hidden>
+											<div class="tt-col-md-6"><div class="tt-form-group"><label>Business address</label><input class="tt-form-control" type="text" name="business_address" placeholder="Full business address"></div></div>
+											<div class="tt-col-md-6"><div class="tt-form-group"><label>Google Maps link</label><input class="tt-form-control" type="url" name="maps" placeholder="https://maps.google.com/..."></div></div>
+										</div>
 
 									<div class="tt-form-group">
 										<label>Short description</label>
 										<textarea class="tt-form-control" name="description" rows="5" placeholder="What should guests know before they contact you?" required></textarea>
 									</div>
 
-									<div class="tt-form-group">
-										<label>Verification readiness</label>
-										<div class="toe-verify-grid">
-											<label><input type="checkbox" name="verify" value="Business registration"> Business registration</label>
-											<label><input type="checkbox" name="verify" value="Owner ID"> Owner ID</label>
-											<label><input type="checkbox" name="verify" value="Address proof"> Address proof</label>
-											<label><input type="checkbox" name="verify" value="Service license"> Service license</label>
-											<label><input type="checkbox" name="verify" value="Customer references"> Customer references</label>
-											<label><input type="checkbox" name="verify" value="Media ready"> Photos ready</label>
+										<div class="tt-form-group toe-vendor-only">
+											<label>Vendor verification</label>
+											<div class="toe-verify-grid">
+												<label><input type="checkbox" name="vendor_verify" value="Government ID"> Government ID ready</label>
+												<label><input type="checkbox" name="vendor_verify" value="Profile photo"> Profile photo ready</label>
+												<label><input type="checkbox" name="vendor_verify" value="Customer references"> Customer references</label>
+												<label><input type="checkbox" name="verify" value="Media ready"> Photos ready</label>
+											</div>
+											<div class="toe-file-grid">
+												<label>Upload valid ID <input class="tt-form-control" type="file" name="vendor_id" accept=".jpg,.jpeg,.png,.pdf"></label>
+												<label>Upload service photos <input class="tt-form-control" type="file" name="vendor_media" accept=".jpg,.jpeg,.png,.pdf" multiple></label>
+											</div>
 										</div>
-									</div>
+
+										<div class="tt-form-group toe-business-only" hidden>
+											<label>Business verification documents</label>
+											<div class="toe-verify-grid">
+												<label><input type="checkbox" name="business_verify" value="CAC certificate"> CAC certificate</label>
+												<label><input type="checkbox" name="business_verify" value="Business address proof"> Address proof</label>
+												<label><input type="checkbox" name="business_verify" value="Owner ID"> Owner / director ID</label>
+												<label><input type="checkbox" name="business_verify" value="Service license"> Service license if applicable</label>
+												<label><input type="checkbox" name="business_verify" value="Customer references"> Customer references</label>
+												<label><input type="checkbox" name="business_verify" value="Media ready"> Brand photos ready</label>
+											</div>
+											<div class="toe-file-grid">
+												<label>CAC certificate <input class="tt-form-control" type="file" name="cac_document" accept=".jpg,.jpeg,.png,.pdf"></label>
+												<label>Address proof <input class="tt-form-control" type="file" name="address_proof" accept=".jpg,.jpeg,.png,.pdf"></label>
+												<label>Owner / director ID <input class="tt-form-control" type="file" name="owner_id" accept=".jpg,.jpeg,.png,.pdf"></label>
+												<label>Business photos <input class="tt-form-control" type="file" name="business_media" accept=".jpg,.jpeg,.png,.pdf" multiple></label>
+											</div>
+										</div>
 
 									<label class="toe-consent"><input type="checkbox" required> I understand T.O.E is a discovery and listing platform, and verification is reviewed before trust badges are applied.</label>
 									<button class="toe-submit-btn magnetic-item" type="submit">Submit onboarding</button>
@@ -143,13 +186,53 @@
 		<script src="assets/vendor/gsap/gsap.min.js"></script>
 		<script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script>
 		<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
-		<script src="assets/vendor/smooth-scrollbar.js"></script>
-		<script src="assets/js/theme.js"></script>
-		<script>
-			document.getElementById("toe-signup-form").addEventListener("submit", function (event) {
-				event.preventDefault();
-				this.querySelector(".toe-success-message").hidden = false;
-			});
+			<script src="assets/vendor/smooth-scrollbar.js"></script>
+			<script src="assets/js/theme.js"></script>
+			<script>
+				const routeButtons = document.querySelectorAll(".toe-route-card");
+				const form = document.getElementById("toe-signup-form");
+				const note = document.getElementById("toe-route-note");
+				const listingType = document.getElementById("toe-listing-type");
+				const nameLabel = document.getElementById("toe-name-label");
+				const areaLabel = document.getElementById("toe-area-label");
+
+				function setRoute(route) {
+					form.hidden = false;
+					form.dataset.route = route;
+					routeButtons.forEach(function (button) {
+						button.classList.toggle("is-active", button.dataset.route === route);
+						button.setAttribute("aria-expanded", button.dataset.route === route ? "true" : "false");
+					});
+					document.querySelectorAll(".toe-vendor-only").forEach(function (item) {
+						item.hidden = route !== "vendor";
+					});
+					document.querySelectorAll(".toe-business-only").forEach(function (item) {
+						item.hidden = route !== "business";
+					});
+					if (route === "business") {
+						note.textContent = "Business onboarding requires stronger verification, including company registration, address details and supporting documents for review.";
+						listingType.value = "Business profile";
+						nameLabel.textContent = "Business name";
+						areaLabel.textContent = "Business area in Abuja";
+					} else {
+						note.textContent = "Vendor onboarding is lighter. Share your service, contact details and a valid means of identification so T.O.E can review your listing.";
+						listingType.value = "Vendor quick listing";
+						nameLabel.textContent = "Vendor name";
+						areaLabel.textContent = "Base area in Abuja";
+					}
+					form.scrollIntoView({ behavior: "smooth", block: "start" });
+				}
+
+				routeButtons.forEach(function (button) {
+					button.addEventListener("click", function () {
+						setRoute(button.dataset.route);
+					});
+				});
+
+				form.addEventListener("submit", function (event) {
+					event.preventDefault();
+					this.querySelector(".toe-success-message").hidden = false;
+				});
 		</script>
 	</body>
 </html>
