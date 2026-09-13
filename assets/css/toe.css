@@ -379,6 +379,112 @@ body,
 	--tt-text-color: var(--toe-night);
 }
 
+.tt-btn,
+.all-works-btn,
+.toe-header-join,
+.toe-hero-btn,
+.toe-detail-actions a,
+.toe-business-actions a,
+.toe-vendor-actions a,
+.toe-listing-actions a,
+.toe-modal-actions a,
+.toe-modal-close,
+.toe-submit-btn,
+.toe-filter-buttons button {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	transform: translateY(0);
+	transition:
+		transform 0.28s ease,
+		border-color 0.28s ease,
+		background-color 0.28s ease,
+		color 0.28s ease,
+		box-shadow 0.28s ease,
+		opacity 0.28s ease;
+}
+
+.toe-header-join::before,
+.toe-hero-btn::before,
+.toe-detail-actions a::before,
+.toe-business-actions a::before,
+.toe-vendor-actions a::before,
+.toe-listing-actions a::before,
+.toe-modal-actions a::before,
+.toe-modal-close::before,
+.toe-submit-btn::before,
+.toe-filter-buttons button::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background: linear-gradient(135deg, rgba(198, 161, 91, 0.26), rgba(185, 106, 80, 0.4));
+	opacity: 0;
+	transition: opacity 0.28s ease;
+}
+
+.toe-header-join:hover,
+.toe-hero-btn:hover,
+.toe-detail-actions a:hover,
+.toe-business-actions a:hover,
+.toe-vendor-actions a:hover,
+.toe-listing-actions a:hover,
+.toe-modal-actions a:hover,
+.toe-modal-close:hover,
+.toe-submit-btn:hover,
+.toe-filter-buttons button:hover {
+	transform: translateY(-3px);
+	border-color: rgba(198, 161, 91, 0.78);
+	box-shadow: 0 16px 38px rgba(5, 12, 9, 0.28), 0 0 0 1px rgba(248, 241, 231, 0.08);
+}
+
+.toe-hero-btn:hover,
+.toe-detail-actions a:hover,
+.toe-vendor-actions a:hover,
+.toe-listing-actions a:hover,
+.toe-modal-actions a:hover,
+.toe-modal-close:hover,
+.toe-submit-btn:hover {
+	color: var(--toe-ivory);
+}
+
+.toe-header-join:hover,
+.toe-hero-btn-light:hover,
+.toe-detail-actions a.is-light:hover,
+.toe-listing-actions a:last-child:hover,
+.toe-modal-actions a:last-child:hover,
+.toe-filter-buttons button:hover,
+.toe-filter-buttons button.is-active {
+	color: var(--toe-green);
+}
+
+.toe-header-join:hover::before,
+.toe-hero-btn:hover::before,
+.toe-detail-actions a:hover::before,
+.toe-business-actions a:hover::before,
+.toe-vendor-actions a:hover::before,
+.toe-listing-actions a:hover::before,
+.toe-modal-actions a:hover::before,
+.toe-modal-close:hover::before,
+.toe-submit-btn:hover::before,
+.toe-filter-buttons button:hover::before {
+	opacity: 1;
+}
+
+.toe-header-join:focus-visible,
+.toe-hero-btn:focus-visible,
+.toe-detail-actions a:focus-visible,
+.toe-business-actions a:focus-visible,
+.toe-vendor-actions a:focus-visible,
+.toe-listing-actions a:focus-visible,
+.toe-modal-actions a:focus-visible,
+.toe-modal-close:focus-visible,
+.toe-submit-btn:focus-visible,
+.toe-filter-buttons button:focus-visible {
+	outline: 2px solid var(--toe-champagne);
+	outline-offset: 4px;
+}
+
 .toe-vendor-grid {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -610,6 +716,12 @@ textarea.tt-form-control {
 .toe-hero-btn span {
 	margin-left: 10px;
 	color: var(--toe-champagne);
+	transition: transform 0.28s ease, color 0.28s ease;
+}
+
+.toe-hero-btn:hover span {
+	transform: translateX(4px);
+	color: var(--toe-ivory);
 }
 
 .toe-hero-btn-light {
