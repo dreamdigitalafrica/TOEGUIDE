@@ -502,13 +502,18 @@ textarea.tt-form-control {
 }
 
 .toe-hero-actions {
+	position: relative;
+	z-index: 5;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 14px;
 	margin-top: 34px;
+	pointer-events: auto;
 }
 
 .toe-hero-btn {
+	position: relative;
+	z-index: 6;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
