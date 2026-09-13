@@ -177,6 +177,86 @@ body,
 	background: transparent !important;
 }
 
+#tt-header.toe-site-header {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	transform: none !important;
+}
+
+.toe-header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 28px;
+	width: min(100% - 54px, 1480px);
+	margin: 26px auto 0;
+	padding: 0 0 16px;
+	border-bottom: 1px solid rgba(248, 241, 231, 0.08);
+}
+
+.toe-nav-brand {
+	display: inline-flex;
+	align-items: center;
+	min-height: 42px;
+	padding: 0 0;
+	color: var(--toe-ivory) !important;
+	font-family: "Syne", sans-serif;
+	font-size: clamp(24px, 2vw, 34px);
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	white-space: nowrap;
+}
+
+.toe-main-nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: clamp(24px, 4.6vw, 76px);
+	width: 100%;
+}
+
+.toe-main-nav a {
+	position: relative;
+	color: rgba(248, 241, 231, 0.78) !important;
+	font-family: "Syne", sans-serif;
+	font-size: clamp(18px, 1.55vw, 30px);
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0;
+	white-space: nowrap;
+	transition: color 0.25s ease;
+}
+
+.toe-main-nav a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -13px;
+	height: 2px;
+	background: var(--toe-burnt-orange);
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.25s ease;
+}
+
+.toe-main-nav a:hover,
+.toe-main-nav a.active {
+	color: var(--toe-ivory) !important;
+}
+
+.toe-main-nav a:hover::after,
+.toe-main-nav a.active::after {
+	transform: scaleX(1);
+}
+
+.toe-mobile-menu-toggle {
+	display: none;
+}
+
 .tt-ol-menu-ghost,
 .ph-caption-title-ghost {
 	color: rgba(248, 241, 231, 0.035) !important;
@@ -1723,6 +1803,25 @@ textarea.tt-form-control {
 		width: 58px;
 	}
 
+	.toe-header-inner {
+		width: min(100% - 30px, 1480px);
+		margin-top: 18px;
+		padding-bottom: 12px;
+	}
+
+	.toe-main-nav {
+		display: none;
+	}
+
+	.toe-mobile-menu-toggle {
+		display: flex;
+		align-items: center;
+	}
+
+	.toe-nav-brand {
+		font-size: 24px;
+	}
+
 	.toe-vendor-grid {
 		grid-template-columns: 1fr;
 	}
@@ -1750,10 +1849,6 @@ textarea.tt-form-control {
 
 	.toe-directory-head {
 		display: block;
-	}
-
-	.toe-header-join {
-		display: none;
 	}
 
 	.toe-filter-buttons {

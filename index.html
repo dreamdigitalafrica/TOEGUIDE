@@ -94,82 +94,33 @@
 				========================
 				* Use class "tt-header-fixed" to set header to fixed position.
 				-->
-				<header id="tt-header" class="tt-header-fixed">
-					<div class="tt-header-inner"> <!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
-
-						<div class="tt-header-col">
-
-							<!-- Begin logo 
-							================ -->
-							<div class="tt-logo"> 
-								<a href="index.html">
-									<!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
-									<img src="assets/img/toe/toe-logo-transparent.png" class="tt-logo-light magnetic-item" alt="T.O.E Media"> <!-- logo light -->
-									<img src="assets/img/toe/toe-logo-transparent.png" class="tt-logo-dark magnetic-item" alt="T.O.E Media"> <!-- logo dark -->
-								</a>
-							</div>
-							<!-- End logo -->
-
-						</div> <!-- /.tt-header-col -->
-
-						<div class="tt-header-col">
-
-							<a href="signup.html#toe-signup-form" class="toe-header-join magnetic-item">Get Started</a>
-
-							<!-- Begin overlay menu toggle button -->
-							<div id="tt-ol-menu-toggle-btn-wrap">
-								<div class="tt-ol-menu-toggle-btn-text-wrap hide-cursor">
-									<div class="tt-ol-menu-toggle-btn-text">
-										<span class="text-menu" data-hover="Open">Menu</span>
-										<span class="text-close">Close</span>
-									</div> <!-- /.tt-ol-menu-toggle-btn-text -->
-								</div> <!-- /.tt-ol-menu-toggle-btn-text-wrap -->
-								<div class="tt-ol-menu-toggle-btn-holder">
-									<a href="#" class="tt-ol-menu-toggle-btn magnetic-item"><span></span></a>
-								</div> <!-- /.tt-ol-menu-toggle-btn-holder -->
-							</div>
-							<!-- End overlay menu toggle button -->
-
-							<!-- Begin overlay menu 
-							======================== 
-							* Use class "tt-ol-menu-count" to enable menu counter.
-							-->
-							<nav class="tt-overlay-menu tt-ol-menu-count">
-								<div class="tt-ol-menu-ghost">T.O.E</div>
-								<div class="tt-ol-menu-holder">
-									<div class="tt-ol-menu-inner tt-wrap">
-										<div class="tt-ol-menu-content">
-
-											<!-- Begin menu list -->
-											<ul class="tt-ol-menu-list">
-												<li class="active"><a href="index.html">Home</a></li>
-												<li><a href="discover.html">Discover</a></li>
-												<li><a href="signup.html#toe-signup-form">Get Started</a></li>
-												<li><a href="toe-blog.html">Blog</a></li>
-												<li><a href="#tt-contact-form">Contact / Info</a></li>
-											</ul>
-											<!-- End menu list -->
-
-											<!-- Begin overlay menu social links 
-											===================================== -->
-											<ul class="tt-ol-menu-social">
-												<li><h6 class="tt-ol-menu-social-heading">Social Links:</h6></li>
-												<li><a href="https://www.facebook.com/themetorium" target="_blank" rel="noopener">Facebook</a></li>
-												<li><a href="https://twitter.com/Themetorium" target="_blank" rel="noopener">Twitter</a></li>
-												<li><a href="https://www.youtube.com/" target="_blank" rel="noopener">Youtube</a></li>
-												<li><a href="https://dribbble.com/Themetorium" target="_blank" rel="noopener">Dribbble</a></li>
-												<li><a href="https://www.behance.net/Themetorium" target="_blank" rel="noopener">Behance</a></li>
-											</ul>
-											<!-- End overlay menu social links -->
-
-										</div> <!-- /.tt-ol-menu-content -->
-									</div> <!-- /.tt-ol-menu-inner -->
-								</div> <!-- /.tt-ol-menu-holder -->
-							</nav> 
-							<!-- End overlay menu -->
-
-						</div> <!-- /.header-col -->
-					</div> <!-- /.header-inner -->
+				<header id="tt-header" class="toe-site-header">
+					<div class="tt-header-inner toe-header-inner">
+						<a href="index.html" class="toe-nav-brand magnetic-item">T.O.E</a>
+						<nav class="toe-main-nav" aria-label="Primary navigation">
+							<a href="index.html" class="active">Home</a>
+							<a href="discover.html">Discover</a>
+							<a href="signup.html#toe-signup-form">Get Started</a>
+							<a href="toe-blog.html">Blog</a>
+							<a href="contact.html">Contact Us</a>
+						</nav>
+						<div id="tt-ol-menu-toggle-btn-wrap" class="toe-mobile-menu-toggle">
+							<div class="tt-ol-menu-toggle-btn-text-wrap hide-cursor"><div class="tt-ol-menu-toggle-btn-text"><span class="text-menu" data-hover="Open">Menu</span><span class="text-close">Close</span></div></div>
+							<div class="tt-ol-menu-toggle-btn-holder"><a href="#" class="tt-ol-menu-toggle-btn magnetic-item"><span></span></a></div>
+						</div>
+						<nav class="tt-overlay-menu tt-ol-menu-count">
+							<div class="tt-ol-menu-ghost">T.O.E</div>
+							<div class="tt-ol-menu-holder"><div class="tt-ol-menu-inner tt-wrap"><div class="tt-ol-menu-content">
+								<ul class="tt-ol-menu-list">
+									<li class="active"><a href="index.html">Home</a></li>
+									<li><a href="discover.html">Discover</a></li>
+									<li><a href="signup.html#toe-signup-form">Get Started</a></li>
+									<li><a href="toe-blog.html">Blog</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</div></div></div>
+						</nav>
+					</div>
 				</header>
 				<!-- End header -->
 
