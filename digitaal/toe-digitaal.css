@@ -453,7 +453,14 @@ body,
 }
 
 .funfact-block-two .inner-box .shape-icon {
-	display: none !important;
+	top: -34px;
+	left: -34px;
+	z-index: -1;
+	display: block !important;
+	width: min(36vw, 430px);
+	height: min(36vw, 430px);
+	opacity: 0.18;
+	pointer-events: none;
 }
 
 .funfact-block-two .inner-box .shape-icon .icon {
@@ -461,7 +468,10 @@ body,
 }
 
 .funfact-block-two .inner-box .shape-icon::before {
-	content: none;
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: url("../assets/img/toe/toe-watermark-mark.png") center / contain no-repeat;
 }
 
 .funfact-block-two .inner-box .count-box,
