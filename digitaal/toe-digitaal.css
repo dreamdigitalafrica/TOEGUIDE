@@ -24,25 +24,30 @@ body,
 }
 
 .preloader::after {
-	background-image: url("../assets/img/toe/toe-logo-padded.png") !important;
-	background-size: 110px 110px;
+	background-image: url("../assets/img/toe/toe-loader-logo.png") !important;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	animation: none !important;
-	z-index: 1;
+	width: 132px;
+	height: 132px;
+	margin-left: -66px;
+	margin-top: -66px;
+	animation: toe-loader-breathe 1.9s ease-in-out infinite !important;
+	z-index: 2;
 }
 
 .preloader::before {
 	content: "" !important;
 	left: 50%;
 	top: 50%;
-	width: 110px;
-	height: 110px;
-	margin-left: -55px;
-	margin-top: -70px;
+	width: 132px;
+	height: 132px;
+	margin-left: -66px;
+	margin-top: -66px;
 	background-repeat: no-repeat;
-	animation: toe-digitaal-loader-fill 1.45s steps(1, end) infinite;
-	z-index: 2;
+	filter: drop-shadow(0 0 11px rgba(255, 106, 42, 0.44));
+	animation: toe-digitaal-loader-fill 1.65s ease-in-out infinite;
+	z-index: 1;
 }
 
 .toe-digitaal-header .logo img,
@@ -62,54 +67,65 @@ body,
 	overflow: visible;
 }
 
+@keyframes toe-loader-breathe {
+	0%, 100% {
+		opacity: 0.88;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.025);
+	}
+}
+
 @keyframes toe-digitaal-loader-fill {
-	0%, 10%, 100% {
+	0%, 8%, 100% {
 		background:
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 32.5% 20.5% / 9% 9% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 43% 17% / 11% 11% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 55.5% 14.5% / 13% 13% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 69% 15% / 15.5% 15.5% no-repeat;
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
 	}
-	12%, 28% {
+	12%, 26% {
 		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 32.5% 20.5% / 9% 9% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 43% 17% / 11% 11% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 55.5% 14.5% / 13% 13% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 69% 15% / 15.5% 15.5% no-repeat;
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
 	}
-	30%, 46% {
+	30%, 44% {
 		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 32.5% 20.5% / 9% 9% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 43% 17% / 11% 11% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 55.5% 14.5% / 13% 13% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 69% 15% / 15.5% 15.5% no-repeat;
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
 	}
-	48%, 64% {
+	48%, 62% {
 		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 32.5% 20.5% / 9% 9% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 43% 17% / 11% 11% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 55.5% 14.5% / 13% 13% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 69% 15% / 15.5% 15.5% no-repeat;
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
 	}
-	66%, 82% {
+	66%, 80% {
 		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 32.5% 20.5% / 9% 9% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 43% 17% / 11% 11% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 55.5% 14.5% / 13% 13% no-repeat,
-			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 69% 15% / 15.5% 15.5% no-repeat;
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
+			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
 	}
-	84%, 98% {
+	84%, 96% {
 		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 32.5% 20.5% / 9% 9% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 43% 17% / 11% 11% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 55.5% 14.5% / 13% 13% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 69% 15% / 15.5% 15.5% no-repeat;
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
 	}
 }
 
@@ -118,9 +134,52 @@ body,
 }
 
 .toe-digitaal-header .main-menu .navigation > li > a {
-	font-size: 15px;
+	font-size: 14px;
 	letter-spacing: 0;
 	transition: color 0.28s ease, transform 0.28s ease;
+}
+
+.toe-digitaal-header .main-menu .navigation > li {
+	margin-right: 30px;
+}
+
+.toe-digitaal-header .main-menu .navigation > li > ul {
+	display: block;
+	width: 230px;
+	padding: 10px;
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	border-radius: 16px;
+	background:
+		linear-gradient(145deg, rgba(21, 50, 38, 0.96), rgba(7, 25, 19, 0.98));
+	box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+	transform: translateY(10px);
+	transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+}
+
+.toe-digitaal-header .main-menu .navigation > li.dropdown:hover > ul,
+.toe-digitaal-header .main-menu .navigation > li.dropdown:focus-within > ul {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.toe-digitaal-header .main-menu .navigation > li > ul > li {
+	border: 0;
+}
+
+.toe-digitaal-header .main-menu .navigation > li > ul > li > a {
+	padding: 11px 14px;
+	border-radius: 10px;
+	color: rgba(248, 241, 231, 0.8);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.toe-digitaal-header .main-menu .navigation > li > ul > li:hover > a {
+	background: rgba(255, 106, 42, 0.14);
+	color: #f8f1e7;
 }
 
 .toe-digitaal-header .main-menu .navigation > li > a::before {
@@ -199,13 +258,16 @@ body,
 	aspect-ratio: 4 / 3;
 }
 
-.project-block.toe-business-card .image-box .image {
-	aspect-ratio: 4 / 3;
+.projects-section .project-block.toe-business-card .image-box .image,
+.projects-section .project-block.toe-vendor-card .image-box .image {
+	height: clamp(360px, 34vw, 460px);
+	aspect-ratio: auto;
 }
 
-.project-block.toe-vendor-card .image-box .image {
-	aspect-ratio: 4 / 5;
-	max-height: 540px;
+.projects-section .project-block.toe-business-card .image-box .image a,
+.projects-section .project-block.toe-vendor-card .image-box .image a {
+	display: block;
+	height: 100%;
 }
 
 .blog-block .image-box .image {
@@ -348,6 +410,39 @@ body,
 	margin-bottom: 0;
 	font-size: 20px;
 	line-height: 1.1;
+}
+
+.funfact-block-two .inner-box {
+	isolation: isolate;
+	min-height: 420px;
+}
+
+.funfact-block-two .inner-box .shape-icon {
+	top: -26px;
+	left: -28px;
+	z-index: -1;
+	display: block !important;
+	width: min(38vw, 480px);
+	height: min(38vw, 480px);
+	opacity: 0.34;
+	pointer-events: none;
+}
+
+.funfact-block-two .inner-box .shape-icon .icon {
+	display: none;
+}
+
+.funfact-block-two .inner-box .shape-icon::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: url("../assets/img/toe/toe-watermark-mark.png") center / contain no-repeat;
+}
+
+.funfact-block-two .inner-box .count-box,
+.funfact-block-two .inner-box .text {
+	position: relative;
+	z-index: 1;
 }
 
 .services-section .service-block .content-box .text,
@@ -1135,6 +1230,130 @@ body,
 	transform: translateY(-2px);
 }
 
+.toe-services-page,
+.toe-explore-section {
+	position: relative;
+	background:
+		linear-gradient(180deg, rgba(7, 25, 19, 0.98), rgba(18, 55, 39, 0.88)),
+		var(--theme-color-dark);
+	overflow: hidden;
+}
+
+.toe-services-page::before,
+.toe-explore-section::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url("../assets/img/toe/toe-contour-bg.svg");
+	background-size: 1120px auto;
+	background-position: center;
+	opacity: 0.14;
+	pointer-events: none;
+}
+
+.toe-services-page .container,
+.toe-explore-section .container {
+	position: relative;
+	z-index: 1;
+}
+
+.toe-service-card,
+.toe-explore-card,
+.toe-event-card {
+	position: relative;
+	display: block;
+	height: 100%;
+	padding: 24px;
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	border-radius: 22px;
+	background:
+		linear-gradient(145deg, rgba(248, 241, 231, 0.075), rgba(248, 241, 231, 0.025)),
+		rgba(7, 25, 19, 0.78);
+	box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+	overflow: hidden;
+	transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.toe-service-card::after,
+.toe-explore-card::after,
+.toe-event-card::after {
+	content: "";
+	position: absolute;
+	right: -42px;
+	bottom: -42px;
+	width: 116px;
+	height: 116px;
+	border: 1px solid rgba(255, 106, 42, 0.28);
+	border-radius: 50%;
+}
+
+.toe-service-card:hover,
+.toe-explore-card:hover,
+.toe-event-card:hover {
+	border-color: rgba(255, 106, 42, 0.5);
+	background:
+		linear-gradient(145deg, rgba(255, 106, 42, 0.12), rgba(248, 241, 231, 0.035)),
+		rgba(9, 37, 27, 0.88);
+	transform: translateY(-6px);
+}
+
+.toe-service-card img,
+.toe-explore-card img {
+	width: 100%;
+	aspect-ratio: 16 / 10;
+	margin-bottom: 24px;
+	border-radius: 16px;
+	object-fit: cover;
+}
+
+.toe-service-card span,
+.toe-explore-card span,
+.toe-event-card span {
+	display: inline-flex;
+	margin-bottom: 12px;
+	color: var(--theme-color1);
+	font-size: 12px;
+	font-weight: 900;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.toe-service-card h3,
+.toe-explore-card h3,
+.toe-event-card h3 {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 12px;
+	color: #f8f1e7;
+	font-size: clamp(24px, 2.4vw, 34px);
+	line-height: 1.06;
+	letter-spacing: 0;
+}
+
+.toe-service-card p,
+.toe-explore-card p,
+.toe-event-card p {
+	position: relative;
+	z-index: 1;
+	margin: 0;
+	color: rgba(248, 241, 231, 0.68);
+	font-size: 16px;
+	line-height: 1.55;
+}
+
+.toe-services-grid,
+.toe-explore-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+}
+
+.toe-event-list {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+}
+
 @media (max-width: 991px) {
 	.toe-header-cta {
 		display: none;
@@ -1188,6 +1407,22 @@ body,
 		top: auto;
 		margin-top: 36px;
 	}
+
+	.funfact-block-two .inner-box {
+		min-height: 300px;
+	}
+
+	.funfact-block-two .inner-box .shape-icon {
+		width: min(82vw, 340px);
+		height: min(82vw, 340px);
+		opacity: 0.24;
+	}
+
+	.toe-services-grid,
+	.toe-explore-grid,
+	.toe-event-list {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1225,5 +1460,23 @@ body,
 	.project-block.toe-business-card .image-box .image,
 	.project-block.toe-vendor-card .image-box .image {
 		border-radius: 10px;
+	}
+
+	.projects-section .project-block.toe-business-card .image-box .image,
+	.projects-section .project-block.toe-vendor-card .image-box .image {
+		height: min(74vw, 330px);
+	}
+
+	.toe-services-grid,
+	.toe-explore-grid,
+	.toe-event-list {
+		grid-template-columns: 1fr;
+	}
+
+	.toe-service-card,
+	.toe-explore-card,
+	.toe-event-card {
+		padding: 18px;
+		border-radius: 18px;
 	}
 }
