@@ -1041,6 +1041,100 @@ body,
 	filter: saturate(0.72) contrast(1.02);
 }
 
+.toe-contact-details {
+	background:
+		linear-gradient(180deg, rgba(7, 25, 19, 0.96), rgba(7, 25, 19, 0.88)),
+		url("../assets/img/toe/toe-contour-bg.svg") center / 1180px auto repeat;
+}
+
+.toe-contact-details .sec-title h2,
+.toe-contact-details .sec-title .text {
+	color: #f8f1e7;
+}
+
+.toe-contact-details .sec-title .text,
+.toe-contact-aside .contact-details__info li .text span {
+	color: rgba(248, 241, 231, 0.68);
+}
+
+.toe-contact-details .form-control {
+	min-height: 62px;
+	border: 1px solid rgba(248, 241, 231, 0.1);
+	border-radius: 10px;
+	background-color: rgba(248, 241, 231, 0.075);
+	color: #f8f1e7;
+	font-size: 16px;
+	transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.toe-contact-details textarea.form-control {
+	min-height: 180px;
+	resize: vertical;
+}
+
+.toe-contact-details .form-control:focus {
+	border-color: rgba(255, 106, 42, 0.62);
+	background-color: rgba(248, 241, 231, 0.1);
+	box-shadow: 0 0 0 4px rgba(255, 106, 42, 0.08);
+	color: #f8f1e7;
+}
+
+.toe-contact-details .form-control::placeholder {
+	color: rgba(248, 241, 231, 0.44);
+}
+
+.toe-contact-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.toe-contact-aside {
+	padding: clamp(28px, 4vw, 44px);
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	border-radius: 20px;
+	background:
+		linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025)),
+		rgba(7, 25, 19, 0.72);
+}
+
+.toe-contact-aside .contact-details__info li .icon {
+	border-radius: 18px;
+	background-color: var(--theme-color1);
+}
+
+.toe-contact-aside .contact-details__info li .text h6,
+.toe-contact-aside .contact-details__info li .text a {
+	color: #f8f1e7;
+}
+
+.toe-contact-social {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 24px;
+}
+
+.toe-contact-social a {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 18px;
+	border: 1px solid rgba(255, 106, 42, 0.34);
+	border-radius: 999px;
+	color: #f8f1e7;
+	font-size: 14px;
+	font-weight: 800;
+	background: rgba(255, 106, 42, 0.16);
+	transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+
+.toe-contact-social a:hover {
+	color: #071913;
+	background: var(--theme-color1);
+	transform: translateY(-2px);
+}
+
 @media (max-width: 991px) {
 	.toe-header-cta {
 		display: none;
