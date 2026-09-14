@@ -1,0 +1,17 @@
+:root[data-tm-layout=lemon] {
+  --dark-color1: #D9F45F;
+  --dark-color2: #222222;
+  --dark-color3: #121310;
+  --dark-color4: #232336;
+  --theme-color-white: var(--dark-color2);
+  --theme-color-white-rgb: 28, 30, 34;
+  --theme-color-light: var(--dark-color2);
+  --text-color: rgba(34, 34, 34, 0.6);
+  --theme-color-dark: #fff;
+  --theme-color-dark-rgb: 255, 255, 255;
+  --theme-color-dark2: #ddd;
+  --body-color: var(--text-color);
+  --headings-color: #222222;
+  --link-color: #ffffff;
+  --link-hover-color: #ffffff;
+}

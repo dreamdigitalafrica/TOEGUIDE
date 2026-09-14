@@ -1,0 +1,825 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?622cb10d1ce0f8ff8b951481e94e9412") format("truetype"),
+url("./flaticon.woff?622cb10d1ce0f8ff8b951481e94e9412") format("woff"),
+url("./flaticon.woff2?622cb10d1ce0f8ff8b951481e94e9412") format("woff2"),
+url("./flaticon.eot?622cb10d1ce0f8ff8b951481e94e9412#iefix") format("embedded-opentype"),
+url("./flaticon.svg?622cb10d1ce0f8ff8b951481e94e9412#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "logistics": "\f101",
+    "cargo": "\f102",
+    "logistics-1": "\f103",
+    "logistics-2": "\f104",
+    "boxes": "\f105",
+    "import": "\f106",
+    "cargo-ship": "\f107",
+    "logistics-3": "\f108",
+    "logistics-4": "\f109",
+    "delivery": "\f10a",
+    "logistic": "\f10b",
+    "port": "\f10c",
+    "cargo-1": "\f10d",
+    "shipment": "\f10e",
+    "delivery-man": "\f10f",
+    "supply-chain": "\f110",
+    "container": "\f111",
+    "delivery-man-1": "\f112",
+    "box": "\f113",
+    "logistics-5": "\f114",
+    "team": "\f115",
+    "3d-cube": "\f116",
+    "global": "\f117",
+    "customer-service": "\f118",
+    "cargo-boat": "\f119",
+    "logistics-6": "\f11a",
+    "airplane": "\f11b",
+    "parcel": "\f11c",
+    "order": "\f11d",
+    "truck": "\f11e",
+    "container-1": "\f11f",
+    "global-1": "\f120",
+    "global-2": "\f121",
+    "worldwide-shipping": "\f122",
+    "fast-delivery": "\f123",
+    "worldwide-shipping-1": "\f124",
+    "shipment-1": "\f125",
+    "cart": "\f126",
+    "global-shipping": "\f127",
+    "delivery-man-2": "\f128",
+    "cargo-ship-1": "\f129",
+    "forklift": "\f12a",
+    "forklift-1": "\f12b",
+    "delivery-courier": "\f12c",
+    "shipping": "\f12d",
+    "airplane-1": "\f12e",
+    "stock": "\f12f",
+    "air-freight": "\f130",
+    "maintenance": "\f131",
+    "air": "\f132",
+    "logistics-delivery": "\f133",
+    "logistics-delivery-1": "\f134",
+    "clipboard": "\f135",
+    "logistics-delivery-2": "\f136",
+    "logistics-delivery-3": "\f137",
+    "box-1": "\f138",
+    "truck-1": "\f139",
+    "order-1": "\f13a",
+    "search": "\f13b",
+    "delivery-truck": "\f13c",
+    "international-shipping": "\f13d",
+    "24-hours": "\f13e",
+    "logistics-delivery-4": "\f13f",
+    "home-delivery": "\f140",
+    "forklift-2": "\f141",
+    "call-center": "\f142",
+    "crane": "\f143",
+    "headset": "\f144",
+    "shipment-2": "\f145",
+    "clipboard-1": "\f146",
+    "production": "\f147",
+    "export": "\f148",
+    "shopping-bag": "\f149",
+    "qr-code": "\f14a",
+    "air-plane": "\f14b",
+    "cash-on-delivery": "\f14c",
+    "import-1": "\f14d",
+    "24-hours-1": "\f14e",
+    "international-shipping-1": "\f14f",
+    "received": "\f150",
+    "export-1": "\f151",
+    "truck-2": "\f152",
+    "increase": "\f153",
+    "global-shipping-1": "\f154",
+    "crane-1": "\f155",
+    "shield": "\f156",
+    "container-2": "\f157",
+    "delivery-truck-1": "\f158",
+    "fast-delivery-1": "\f159",
+    "shipping-1": "\f15a",
+    "cash-on-delivery-1": "\f15b",
+    "delivery-1": "\f15c",
+    "trolley": "\f15d",
+    "packaging": "\f15e",
+    "setting": "\f15f",
+    "trolley-1": "\f160",
+    "settings": "\f161",
+    "delivery-2": "\f162",
+    "computer-monitor": "\f163",
+    "delivery-truck-2": "\f164",
+    "courier": "\f165",
+    "24-hours-delivery": "\f166",
+    "location-pin": "\f167",
+    "cash": "\f168",
+    "delivery-box": "\f169",
+    "delivery-bike": "\f16a",
+    "partnership": "\f16b",
+    "schedule": "\f16c",
+    "lock": "\f16d",
+    "delivery-box-1": "\f16e",
+    "open-box": "\f16f",
+    "product": "\f170",
+    "packages": "\f171",
+    "delivery-insurance": "\f172",
+    "weight": "\f173",
+    "global-3": "\f174",
+    "distribution-center": "\f175",
+    "weight-1": "\f176",
+    "trolley-2": "\f177",
+    "warehouse": "\f178",
+    "forklift-3": "\f179",
+    "shipping-2": "\f17a",
+    "delivery-service": "\f17b",
+    "24-hours-2": "\f17c",
+    "conveyor": "\f17d",
+    "24-hours-3": "\f17e",
+    "clipboard-2": "\f17f",
+    "airplane-2": "\f180",
+    "delivery-box-2": "\f181",
+    "checklist": "\f182",
+    "crane-2": "\f183",
+    "global-distribution": "\f184",
+    "delivery-3": "\f185",
+    "package": "\f186",
+    "weight-scale": "\f187",
+    "delivery-insurance-1": "\f188",
+    "train": "\f189",
+    "cargo-2": "\f18a",
+    "delivery-4": "\f18b",
+    "delivery-insurance-2": "\f18c",
+    "calendar": "\f18d",
+    "wrench": "\f18e",
+    "call-box": "\f18f",
+    "ship": "\f190",
+    "delivery-time": "\f191",
+    "trolley-3": "\f192",
+    "delivery-truck-3": "\f193",
+    "weight-2": "\f194",
+    "global-distribution-1": "\f195",
+    "tracking": "\f196",
+    "shipping-3": "\f197",
+    "delivery-5": "\f198",
+    "international-shipping-2": "\f199",
+    "delivery-cart": "\f19a",
+    "stock-1": "\f19b",
+    "delivery-service-1": "\f19c",
+    "distribution": "\f19d",
+    "scanner": "\f19e",
+    "delivery-box-3": "\f19f",
+    "settings-1": "\f1a0",
+    "vaccine": "\f1a1",
+    "worldwide-shipping-2": "\f1a2",
+    "delivery-insurance-3": "\f1a3",
+    "global-distribution-2": "\f1a4",
+    "delivery-box-4": "\f1a5",
+    "delivery-box-5": "\f1a6",
+    "air-mail": "\f1a7",
+    "recycle": "\f1a8",
+    "manufacturing": "\f1a9",
+    "smartphone": "\f1aa",
+    "import-2": "\f1ab",
+    "earth": "\f1ac",
+    "scooter": "\f1ad",
+    "delivery-6": "\f1ae",
+    "logistics-delivery-5": "\f1af",
+    "logistics-delivery-6": "\f1b0",
+    "transportation": "\f1b1",
+    "van": "\f1b2",
+    "supply-chain-management": "\f1b3",
+    "delivery-truck-4": "\f1b4",
+    "courier-1": "\f1b5",
+    "delivery-7": "\f1b6",
+    "logistics-7": "\f1b7",
+    "on-time": "\f1b8",
+    "distribution-center-1": "\f1b9",
+    "location": "\f1ba",
+    "air-freight-1": "\f1bb",
+    "logistics-8": "\f1bc",
+    "delivery-man-3": "\f1bd",
+    "logistics-delivery-7": "\f1be",
+    "international": "\f1bf",
+    "international-shipping-3": "\f1c0",
+    "distribution-1": "\f1c1",
+    "distribution-center-2": "\f1c2",
+    "container-3": "\f1c3",
+    "logistics-9": "\f1c4",
+    "delivery-8": "\f1c5",
+    "flow": "\f1c6",
+    "manufacture": "\f1c7",
+    "maps": "\f1c8",
+);
+
+.flaticon-logistics:before {
+    content: map-get($flaticon-map, "logistics");
+}
+.flaticon-cargo:before {
+    content: map-get($flaticon-map, "cargo");
+}
+.flaticon-logistics-1:before {
+    content: map-get($flaticon-map, "logistics-1");
+}
+.flaticon-logistics-2:before {
+    content: map-get($flaticon-map, "logistics-2");
+}
+.flaticon-boxes:before {
+    content: map-get($flaticon-map, "boxes");
+}
+.flaticon-import:before {
+    content: map-get($flaticon-map, "import");
+}
+.flaticon-cargo-ship:before {
+    content: map-get($flaticon-map, "cargo-ship");
+}
+.flaticon-logistics-3:before {
+    content: map-get($flaticon-map, "logistics-3");
+}
+.flaticon-logistics-4:before {
+    content: map-get($flaticon-map, "logistics-4");
+}
+.flaticon-delivery:before {
+    content: map-get($flaticon-map, "delivery");
+}
+.flaticon-logistic:before {
+    content: map-get($flaticon-map, "logistic");
+}
+.flaticon-port:before {
+    content: map-get($flaticon-map, "port");
+}
+.flaticon-cargo-1:before {
+    content: map-get($flaticon-map, "cargo-1");
+}
+.flaticon-shipment:before {
+    content: map-get($flaticon-map, "shipment");
+}
+.flaticon-delivery-man:before {
+    content: map-get($flaticon-map, "delivery-man");
+}
+.flaticon-supply-chain:before {
+    content: map-get($flaticon-map, "supply-chain");
+}
+.flaticon-container:before {
+    content: map-get($flaticon-map, "container");
+}
+.flaticon-delivery-man-1:before {
+    content: map-get($flaticon-map, "delivery-man-1");
+}
+.flaticon-box:before {
+    content: map-get($flaticon-map, "box");
+}
+.flaticon-logistics-5:before {
+    content: map-get($flaticon-map, "logistics-5");
+}
+.flaticon-team:before {
+    content: map-get($flaticon-map, "team");
+}
+.flaticon-3d-cube:before {
+    content: map-get($flaticon-map, "3d-cube");
+}
+.flaticon-global:before {
+    content: map-get($flaticon-map, "global");
+}
+.flaticon-customer-service:before {
+    content: map-get($flaticon-map, "customer-service");
+}
+.flaticon-cargo-boat:before {
+    content: map-get($flaticon-map, "cargo-boat");
+}
+.flaticon-logistics-6:before {
+    content: map-get($flaticon-map, "logistics-6");
+}
+.flaticon-airplane:before {
+    content: map-get($flaticon-map, "airplane");
+}
+.flaticon-parcel:before {
+    content: map-get($flaticon-map, "parcel");
+}
+.flaticon-order:before {
+    content: map-get($flaticon-map, "order");
+}
+.flaticon-truck:before {
+    content: map-get($flaticon-map, "truck");
+}
+.flaticon-container-1:before {
+    content: map-get($flaticon-map, "container-1");
+}
+.flaticon-global-1:before {
+    content: map-get($flaticon-map, "global-1");
+}
+.flaticon-global-2:before {
+    content: map-get($flaticon-map, "global-2");
+}
+.flaticon-worldwide-shipping:before {
+    content: map-get($flaticon-map, "worldwide-shipping");
+}
+.flaticon-fast-delivery:before {
+    content: map-get($flaticon-map, "fast-delivery");
+}
+.flaticon-worldwide-shipping-1:before {
+    content: map-get($flaticon-map, "worldwide-shipping-1");
+}
+.flaticon-shipment-1:before {
+    content: map-get($flaticon-map, "shipment-1");
+}
+.flaticon-cart:before {
+    content: map-get($flaticon-map, "cart");
+}
+.flaticon-global-shipping:before {
+    content: map-get($flaticon-map, "global-shipping");
+}
+.flaticon-delivery-man-2:before {
+    content: map-get($flaticon-map, "delivery-man-2");
+}
+.flaticon-cargo-ship-1:before {
+    content: map-get($flaticon-map, "cargo-ship-1");
+}
+.flaticon-forklift:before {
+    content: map-get($flaticon-map, "forklift");
+}
+.flaticon-forklift-1:before {
+    content: map-get($flaticon-map, "forklift-1");
+}
+.flaticon-delivery-courier:before {
+    content: map-get($flaticon-map, "delivery-courier");
+}
+.flaticon-shipping:before {
+    content: map-get($flaticon-map, "shipping");
+}
+.flaticon-airplane-1:before {
+    content: map-get($flaticon-map, "airplane-1");
+}
+.flaticon-stock:before {
+    content: map-get($flaticon-map, "stock");
+}
+.flaticon-air-freight:before {
+    content: map-get($flaticon-map, "air-freight");
+}
+.flaticon-maintenance:before {
+    content: map-get($flaticon-map, "maintenance");
+}
+.flaticon-air:before {
+    content: map-get($flaticon-map, "air");
+}
+.flaticon-logistics-delivery:before {
+    content: map-get($flaticon-map, "logistics-delivery");
+}
+.flaticon-logistics-delivery-1:before {
+    content: map-get($flaticon-map, "logistics-delivery-1");
+}
+.flaticon-clipboard:before {
+    content: map-get($flaticon-map, "clipboard");
+}
+.flaticon-logistics-delivery-2:before {
+    content: map-get($flaticon-map, "logistics-delivery-2");
+}
+.flaticon-logistics-delivery-3:before {
+    content: map-get($flaticon-map, "logistics-delivery-3");
+}
+.flaticon-box-1:before {
+    content: map-get($flaticon-map, "box-1");
+}
+.flaticon-truck-1:before {
+    content: map-get($flaticon-map, "truck-1");
+}
+.flaticon-order-1:before {
+    content: map-get($flaticon-map, "order-1");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-delivery-truck:before {
+    content: map-get($flaticon-map, "delivery-truck");
+}
+.flaticon-international-shipping:before {
+    content: map-get($flaticon-map, "international-shipping");
+}
+.flaticon-24-hours:before {
+    content: map-get($flaticon-map, "24-hours");
+}
+.flaticon-logistics-delivery-4:before {
+    content: map-get($flaticon-map, "logistics-delivery-4");
+}
+.flaticon-home-delivery:before {
+    content: map-get($flaticon-map, "home-delivery");
+}
+.flaticon-forklift-2:before {
+    content: map-get($flaticon-map, "forklift-2");
+}
+.flaticon-call-center:before {
+    content: map-get($flaticon-map, "call-center");
+}
+.flaticon-crane:before {
+    content: map-get($flaticon-map, "crane");
+}
+.flaticon-headset:before {
+    content: map-get($flaticon-map, "headset");
+}
+.flaticon-shipment-2:before {
+    content: map-get($flaticon-map, "shipment-2");
+}
+.flaticon-clipboard-1:before {
+    content: map-get($flaticon-map, "clipboard-1");
+}
+.flaticon-production:before {
+    content: map-get($flaticon-map, "production");
+}
+.flaticon-export:before {
+    content: map-get($flaticon-map, "export");
+}
+.flaticon-shopping-bag:before {
+    content: map-get($flaticon-map, "shopping-bag");
+}
+.flaticon-qr-code:before {
+    content: map-get($flaticon-map, "qr-code");
+}
+.flaticon-air-plane:before {
+    content: map-get($flaticon-map, "air-plane");
+}
+.flaticon-cash-on-delivery:before {
+    content: map-get($flaticon-map, "cash-on-delivery");
+}
+.flaticon-import-1:before {
+    content: map-get($flaticon-map, "import-1");
+}
+.flaticon-24-hours-1:before {
+    content: map-get($flaticon-map, "24-hours-1");
+}
+.flaticon-international-shipping-1:before {
+    content: map-get($flaticon-map, "international-shipping-1");
+}
+.flaticon-received:before {
+    content: map-get($flaticon-map, "received");
+}
+.flaticon-export-1:before {
+    content: map-get($flaticon-map, "export-1");
+}
+.flaticon-truck-2:before {
+    content: map-get($flaticon-map, "truck-2");
+}
+.flaticon-increase:before {
+    content: map-get($flaticon-map, "increase");
+}
+.flaticon-global-shipping-1:before {
+    content: map-get($flaticon-map, "global-shipping-1");
+}
+.flaticon-crane-1:before {
+    content: map-get($flaticon-map, "crane-1");
+}
+.flaticon-shield:before {
+    content: map-get($flaticon-map, "shield");
+}
+.flaticon-container-2:before {
+    content: map-get($flaticon-map, "container-2");
+}
+.flaticon-delivery-truck-1:before {
+    content: map-get($flaticon-map, "delivery-truck-1");
+}
+.flaticon-fast-delivery-1:before {
+    content: map-get($flaticon-map, "fast-delivery-1");
+}
+.flaticon-shipping-1:before {
+    content: map-get($flaticon-map, "shipping-1");
+}
+.flaticon-cash-on-delivery-1:before {
+    content: map-get($flaticon-map, "cash-on-delivery-1");
+}
+.flaticon-delivery-1:before {
+    content: map-get($flaticon-map, "delivery-1");
+}
+.flaticon-trolley:before {
+    content: map-get($flaticon-map, "trolley");
+}
+.flaticon-packaging:before {
+    content: map-get($flaticon-map, "packaging");
+}
+.flaticon-setting:before {
+    content: map-get($flaticon-map, "setting");
+}
+.flaticon-trolley-1:before {
+    content: map-get($flaticon-map, "trolley-1");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-delivery-2:before {
+    content: map-get($flaticon-map, "delivery-2");
+}
+.flaticon-computer-monitor:before {
+    content: map-get($flaticon-map, "computer-monitor");
+}
+.flaticon-delivery-truck-2:before {
+    content: map-get($flaticon-map, "delivery-truck-2");
+}
+.flaticon-courier:before {
+    content: map-get($flaticon-map, "courier");
+}
+.flaticon-24-hours-delivery:before {
+    content: map-get($flaticon-map, "24-hours-delivery");
+}
+.flaticon-location-pin:before {
+    content: map-get($flaticon-map, "location-pin");
+}
+.flaticon-cash:before {
+    content: map-get($flaticon-map, "cash");
+}
+.flaticon-delivery-box:before {
+    content: map-get($flaticon-map, "delivery-box");
+}
+.flaticon-delivery-bike:before {
+    content: map-get($flaticon-map, "delivery-bike");
+}
+.flaticon-partnership:before {
+    content: map-get($flaticon-map, "partnership");
+}
+.flaticon-schedule:before {
+    content: map-get($flaticon-map, "schedule");
+}
+.flaticon-lock:before {
+    content: map-get($flaticon-map, "lock");
+}
+.flaticon-delivery-box-1:before {
+    content: map-get($flaticon-map, "delivery-box-1");
+}
+.flaticon-open-box:before {
+    content: map-get($flaticon-map, "open-box");
+}
+.flaticon-product:before {
+    content: map-get($flaticon-map, "product");
+}
+.flaticon-packages:before {
+    content: map-get($flaticon-map, "packages");
+}
+.flaticon-delivery-insurance:before {
+    content: map-get($flaticon-map, "delivery-insurance");
+}
+.flaticon-weight:before {
+    content: map-get($flaticon-map, "weight");
+}
+.flaticon-global-3:before {
+    content: map-get($flaticon-map, "global-3");
+}
+.flaticon-distribution-center:before {
+    content: map-get($flaticon-map, "distribution-center");
+}
+.flaticon-weight-1:before {
+    content: map-get($flaticon-map, "weight-1");
+}
+.flaticon-trolley-2:before {
+    content: map-get($flaticon-map, "trolley-2");
+}
+.flaticon-warehouse:before {
+    content: map-get($flaticon-map, "warehouse");
+}
+.flaticon-forklift-3:before {
+    content: map-get($flaticon-map, "forklift-3");
+}
+.flaticon-shipping-2:before {
+    content: map-get($flaticon-map, "shipping-2");
+}
+.flaticon-delivery-service:before {
+    content: map-get($flaticon-map, "delivery-service");
+}
+.flaticon-24-hours-2:before {
+    content: map-get($flaticon-map, "24-hours-2");
+}
+.flaticon-conveyor:before {
+    content: map-get($flaticon-map, "conveyor");
+}
+.flaticon-24-hours-3:before {
+    content: map-get($flaticon-map, "24-hours-3");
+}
+.flaticon-clipboard-2:before {
+    content: map-get($flaticon-map, "clipboard-2");
+}
+.flaticon-airplane-2:before {
+    content: map-get($flaticon-map, "airplane-2");
+}
+.flaticon-delivery-box-2:before {
+    content: map-get($flaticon-map, "delivery-box-2");
+}
+.flaticon-checklist:before {
+    content: map-get($flaticon-map, "checklist");
+}
+.flaticon-crane-2:before {
+    content: map-get($flaticon-map, "crane-2");
+}
+.flaticon-global-distribution:before {
+    content: map-get($flaticon-map, "global-distribution");
+}
+.flaticon-delivery-3:before {
+    content: map-get($flaticon-map, "delivery-3");
+}
+.flaticon-package:before {
+    content: map-get($flaticon-map, "package");
+}
+.flaticon-weight-scale:before {
+    content: map-get($flaticon-map, "weight-scale");
+}
+.flaticon-delivery-insurance-1:before {
+    content: map-get($flaticon-map, "delivery-insurance-1");
+}
+.flaticon-train:before {
+    content: map-get($flaticon-map, "train");
+}
+.flaticon-cargo-2:before {
+    content: map-get($flaticon-map, "cargo-2");
+}
+.flaticon-delivery-4:before {
+    content: map-get($flaticon-map, "delivery-4");
+}
+.flaticon-delivery-insurance-2:before {
+    content: map-get($flaticon-map, "delivery-insurance-2");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-wrench:before {
+    content: map-get($flaticon-map, "wrench");
+}
+.flaticon-call-box:before {
+    content: map-get($flaticon-map, "call-box");
+}
+.flaticon-ship:before {
+    content: map-get($flaticon-map, "ship");
+}
+.flaticon-delivery-time:before {
+    content: map-get($flaticon-map, "delivery-time");
+}
+.flaticon-trolley-3:before {
+    content: map-get($flaticon-map, "trolley-3");
+}
+.flaticon-delivery-truck-3:before {
+    content: map-get($flaticon-map, "delivery-truck-3");
+}
+.flaticon-weight-2:before {
+    content: map-get($flaticon-map, "weight-2");
+}
+.flaticon-global-distribution-1:before {
+    content: map-get($flaticon-map, "global-distribution-1");
+}
+.flaticon-tracking:before {
+    content: map-get($flaticon-map, "tracking");
+}
+.flaticon-shipping-3:before {
+    content: map-get($flaticon-map, "shipping-3");
+}
+.flaticon-delivery-5:before {
+    content: map-get($flaticon-map, "delivery-5");
+}
+.flaticon-international-shipping-2:before {
+    content: map-get($flaticon-map, "international-shipping-2");
+}
+.flaticon-delivery-cart:before {
+    content: map-get($flaticon-map, "delivery-cart");
+}
+.flaticon-stock-1:before {
+    content: map-get($flaticon-map, "stock-1");
+}
+.flaticon-delivery-service-1:before {
+    content: map-get($flaticon-map, "delivery-service-1");
+}
+.flaticon-distribution:before {
+    content: map-get($flaticon-map, "distribution");
+}
+.flaticon-scanner:before {
+    content: map-get($flaticon-map, "scanner");
+}
+.flaticon-delivery-box-3:before {
+    content: map-get($flaticon-map, "delivery-box-3");
+}
+.flaticon-settings-1:before {
+    content: map-get($flaticon-map, "settings-1");
+}
+.flaticon-vaccine:before {
+    content: map-get($flaticon-map, "vaccine");
+}
+.flaticon-worldwide-shipping-2:before {
+    content: map-get($flaticon-map, "worldwide-shipping-2");
+}
+.flaticon-delivery-insurance-3:before {
+    content: map-get($flaticon-map, "delivery-insurance-3");
+}
+.flaticon-global-distribution-2:before {
+    content: map-get($flaticon-map, "global-distribution-2");
+}
+.flaticon-delivery-box-4:before {
+    content: map-get($flaticon-map, "delivery-box-4");
+}
+.flaticon-delivery-box-5:before {
+    content: map-get($flaticon-map, "delivery-box-5");
+}
+.flaticon-air-mail:before {
+    content: map-get($flaticon-map, "air-mail");
+}
+.flaticon-recycle:before {
+    content: map-get($flaticon-map, "recycle");
+}
+.flaticon-manufacturing:before {
+    content: map-get($flaticon-map, "manufacturing");
+}
+.flaticon-smartphone:before {
+    content: map-get($flaticon-map, "smartphone");
+}
+.flaticon-import-2:before {
+    content: map-get($flaticon-map, "import-2");
+}
+.flaticon-earth:before {
+    content: map-get($flaticon-map, "earth");
+}
+.flaticon-scooter:before {
+    content: map-get($flaticon-map, "scooter");
+}
+.flaticon-delivery-6:before {
+    content: map-get($flaticon-map, "delivery-6");
+}
+.flaticon-logistics-delivery-5:before {
+    content: map-get($flaticon-map, "logistics-delivery-5");
+}
+.flaticon-logistics-delivery-6:before {
+    content: map-get($flaticon-map, "logistics-delivery-6");
+}
+.flaticon-transportation:before {
+    content: map-get($flaticon-map, "transportation");
+}
+.flaticon-van:before {
+    content: map-get($flaticon-map, "van");
+}
+.flaticon-supply-chain-management:before {
+    content: map-get($flaticon-map, "supply-chain-management");
+}
+.flaticon-delivery-truck-4:before {
+    content: map-get($flaticon-map, "delivery-truck-4");
+}
+.flaticon-courier-1:before {
+    content: map-get($flaticon-map, "courier-1");
+}
+.flaticon-delivery-7:before {
+    content: map-get($flaticon-map, "delivery-7");
+}
+.flaticon-logistics-7:before {
+    content: map-get($flaticon-map, "logistics-7");
+}
+.flaticon-on-time:before {
+    content: map-get($flaticon-map, "on-time");
+}
+.flaticon-distribution-center-1:before {
+    content: map-get($flaticon-map, "distribution-center-1");
+}
+.flaticon-location:before {
+    content: map-get($flaticon-map, "location");
+}
+.flaticon-air-freight-1:before {
+    content: map-get($flaticon-map, "air-freight-1");
+}
+.flaticon-logistics-8:before {
+    content: map-get($flaticon-map, "logistics-8");
+}
+.flaticon-delivery-man-3:before {
+    content: map-get($flaticon-map, "delivery-man-3");
+}
+.flaticon-logistics-delivery-7:before {
+    content: map-get($flaticon-map, "logistics-delivery-7");
+}
+.flaticon-international:before {
+    content: map-get($flaticon-map, "international");
+}
+.flaticon-international-shipping-3:before {
+    content: map-get($flaticon-map, "international-shipping-3");
+}
+.flaticon-distribution-1:before {
+    content: map-get($flaticon-map, "distribution-1");
+}
+.flaticon-distribution-center-2:before {
+    content: map-get($flaticon-map, "distribution-center-2");
+}
+.flaticon-container-3:before {
+    content: map-get($flaticon-map, "container-3");
+}
+.flaticon-logistics-9:before {
+    content: map-get($flaticon-map, "logistics-9");
+}
+.flaticon-delivery-8:before {
+    content: map-get($flaticon-map, "delivery-8");
+}
+.flaticon-flow:before {
+    content: map-get($flaticon-map, "flow");
+}
+.flaticon-manufacture:before {
+    content: map-get($flaticon-map, "manufacture");
+}
+.flaticon-maps:before {
+    content: map-get($flaticon-map, "maps");
+}

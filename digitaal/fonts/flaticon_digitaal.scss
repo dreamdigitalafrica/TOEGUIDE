@@ -1,0 +1,145 @@
+$flaticon_digitaal-font: "flaticon_digitaal";
+
+@font-face {
+    font-family: $flaticon_digitaal-font;
+    src: url("./flaticon_digitaal.woff2?dc6ba0a38907bb85e841d15a43f0660c") format("woff2"),
+url("./flaticon_digitaal.woff?dc6ba0a38907bb85e841d15a43f0660c") format("woff"),
+url("./flaticon_digitaal.eot?dc6ba0a38907bb85e841d15a43f0660c#iefix") format("embedded-opentype"),
+url("./flaticon_digitaal.ttf?dc6ba0a38907bb85e841d15a43f0660c") format("truetype"),
+url("./flaticon_digitaal.svg?dc6ba0a38907bb85e841d15a43f0660c#flaticon_digitaal") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_digitaal !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_digitaal-map: (
+    "scribble": "\f101",
+    "search": "\f102",
+    "menu": "\f103",
+    "star": "\f104",
+    "quote": "\f105",
+    "next": "\f106",
+    "technical-support": "\f107",
+    "notes": "\f108",
+    "database": "\f109",
+    "top-right": "\f10a",
+    "paper-plane": "\f10b",
+    "facebook-app-symbol": "\f10c",
+    "twitter": "\f10d",
+    "instagram": "\f10e",
+    "linkedin": "\f10f",
+    "share": "\f110",
+    "digitalization": "\f111",
+    "digital-marketing": "\f112",
+    "call": "\f113",
+    "target": "\f114",
+    "3d-speaker": "\f115",
+    "3d-notes": "\f116",
+    "right-down": "\f117",
+    "film": "\f118",
+    "seo": "\f119",
+    "mobile-development": "\f11a",
+    "target-1": "\f11b",
+    "mission": "\f11c",
+    "hand-pointer": "\f11d",
+    "paint-roller": "\f11e",
+);
+
+.flaticon-scribble:before {
+    content: map-get($flaticon_digitaal-map, "scribble");
+}
+.flaticon-search:before {
+    content: map-get($flaticon_digitaal-map, "search");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon_digitaal-map, "menu");
+}
+.flaticon-star:before {
+    content: map-get($flaticon_digitaal-map, "star");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon_digitaal-map, "quote");
+}
+.flaticon-next:before {
+    content: map-get($flaticon_digitaal-map, "next");
+}
+.flaticon-technical-support:before {
+    content: map-get($flaticon_digitaal-map, "technical-support");
+}
+.flaticon-notes:before {
+    content: map-get($flaticon_digitaal-map, "notes");
+}
+.flaticon-database:before {
+    content: map-get($flaticon_digitaal-map, "database");
+}
+.flaticon-top-right:before {
+    content: map-get($flaticon_digitaal-map, "top-right");
+}
+.flaticon-paper-plane:before {
+    content: map-get($flaticon_digitaal-map, "paper-plane");
+}
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon_digitaal-map, "facebook-app-symbol");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon_digitaal-map, "twitter");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon_digitaal-map, "instagram");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon_digitaal-map, "linkedin");
+}
+.flaticon-share:before {
+    content: map-get($flaticon_digitaal-map, "share");
+}
+.flaticon-digitalization:before {
+    content: map-get($flaticon_digitaal-map, "digitalization");
+}
+.flaticon-digital-marketing:before {
+    content: map-get($flaticon_digitaal-map, "digital-marketing");
+}
+.flaticon-call:before {
+    content: map-get($flaticon_digitaal-map, "call");
+}
+.flaticon-target:before {
+    content: map-get($flaticon_digitaal-map, "target");
+}
+.flaticon-3d-speaker:before {
+    content: map-get($flaticon_digitaal-map, "3d-speaker");
+}
+.flaticon-3d-notes:before {
+    content: map-get($flaticon_digitaal-map, "3d-notes");
+}
+.flaticon-right-down:before {
+    content: map-get($flaticon_digitaal-map, "right-down");
+}
+.flaticon-film:before {
+    content: map-get($flaticon_digitaal-map, "film");
+}
+.flaticon-seo:before {
+    content: map-get($flaticon_digitaal-map, "seo");
+}
+.flaticon-mobile-development:before {
+    content: map-get($flaticon_digitaal-map, "mobile-development");
+}
+.flaticon-target-1:before {
+    content: map-get($flaticon_digitaal-map, "target-1");
+}
+.flaticon-mission:before {
+    content: map-get($flaticon_digitaal-map, "mission");
+}
+.flaticon-hand-pointer:before {
+    content: map-get($flaticon_digitaal-map, "hand-pointer");
+}
+.flaticon-paint-roller:before {
+    content: map-get($flaticon_digitaal-map, "paint-roller");
+}

@@ -1,0 +1,18 @@
+:root[data-tm-layout=dark] {
+  --dark-color1: #0B0B20;
+  --dark-color2: #13132E;
+  --dark-color3: #2b242b;
+  --dark-color4: #232336;
+  --theme-color-white: var(--dark-color1);
+  --theme-color-white-rgb: 28, 30, 34;
+  --theme-color-light: var(--dark-color2);
+  --theme-color-gray: var(--dark-color3);
+  --theme-color-silver: #292929;
+  --theme-color-dark: #fff;
+  --theme-color-dark-rgb: 255, 255, 255;
+  --theme-color-dark2: #ddd;
+  --body-color: var(--dark-color1);
+  --headings-color: #fff;
+  --link-color: #ffffff;
+  --link-hover-color: #ffffff;
+}

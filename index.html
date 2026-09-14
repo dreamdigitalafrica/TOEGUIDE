@@ -1,980 +1,487 @@
 <!DOCTYPE html>
-
-<!--
-	Template:   Nui - Creative Portfolio Showcase HTML Website Template
-	Author:     Themetorium
-	URL:        https://themetorium.net/
--->
-
 <html lang="en">
-	<head>
+<head>
+	<meta charset="utf-8">
+	<title>T.O.E Guide | Through Our Eyes Discovery Network</title>
+	<meta name="description" content="T.O.E Guide is a publication, advertising and discovery platform helping people find businesses, services, events and opportunities across Nigeria.">
+	<meta name="author" content="T.O.E Guide">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/img/toe/toe-favicon-transparent.png" type="image/png">
+	<link rel="icon" href="assets/img/toe/toe-favicon-transparent.png" type="image/png">
+	<link href="digitaal/css/bootstrap.min.css" rel="stylesheet">
+	<link href="digitaal/css/fontawesome.css" rel="stylesheet">
+	<link href="digitaal/css/flaticon-digitaal.css" rel="stylesheet">
+	<link href="digitaal/css/linear.css" rel="stylesheet">
+	<link href="digitaal/css/animate.css" rel="stylesheet">
+	<link href="digitaal/css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="digitaal/css/swiper.min.css" rel="stylesheet">
+	<link href="digitaal/css/owl.css" rel="stylesheet">
+	<link href="digitaal/css/select2.min.css" rel="stylesheet">
+	<link href="digitaal/css/jquery-ui.css" rel="stylesheet">
+	<link href="digitaal/css/aos.css" rel="stylesheet">
+	<link href="digitaal/css/tm-bs-mp.css" rel="stylesheet">
+	<link href="digitaal/css/tm-utility-classes.css" rel="stylesheet">
+	<link href="digitaal/css/style.css" rel="stylesheet">
+	<link href="digitaal/toe-digitaal.css" rel="stylesheet">
+</head>
+<body>
+	<div class="page-wrapper dark-layout toe-digitaal-page">
+		<div class="preloader"></div>
 
-		<!-- Title -->
-		<title>T.O.E Guide - Through Our Eyes Discovery Network</title>
-
-		<!-- Meta -->
-		<meta charset="utf-8">
-		<meta name="description" content="T.O.E Guide is a publication, advertising and discovery platform helping people find businesses, services, events and opportunities across Nigeria.">
-		<meta name="author" content="T.O.E Guide">
-
-		<!-- Mobile Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<!-- Favicon (http://www.favicon-generator.org/) -->
-		<link rel="shortcut icon" href="assets/img/toe/toe-favicon-transparent.png" type="image/png">
-		<link rel="icon" href="assets/img/toe/toe-favicon-transparent.png" type="image/png">
-
-		<!-- Your Google Analytics code goes here -->
-
-		<!-- Google fonts (https://www.google.com/fonts) -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Body font -->
-		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <!-- Secondary/Alter font -->
-
-		<!-- Libs and Plugins CSS -->
-		<link rel="stylesheet" href="assets/vendor/normalize/normalize.min.css"> <!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
-		<link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome-all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
-		<link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css"> <!-- Swiper CSS (https://swiperjs.com/) -->
-		<link rel="stylesheet" href="assets/vendor/lightgallery/css/lightgallery.min.css"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
-
-		<!-- Template master CSS -->
-		<link rel="stylesheet" href="assets/css/helper.css">
-		<link id="tt-themecss" rel="stylesheet" href="assets/css/theme.css">
-		<link rel="stylesheet" href="assets/css/toe.css">
-
-	</head>
-
-	
-	<!-- ===========
-	///// Body /////
-	================
-	* Use class "tt-boxed" to enable page boxed layout globally (affects all elements containing class "tt-wrap").
-	* Use class "tt-smooth-scroll" to enable page smooth scrolling.
-	* Use class "tt-transition" to enable page transitions.
-	* Use class "tt-magic-cursor" to enable magic cursor.
-	* Note: there may be classes that are specific to this page only!
-	-->
-	<body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
-
-
-		<!-- *************************************
-		*********** Begin body inner ************* 
-		************************************** -->
-		<main id="body-inner">
-
-			<!-- Begin page transition (do not remove!!!) 
-			=========================== -->
-			<div id="page-transition">
-				<div class="ptr-overlay"></div>
-				<div class="ptr-preloader">
-					<div class="ptr-prel-content">
-						<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
-						<img src="assets/img/toe/toe-logo-transparent.png" class="ptr-prel-image tt-logo-light" alt="T.O.E Guide"><span class="toe-loader-dot"></span><span class="toe-loader-dot"></span><span class="toe-loader-dot"></span><span class="toe-loader-dot"></span><span class="toe-loader-dot"></span>
-					</div> <!-- /.ptr-prel-content -->
-				</div> <!-- /.ptr-preloader -->
-			</div>
-			<!-- End page transition -->
-
-			<!-- Begin magic cursor 
-			======================== -->
-			<div id="magic-cursor">
-				<div id="ball"></div>
-			</div>
-			<!-- End magic cursor --> 
-
-
-			<!-- *****************************************
-			*********** Begin scroll container *********** 
-			****************************************** -->
-			<div id="scroll-container"> 
-				
-				<!-- ===================
-				///// Begin header /////
-				========================
-				* Use class "tt-header-fixed" to set header to fixed position.
-				-->
-				<header id="tt-header" class="toe-site-header">
-					<div class="tt-header-inner toe-header-inner">
-						<a href="index.html" class="toe-nav-brand magnetic-item"><img src="assets/img/toe/toe-logo-transparent.png" alt="T.O.E"></a>
-						<nav class="toe-main-nav" aria-label="Primary navigation">
-							<a href="index.html" class="active">Home</a>
-							<a href="about-us.html">About</a>
-							<a href="discover.html">Discover</a>
-							<a href="signup.html">Get Started</a>
-							<a href="toe-blog.html">Blog</a>
-							<a href="contact.html">Contact Us</a>
-						</nav>
-					</div>
-				</header>
-				<!-- End header -->
-
-				
-				<!-- *************************************
-				*********** Begin content wrap *********** 
-				************************************** -->
-				<div id="content-wrap">
-					<section class="toe-ogoni-hero" id="toe-home-hero">
-						<div class="toe-ogoni-bg" aria-hidden="true"></div>
-						<div class="toe-ogoni-inner tt-wrap">
-							<div class="toe-ogoni-copy">
-								<img class="toe-ogoni-mark" src="assets/img/toe/toe-logo-transparent.png" alt="T.O.E">
-								<p class="toe-page-kicker">T.O.E Guide</p>
-								<h1>See more.<br>Be seen.</h1>
-								<p class="toe-ogoni-text">Print-to-digital discovery for places, people, services and opportunities across Nigeria.</p>
-								<div class="toe-ogoni-tags" aria-label="T.O.E discovery channels">
-									<span>Print</span>
-									<span>QR</span>
-									<span>Maps</span>
-									<span>Vendors</span>
-									<span>Brands</span>
-								</div>
-								<div class="toe-hero-actions">
-									<a href="discover.html" class="toe-hero-btn">Discover now <span>→</span></a>
-									<a href="signup.html" class="toe-hero-btn toe-hero-btn-light">Get started</a>
+		<header class="main-header header-style-one toe-digitaal-header">
+			<div class="outer-box">
+				<div class="header-lower anim-fade-move" data-delay="0.25">
+					<div class="inner-container">
+						<div class="main-box">
+							<div class="logo-box">
+								<div class="logo">
+									<a href="index.html" title="T.O.E Guide"><img src="assets/img/toe/toe-logo-transparent.png" alt="T.O.E Guide"></a>
 								</div>
 							</div>
-							<div class="toe-ogoni-showcase" aria-label="T.O.E hospitality previews">
-								<div class="toe-ogoni-badge">Make<br>we<br>L.O.U.D?</div>
-								<figure class="toe-ogoni-card toe-ogoni-card-large">
-									<img src="assets/img/toe/vendors/luxury-hotel-lobby-woman.png" alt="Luxury hospitality guest in Abuja hotel lobby">
-									<figcaption><span>Stay</span><strong>Hotels and apartments</strong></figcaption>
-								</figure>
-								<figure class="toe-ogoni-card toe-ogoni-card-wide">
-									<img src="assets/img/toe/vendors/luxury-restaurant-lounge-woman.png" alt="Luxury Abuja restaurant and lounge ambience">
-									<figcaption><span>Eat</span><strong>Lounges and restaurants</strong></figcaption>
-								</figure>
-								<figure class="toe-ogoni-card toe-ogoni-card-small">
-									<img src="assets/img/toe/vendors/luxury-serviced-apartment-woman.png" alt="Serviced apartment guest using T.O.E Guide">
-									<figcaption><span>Help</span><strong>Useful local services</strong></figcaption>
-								</figure>
-							</div>
-						</div>
-						<a href="#page-content" class="toe-ogoni-arrow" aria-label="Scroll to content"></a>
-					</section>
-
-					<section class="toe-ogoni-features" aria-label="T.O.E features">
-						<div class="toe-ogoni-feature-wrap tt-wrap">
-							<article><span>01</span><strong>Guide</strong><p>Print and digital listings for what people should not miss.</p></article>
-							<article><span>02</span><strong>Scan</strong><p>QR access to maps, calls, WhatsApp, booking and requests.</p></article>
-							<article><span>03</span><strong>Discover</strong><p>Places, people, services, events and local opportunities.</p></article>
-							<article><span>04</span><strong>Get listed</strong><p>Fast onboarding for vendors, businesses and partners.</p></article>
-						</div>
-					</section>
-
-<!-- *************************************
-					*********** Begin page content *********** 
-					************************************** -->
-					<div id="page-content">
-
-
-						<!-- =======================
-						///// Begin tt-section /////
-						============================ 
-						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
-						-->
-						<div class="tt-section">
-							<div class="tt-section-inner">
-
-								<!-- Begin portfolio grid (works combined with tt-Ggrid!)
-								========================== 
-								* Use class "pgi-hover" to enable portfolio grid item hover effect (behavior depends on "ttgr-gap-*" classes below!).
-								* Use class "pgi-cap-hover" to enable portfolio grid item caption hover effect (effect only with class "pgi-cap-inside"! Also no effect on mobile devices!).
-								* Use class "pgi-cap-center" to position portfolio grid item caption to center.
-								* Use class "pgi-cap-inside" to position portfolio grid item caption to inside.
-								--> 
-								<div id="portfolio-grid" class="pgi-hover">
-
-									<!-- Begin tt-Grid
-									=================== 
-									* Use class "ttgr-layout-2", "ttgr-layout-3", "ttgr-layout-4" to set grid layout (columns). No class = one column.
-									* Use class "ttgr-layout-1-2", "ttgr-layout-2-1", "ttgr-layout-2-3", "ttgr-layout-3-2", "ttgr-layout-3-4" or "ttgr-layout-4-3" to set grid mixed layout (columns).
-									* Use class "ttgr-layout-creative-1" or "ttgr-layout-creative-2" to set grid creative mixed layout (no effect with classes "ttgr-portrait", "ttgr-portrait-half", "ttgr-not-cropped" and "ttgr-shifted").
-									* Use class "ttgr-portrait" or "ttgr-portrait-half" to enable portrait mode (no effect with classes "ttgr-layout-creative-1", "ttgr-layout-creative-2" and "ttgr-not-cropped").
-									* Use class "ttgr-gap-1", "ttgr-gap-2", "ttgr-gap-3", "ttgr-gap-4", "ttgr-gap-5" or "ttgr-gap-6" to add space between items.
-									* Use class "ttgr-not-cropped" to enable not cropped mode (effect only with classes "ttgr-layout-2", "ttgr-layout-3" and "ttgr-layout-4").
-									* Use class "ttgr-shifted" to enable shifted layout (effect only with classes "ttgr-layout-2", "ttgr-layout-3" and "ttgr-layout-4").
-									-->
-									<div class="tt-grid ttgr-layout-creative-2 ttgr-gap-4">
-
-										<!-- Begin tt-Grid items wrap 
-										============================== -->
-										<div class="tt-grid-items-wrap isotope-items-wrap">
-
-											<!-- Begin tt-Grid item
-											======================== -->
-											<div class="tt-grid-item isotope-item people">
-												<div class="ttgr-item-inner">
-
-													<!-- Begin portfolio grid item 
-													===============================
-													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"! Also no effect on small screens!).
-													-->
-													<div class="portfolio-grid-item">
-														<a href="single-project-1.html" class="pgi-image-wrap" data-cursor="View<br>Project">
-															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-															<div class="pgi-image-holder">
-																<div class="pgi-image-inner anim-zoomin">
-																	<figure class="pgi-image ttgr-height">
-																		<img src="assets/img/portfolio/1200/portfolio-1.jpg" alt="image">
-																	</figure> <!-- /.pgi-image -->
-																</div> <!-- /.pgi-image-inner -->
-															</div> <!-- /.pgi-image-holder -->
-														</a> <!-- /.pgi-image-wrap -->
-
-														<div class="pgi-caption">
-															<div class="pgi-caption-inner">
-																<h2 class="pgi-title">
-																	<a href="single-project-1.html">City Discovery</a>
-																</h2>
-																<div class="pgi-categories-wrap">
-																	<div class="pgi-category">People</div>
-																	<!-- <div class="pgi-category">Varia</div> -->
-																</div> <!-- /.pli-categories-wrap -->
-															</div> <!-- /.pgi-caption-inner -->
-														</div> <!-- /.pgi-caption -->
-													</div>
-													<!-- End portfolio grid item -->
-
-												</div> <!-- /.ttgr-item-inner -->
-											</div>
-											<!-- End tt-Grid item -->
-
-											<!-- Begin tt-Grid item
-											======================== -->
-											<div class="tt-grid-item isotope-item creative">
-												<div class="ttgr-item-inner">
-
-													<!-- Begin portfolio grid item 
-													===============================
-													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
-													-->
-													<div class="portfolio-grid-item">
-														<a href="single-project-2.html" class="pgi-image-wrap" data-cursor="View<br>Project">
-															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-															<div class="pgi-image-holder">
-																<div class="pgi-image-inner anim-zoomin">
-																	<figure class="pgi-image ttgr-height">
-																		<img src="assets/img/portfolio/1200/portfolio-2.jpg" alt="image">
-																	</figure> <!-- /.pgi-image -->
-																</div> <!-- /.pgi-image-inner -->
-															</div> <!-- /.pgi-image-holder -->
-														</a> <!-- /.pgi-image-wrap -->
-
-														<div class="pgi-caption">
-															<div class="pgi-caption-inner">
-																<h2 class="pgi-title">
-																	<a href="single-project-2.html">Eat & Drink</a>
-																</h2>
-																<div class="pgi-categories-wrap">
-																	<div class="pgi-category">Creative</div>
-																	<!-- <div class="pgi-category">Varia</div> -->
-																</div> <!-- /.pli-categories-wrap -->
-															</div> <!-- /.pgi-caption-inner -->
-														</div> <!-- /.pgi-caption -->
-													</div>
-													<!-- End portfolio grid item -->
-
-												</div> <!-- /.ttgr-item-inner -->
-											</div>
-											<!-- End tt-Grid item -->
-
-											<!-- Begin tt-Grid item
-											======================== -->
-											<div class="tt-grid-item isotope-item people">
-												<div class="ttgr-item-inner">
-
-													<!-- Begin portfolio grid item 
-													===============================
-													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
-													-->
-													<div class="portfolio-grid-item">
-														<a href="single-project-3.html" class="pgi-image-wrap" data-cursor="View<br>Project">
-															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-															<div class="pgi-image-holder">
-																<div class="pgi-image-inner anim-zoomin">
-																	<figure class="pgi-video-wrap ttgr-height">
-																		<video class="pgi-video" loop muted preload="metadata" poster="assets/vids/fashion-shoot.jpg">
-																			<source src="assets/vids/fashion-shoot.mp4" type="video/mp4">
-																			<source src="assets/vids/fashion-shoot.webm" type="video/webm">
-																		</video>
-																	</figure> <!-- /.pgi-video-wrap -->
-																</div> <!-- /.pgi-image-inner -->
-															</div> <!-- /.pgi-image-holder -->
-														</a> <!-- /.pgi-image-wrap -->
-
-														<div class="pgi-caption">
-															<div class="pgi-caption-inner">
-																<h2 class="pgi-title">
-																	<a href="single-project-3.html">Stay & Unwind</a>
-																</h2>
-																<div class="pgi-categories-wrap">
-																	<div class="pgi-category">People</div>
-																	<!-- <div class="pgi-category">Varia</div> -->
-																</div> <!-- /.pli-categories-wrap -->
-															</div> <!-- /.pgi-caption-inner -->
-														</div> <!-- /.pgi-caption -->
-													</div>
-													<!-- End portfolio grid item -->
-
-												</div> <!-- /.ttgr-item-inner -->
-											</div>
-											<!-- End tt-Grid item -->
-
-											<!-- Begin tt-Grid item
-											======================== -->
-											<div class="tt-grid-item isotope-item nature">
-												<div class="ttgr-item-inner">
-
-													<!-- Begin portfolio grid item 
-													===============================
-													* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
-													-->
-													<div class="portfolio-grid-item">
-														<a href="single-project-4.html" class="pgi-image-wrap" data-cursor="View<br>Project">
-															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-															<div class="pgi-image-holder">
-																<div class="pgi-image-inner anim-zoomin">
-																	<figure class="pgi-image ttgr-height">
-																		<img src="assets/img/portfolio/1200/portfolio-3.jpg" alt="image">
-																	</figure> <!-- /.pgi-image -->
-																</div> <!-- /.pgi-image-inner -->
-															</div> <!-- /.pgi-image-holder -->
-														</a> <!-- /.pgi-image-wrap -->
-
-														<div class="pgi-caption">
-															<div class="pgi-caption-inner">
-																<h2 class="pgi-title">
-																	<a href="single-project-4.html">T.O.E Help</a>
-																</h2>
-																<div class="pgi-categories-wrap">
-																	<div class="pgi-category">Nature</div>
-																	<!-- <div class="pgi-category">Varia</div> -->
-																</div> <!-- /.pli-categories-wrap -->
-															</div> <!-- /.pgi-caption-inner -->
-														</div> <!-- /.pgi-caption -->
-													</div>
-													<!-- End portfolio grid item -->
-
-												</div> <!-- /.ttgr-item-inner -->
-											</div>
-											<!-- End tt-Grid item -->
-
-										</div>
-										<!-- End tt-Grid items wrap  -->
-
-									</div>
-									<!-- End tt-Grid -->
-
-								</div>
-								<!-- End portfolio grid -->
-
-
-
-							</div> <!-- /.tt-section-inner -->
-						</div>
-						<!-- End tt-section -->
-
-
-
-						<!-- =======================
-						///// Begin tt-section /////
-						============================ 
-						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
-						-->
-						<div class="tt-section padding-top-xlg-100 padding-bottom-xlg-150">
-							<div class="tt-section-inner tt-wrap max-width-1700">
-
-								<div class="tt-row margin-left-lg-3-p margin-right-lg-3-p">
-									<div class="tt-col-xl-4">
-
-										<!-- Begin tt-Heading 
-										====================== 
-										* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
-										* Use class "tt-heading-stroke" to enable stroke style.
-										* Use class "tt-heading-center" to align tt-Heading to center.
-										* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
-										-->
-										<div class="tt-heading tt-heading-xlg anim-fadeinup">
-											<h3 class="tt-heading-subtitle">T.O.E Segments</h3>
-											<h2 class="tt-heading-title">Discovery, visibility and access</h2> <!-- You can use <br> to break a text line if needed -->
-										</div>
-										<!-- End tt-Heading -->
-
-										<div class="max-width-600 margin-bottom-60 anim-fadeinup">
-											<h5>A publication and advertising network helping residents, visitors and brands find what matters faster.</h5>
-										</div>
-
-									</div> <!-- /.tt-col -->
-
-									<div class="tt-col-xl-1">
-									</div> <!-- /.tt-col -->
-
-									<div class="tt-col-xl-7">
-
-										<!-- Begin accordion 
-										===================== 
-										* Use class "tt-ac-sm", "tt-ac-lg", "tt-ac-xlg" or "tt-ac-xxlg" to set accordion size.
-										* Use class "tt-ac-borders" to enable borders.
-										* Note: Add class "is-open" to the "tt-accordion-content" to make this content open by default.
-										-->
-										<div class="tt-accordion tt-ac-borders">
-											<div class="tt-accordion-item anim-fadeinup">
-												<div class="tt-accordion-heading">
-													<div class="tt-ac-head cursor-alter">
-														<h3 class="tt-ac-head-title">City & state guides</h3>
-														<!-- <div class="tt-accordion-subtext">Mauris mauris ante</div> -->
-													</div>
-
-													<div class="tt-accordion-caret-wrap">
-														<div class="tt-accordion-caret-inner magnetic-item">
-															<div class="tt-accordion-caret"></div>
-														</div>
-													</div> <!-- /.tt-accordion-caret-wrap -->
-												</div> <!-- /.tt-accordion-heading -->
-												<div class="tt-accordion-content max-width-800">
-													<p>Local guides, directories and useful recommendations that help people see more in each featured state.</p>
-												</div> <!-- /.tt-accordion-content -->
-											</div> <!-- /.tt-accordion-item -->
-
-											<div class="tt-accordion-item anim-fadeinup">
-												<div class="tt-accordion-heading">
-													<div class="tt-ac-head cursor-alter">
-														<h3 class="tt-ac-head-title">Eat, Stay & Explore</h3>
-														<!-- <div class="tt-accordion-subtext">Vivamus nisi</div> -->
-													</div>
-
-													<div class="tt-accordion-caret-wrap">
-														<div class="tt-accordion-caret-inner magnetic-item">
-															<div class="tt-accordion-caret"></div>
-														</div>
-													</div> <!-- /.tt-accordion-caret-wrap -->
-												</div> <!-- /.tt-accordion-heading -->
-												<div class="tt-accordion-content max-width-800">
-													<p>Restaurants, cafes, lounges, hotels, spas, attractions, shopping, culture, events and curated experiences.</p>
-												</div> <!-- /.tt-accordion-content -->
-											</div> <!-- /.tt-accordion-item -->
-
-											<div class="tt-accordion-item anim-fadeinup">
-												<div class="tt-accordion-heading">
-													<div class="tt-ac-head cursor-alter">
-														<h3 class="tt-ac-head-title">Local service discovery</h3>
-														<!-- <div class="tt-accordion-subtext">Nam min proin eget</div> -->
-													</div>
-
-													<div class="tt-accordion-caret-wrap">
-														<div class="tt-accordion-caret-inner magnetic-item">
-															<div class="tt-accordion-caret"></div>
-														</div>
-													</div> <!-- /.tt-accordion-caret-wrap -->
-												</div> <!-- /.tt-accordion-heading -->
-												<div class="tt-accordion-content max-width-800">
-													<p>Professional, domestic and everyday service providers organised by need, location and contact access.</p>
-												</div> <!-- /.tt-accordion-content -->
-											</div> <!-- /.tt-accordion-item -->
-
-											<div class="tt-accordion-item anim-fadeinup">
-												<div class="tt-accordion-heading">
-													<div class="tt-ac-head cursor-alter">
-														<h3 class="tt-ac-head-title">QR & digital campaigns</h3>
-														<!-- <div class="tt-accordion-subtext">Condimentum sit amet</div> -->
-													</div>
-
-													<div class="tt-accordion-caret-wrap">
-														<div class="tt-accordion-caret-inner magnetic-item">
-															<div class="tt-accordion-caret"></div>
-														</div>
-													</div> <!-- /.tt-accordion-caret-wrap -->
-												</div> <!-- /.tt-accordion-heading -->
-												<div class="tt-accordion-content max-width-800">
-													<p>QR-linked pages, maps, WhatsApp contact points, reviews, partner listings and digital tools beyond print.</p>
-												</div> <!-- /.tt-accordion-content -->
-											</div> <!-- /.tt-accordion-item -->
-
-										</div>
-										<!-- End accordion -->
-
-									</div> <!-- /.tt-col -->
-								</div> <!-- /.tt-row -->
-
-							</div> <!-- /.tt-section-inner -->
-						</div>
-						<!-- End tt-section -->
-
-
-
-
-						<!-- =======================
-						///// Begin tt-section /////
-						============================ 
-						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
-						-->
-						<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
-							<div class="tt-section-inner tt-wrap">
-
-								<div class="tt-heading tt-heading-xlg margin-bottom-7-p anim-fadeinup max-width-1200">
-									<h3 class="tt-heading-subtitle">Vendor & business signup</h3>
-									<h2 class="tt-heading-title">Be seen by the people already looking.</h2>
-								</div>
-
-								<div class="toe-vendor-grid">
-									<div class="toe-vendor-card anim-fadeinup">
-										<span>01</span>
-										<h3>Hospitality & Stay</h3>
-										<p>Hotels, apartments, serviced stays, resorts, spas and wellness spaces.</p>
-									</div>
-									<div class="toe-vendor-card anim-fadeinup">
-										<span>02</span>
-										<h3>Eat, Drink & Events</h3>
-										<p>Restaurants, cafes, lounges, caterers, event venues, comedy, concerts and conferences.</p>
-									</div>
-									<div class="toe-vendor-card anim-fadeinup">
-										<span>03</span>
-										<h3>Shop & Lifestyle</h3>
-										<p>Fashion, beauty, boutiques, designers, gift stores, galleries and lifestyle brands.</p>
-									</div>
-									<div class="toe-vendor-card anim-fadeinup">
-										<span>04</span>
-										<h3>Home Services</h3>
-										<p>Grocery shoppers, laundry, cleaning, private cooks, errands, childcare and handyman support.</p>
-									</div>
-								</div>
-
-							</div> <!-- /.tt-section-inner -->
-						</div>
-						<!-- End tt-section -->
-
-
-
-						<!-- =======================
-						///// Begin tt-section /////
-						============================ 
-						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
-						-->
-						<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150 bg-white-accent-3">
-							<div class="tt-section-inner tt-wrap max-width-1600">
-
-								<!-- Begin tt-Heading 
-								====================== 
-								* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
-								* Use class "tt-heading-stroke" to enable stroke style.
-								* Use class "tt-heading-center" to align tt-Heading to center.
-								* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
-								-->
-								<div class="tt-heading tt-heading-xlg margin-bottom-7-p anim-fadeinup max-width-1250 margin-auto">
-									<h3 class="tt-heading-subtitle">T.O.E Picks</h3>
-									<h2 class="tt-heading-title">What people need when they are ready to act</h2> <!-- You can use <br> to break a text line if needed -->
-									<a href="blog-classic.html" class="tt-btn tt-btn-link">
-										<div data-hover="View More Picks">View More Picks</div>
-										<span class="tt-btn-icon"><i class="fas fa-arrow-right"></i></span>
+							<div class="nav-outer">
+								<nav class="nav main-menu">
+									<ul class="navigation">
+										<li class="current"><a href="index.html">Home</a></li>
+										<li><a href="about-us.html">About</a></li>
+										<li><a href="discover.html">Discover</a></li>
+										<li><a href="signup.html">Get Started</a></li>
+										<li><a href="toe-blog.html">Blog</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</nav>
+								<div class="action-box">
+									<a href="signup.html" class="theme-btn btn-style-four toe-header-cta">
+										<span class="btn-title">Get listed</span>
+										<span class="dot-box"><span class="dot-item"></span></span>
 									</a>
+									<div class="mobile-nav-toggler">
+										<div class="shape-line-img"><img class="icon-img" src="digitaal/images/icons/shape-line-icon.png" alt=""></div>
+									</div>
 								</div>
-								<!-- End tt-Heading -->
-
-								<!-- ==========================
-								///// Begin blog carousel /////
-								===============================
-								* Use class "tt-blc-shifted" to enable shifted style (no effect on smaller screens!).
-								* Use class "tt-blc-hide-navigation" to hide navigation.
-								* Available data attributes:
-										data-speed="800"......................(milliseconds)
-										data-autoplay="5000"..................(milliseconds. Note: disabled after user first interactions)
-										data-simulate-touch="true"............(true/false)
-										data-pagination-type="bullets"........(bullets/fraction/progressbar)
-								-->
-								<div class="tt-blog-carousel anim-fadeinup" data-speed="800" data-simulate-touch="true" data-pagination-type="bullets">
-
-									<!-- Begin swiper container -->
-									<div class="swiper">
-
-										<!-- Begin swiper wrapper (required) -->
-										<div class="swiper-wrapper">
-
-											<!-- Begin swiper slide 
-											======================== -->
-											<div class="swiper-slide">
-
-												<!-- Begin blog carousel item 
-												============================== -->
-												<div class="tt-blog-carousel-item">
-													<a href="blog-post.html" class="tt-bci-image-wrap" data-cursor="Read<br>More">
-														<figure class="tt-bci-image">
-															<img class="swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/carousel/blog-carousel-1.jpg" alt="Image">
-														</figure> <!-- /.tt-bci-image -->
-													</a> <!-- /.tt-bci-image-wrap -->
-
-													<div class="tt-bci-info">
-														<div class="tt-bci-categories">
-															<a href="blog-archive.html">Lifestyle</a>
-															<!-- <a href="blog-archive.html">Uncategorized</a> -->
-														</div>
-														<h2 class="tt-bci-title"><a href="blog-post.html">Need groceries during your stay?</a></h2>
-														<div class="tt-bci-meta"> 
-															<span class="published">T.O.E Help</span>
-															<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by T.O.E Guide">T.O.E Guide</a></span>
-														</div> <!-- /.tt-bci-meta -->
-													</div> <!-- /.tt-bci-inf -->
-												</div>
-												<!-- End blog carousel item -->
-
-											</div>
-											<!-- End swiper slide -->
-
-											<!-- Begin swiper slide 
-											======================== -->
-											<div class="swiper-slide">
-
-												<!-- Begin blog carousel item 
-												============================== -->
-												<div class="tt-blog-carousel-item">
-													<a href="blog-post.html" class="tt-bci-image-wrap" data-cursor="Read<br>More">
-														<figure class="tt-bci-image">
-															<img class="swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/carousel/blog-carousel-2.jpg" alt="Image">
-														</figure> <!-- /.tt-bci-image -->
-													</a> <!-- /.tt-bci-image-wrap -->
-
-													<div class="tt-bci-info">
-														<div class="tt-bci-categories">
-															<a href="blog-archive.html">Services</a>
-															<!-- <a href="blog-archive.html">Uncategorized</a> -->
-														</div>
-														<h2 class="tt-bci-title"><a href="blog-post.html">Where should guests eat tonight?</a></h2>
-														<div class="tt-bci-meta"> 
-															<span class="published">Eat & Drink</span>
-															<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by T.O.E Guide">T.O.E Guide</a></span>
-														</div> <!-- /.tt-bci-meta -->
-													</div> <!-- /.tt-bci-inf -->
-												</div>
-												<!-- End blog carousel item -->
-
-											</div>
-											<!-- End swiper slide -->
-
-											<!-- Begin swiper slide 
-											======================== -->
-											<div class="swiper-slide">
-
-												<!-- Begin blog carousel item 
-												============================== -->
-												<div class="tt-blog-carousel-item">
-													<a href="blog-post.html" class="tt-bci-image-wrap" data-cursor="Read<br>More">
-														<figure class="tt-bci-image">
-															<img class="swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/carousel/blog-carousel-3.jpg" alt="Image">
-														</figure> <!-- /.tt-bci-image -->
-													</a> <!-- /.tt-bci-image-wrap -->
-
-													<div class="tt-bci-info">
-														<div class="tt-bci-categories">
-															<a href="blog-archive.html">Lifestyle</a>
-															<!-- <a href="blog-archive.html">Uncategorized</a> -->
-														</div>
-														<h2 class="tt-bci-title"><a href="blog-post.html">Laundry, cleaning and errands made simple</a></h2>
-														<div class="tt-bci-meta"> 
-															<span class="published">Home Services</span>
-															<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by T.O.E Guide">T.O.E Guide</a></span>
-														</div> <!-- /.tt-bci-meta -->
-													</div> <!-- /.tt-bci-inf -->
-												</div>
-												<!-- End blog carousel item -->
-
-											</div>
-											<!-- End swiper slide -->
-
-											<!-- Begin swiper slide 
-											======================== -->
-											<div class="swiper-slide">
-
-												<!-- Begin blog carousel item 
-												============================== -->
-												<div class="tt-blog-carousel-item">
-													<a href="blog-post.html" class="tt-bci-image-wrap" data-cursor="Read<br>More">
-														<figure class="tt-bci-image">
-															<img class="swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/carousel/blog-carousel-4.jpg" alt="Image">
-														</figure> <!-- /.tt-bci-image -->
-													</a> <!-- /.tt-bci-image-wrap -->
-
-													<div class="tt-bci-info">
-														<div class="tt-bci-categories">
-															<a href="blog-archive.html">Experiences</a>
-															<!-- <a href="blog-archive.html">Uncategorized</a> -->
-														</div>
-														<h2 class="tt-bci-title"><a href="blog-post.html">Weekend ideas for guests and residents</a></h2>
-														<div class="tt-bci-meta"> 
-															<span class="published">Things to Do</span>
-															<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by T.O.E Guide">T.O.E Guide</a></span>
-														</div> <!-- /.tt-bci-meta -->
-													</div> <!-- /.tt-bci-inf -->
-												</div>
-												<!-- End blog carousel item -->
-
-											</div>
-											<!-- End swiper slide -->
-
-											<!-- Begin swiper slide 
-											======================== -->
-											<div class="swiper-slide">
-
-												<!-- Begin blog carousel item 
-												============================== -->
-												<div class="tt-blog-carousel-item">
-													<a href="blog-post.html" class="tt-bci-image-wrap" data-cursor="Read<br>More">
-														<figure class="tt-bci-image">
-															<img class="swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/carousel/blog-carousel-5.jpg" alt="Image">
-														</figure> <!-- /.tt-bci-image -->
-													</a> <!-- /.tt-bci-image-wrap -->
-
-													<div class="tt-bci-info">
-														<div class="tt-bci-categories">
-															<a href="blog-archive.html">Services</a>
-															<!-- <a href="blog-archive.html">Uncategorized</a> -->
-														</div>
-														<h2 class="tt-bci-title"><a href="blog-post.html">Verified picks for trusted local services</a></h2>
-														<div class="tt-bci-meta"> 
-															<span class="published">T.O.E Verified</span>
-															<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by T.O.E Guide">T.O.E Guide</a></span>
-														</div> <!-- /.tt-bci-meta -->
-													</div> <!-- /.tt-bci-inf -->
-												</div>
-												<!-- End blog carousel item -->
-
-											</div>
-											<!-- End swiper slide -->
-
-										</div>
-										<!-- End swiper wrapper -->
-
-									</div>
-									<!-- End swiper container -->
-
-
-									<!-- Begin blog carousel navigation (arrows) 
-									============================================= -->
-									<div class="tt-blc-nav-prev">
-										<div class="tt-blc-nav-arrow magnetic-item"><i class="tt-arrow-left"></i></div>
-									</div>
-									<div class="tt-blc-nav-next">
-										<div class="tt-blc-nav-arrow magnetic-item"><i class="tt-arrow-right"></i></div>
-									</div>
-									<!-- End blog carousel navigation -->
-
-									<!-- Blog carousel pagination -->
-									<div class="tt-blc-pagination hide-cursor"></div>
-
-								</div>
-								<!-- End blog carousel -->
-
-							</div> <!-- /.tt-section-inner -->
+							</div>
 						</div>
-						<!-- End tt-section -->
-
-
-						<!-- =======================
-						///// Begin tt-section /////
-						============================ 
-						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
-						-->
-						<div class="tt-section padding-top-xlg-150">
-							<div class="tt-section-inner tt-wrap max-width-700">
-
-								<!-- Begin tt-Heading 
-								====================== 
-								* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
-								* Use class "tt-heading-stroke" to enable stroke style.
-								* Use class "tt-heading-center" to align tt-Heading to center.
-								* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
-								-->
-								<div class="tt-heading tt-heading-xxlg margin-bottom-8-p anim-fadeinup">
-									<h3 class="tt-heading-subtitle">Business signup</h3>
-									<h2 class="tt-heading-title">Join the<br> T.O.E Guide</h2> <!-- You can use <br> to break a text line if needed -->
-								</div>
-								<!-- End tt-Heading -->
-
-								<!-- Begin form 
-								================ 
-								* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
-								* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
-								-->
-								<form id="tt-contact-form" class="tt-form-filled anim-fadeinup">
-
-									<!-- Begin hidden required fields (https://github.com/agragregra/uniMail) -->
-									<input type="hidden" name="project_name" value="T.O.E Guide">
-									<input type="hidden" name="admin_email" value="hello@toeguide.com">
-									<input type="hidden" name="form_subject" value="New T.O.E vendor signup">
-									<!-- End Hidden Required Fields -->
-
-									<div class="tt-row">
-										<div class="tt-col-md-6">
-
-											<div class="tt-form-group">
-												<label>Contact person <span class="required">*</span></label>
-												<input class="tt-form-control" type="text" name="Contact person" placeholder="" required>
-											</div>
-
-										</div> <!-- /.tt-col -->
-
-										<div class="tt-col-md-6">
-
-											<div class="tt-form-group">
-												<label>Email address <span class="required">*</span></label>
-												<input class="tt-form-control" type="email" name="Email" placeholder="" required>
-											</div>
-
-										</div> <!-- /.tt-col -->
-									</div> <!-- /.tt-row -->
-
-									<div class="tt-row">
-										<div class="tt-col-md-6">
-											<div class="tt-form-group">
-												<label>Business name <span class="required">*</span></label>
-												<input class="tt-form-control" type="text" name="Business name" placeholder="" required>
-											</div>
-										</div>
-										<div class="tt-col-md-6">
-											<div class="tt-form-group">
-												<label>Phone / WhatsApp <span class="required">*</span></label>
-												<input class="tt-form-control" type="tel" name="Phone or WhatsApp" placeholder="" required>
-											</div>
-										</div>
-									</div>
-
-									<div class="tt-form-group">
-										<label>Select an option <span class="required">*</span></label>
-										<select class="tt-form-control" name="Business category" required>
-											<option value="" disabled selected>Choose your business category</option>
-											<option value="Eat & Drink">Eat & Drink</option>
-											<option value="Stay & Unwind">Stay & Unwind</option>
-											<option value="Shop & Style">Shop & Style</option>
-											<option value="Events & Tourism Promotion">Events & Tourism Promotion</option>
-											<option value="Events">Events</option>
-											<option value="Home & Domestic Services">Home & Domestic Services</option>
-											<option value="Essential Services">Essential Services</option>
-											<option value="Other">Other</option>
-										</select>
-									</div>
-
-									<div class="tt-form-group">
-										<label>Tell us what you offer <span class="required">*</span></label>
-										<textarea class="tt-form-control" rows="5" name="Business details" placeholder="Service area, offer, location, social handle, website, listing goals..." required></textarea>
-									</div>
-
-									<small class="tt-form-text"><em>T.O.E is a listing, advertising and discovery platform. Verification status is reviewed separately.</em></small>
-
-									<button type="submit" class="tt-btn tt-btn-primary margin-top-30">
-										<div data-hover="Submit Business">Submit Business</div>
-										<span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
-									</button>
-								</form>
-								<!-- End form -->
-
-							</div> <!-- /.tt-section-inner -->
-						</div>
-						<!-- End tt-section -->
-
-
 					</div>
-					<!-- End page content -->
-					
-
-					<!-- ======================
-					///// Begin tt-footer /////
-					=========================== -->
-					<footer id="tt-footer">
-						<div class="tt-footer-inner">
-
-							<!-- Begin footer column 
-							========================= -->
-							<div class="footer-col tt-align-center-left">
-								<div class="footer-col-inner">
-
-									<a href="#" class="tt-btn tt-btn-link scroll-to-top">
-										<span class="tt-btn-icon"><i class="fas fa-arrow-up"></i></span>
-										<div data-hover="Back to Top">Back to Top</div>
-									</a>
-
-								</div> <!-- /.footer-col-inner -->
-							</div>
-							<!-- Begin footer column -->
-
-							<!-- Begin footer column 
-							========================= -->
-							<div class="footer-col tt-align-center order-m-last">
-								<div class="footer-col-inner">
-
-									<div class="tt-copyright text-gray">
-										<a href="https://themetorium.net" target="_blank" rel="noopener" class="tt-btn tt-btn-link">
-											<span class="tt-btn-icon"><i class="far fa-copyright"></i></span>
-											<div data-hover="T.O.E Guide">T.O.E Guide</div>
-										</a>
-									</div>
-
-								</div> <!-- /.footer-col-inner -->
-							</div>
-							<!-- Begin footer column -->
-
-							<!-- Begin footer column 
-							========================= -->
-							<div class="footer-col tt-align-center-right">
-								<div class="footer-col-inner">
-
-									<div class="footer-social">
-										<div class="footer-social-text"><span>Follow</span><i class="fas fa-share-alt"></i></div>
-										<div class="social-buttons">
-											<ul>
-												<li><a href="https://www.facebook.com/themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
-												<li><a href="https://twitter.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
-												<li><a href="https://www.youtube.com/" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a></li>
-												<li><a href="https://dribbble.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-dribbble"></i></a></li>
-												<li><a href="https://www.behance.net/Themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-behance"></i></a></li>
-											</ul>
-										</div> <!-- /.social-buttons -->
-									</div> <!-- /.footer-social -->
-
-								</div> <!-- /.footer-col-inner -->
-							</div>
-							<!-- Begin footer column -->
-
-						</div> <!-- /.tt-section-inner -->
-					</footer>
-					<!-- End tt-footer -->
-
-
 				</div>
-				<!-- End content wrap -->
-
 			</div>
-			<!-- End scroll container -->
+			<div class="mobile-menu">
+				<div class="menu-backdrop"></div>
+				<nav class="menu-box">
+					<div class="upper-box">
+						<div class="nav-logo"><a href="index.html"><img src="assets/img/toe/toe-logo-transparent.png" alt="T.O.E Guide"></a></div>
+						<div class="close-btn"><i class="icon fa fa-times"></i></div>
+					</div>
+					<ul class="navigation clearfix"></ul>
+					<ul class="contact-list-one">
+						<li>
+							<i class="icon lnr-icon-envelope1"></i>
+							<span class="title">Email</span>
+							<div class="text"><a href="mailto:hello@toeguide.com">hello@toeguide.com</a></div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="sticky-header">
+				<div class="auto-container">
+					<div class="inner-container">
+						<div class="logo"><a href="index.html"><img src="assets/img/toe/toe-logo-transparent.png" alt="T.O.E Guide"></a></div>
+						<div class="nav-outer">
+							<nav class="main-menu">
+								<div class="navbar-collapse show collapse clearfix">
+									<ul class="navigation clearfix"></ul>
+								</div>
+							</nav>
+							<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
-		</main>
-		<!-- End body inner -->
+		<section class="banner-section-one toe-banner">
+			<div class="banner-slider">
+				<div class="banner-slide">
+					<div class="anim-icons">
+						<img class="image-1" src="digitaal/images/icons/shape-style1.png" alt="">
+						<img class="image-2 tm-gsap-animate-circle" data-fade-from="top" data-fade-offset="100" data-ease="bounce" src="digitaal/images/icons/shape-style4.png" alt="">
+						<img class="image-3" src="digitaal/images/icons/shape-style43.png" alt="">
+					</div>
+					<div class="container">
+						<div class="outer-box">
+							<div class="row">
+								<div class="content-box col-12">
+									<div class="inner-box">
+										<div class="title-box">
+											<h1 class="title tm-split-text split-in-right">
+												See more,<img class="shape-image-2" src="digitaal/images/icons/shape-style3.png" alt=""> <br>be seen <span><img class="shape-image-1" src="digitaal/images/icons/shape-style2.png" alt=""> everywhere</span>
+											</h1>
+										</div>
+										<div class="image-box">
+											<figure class="image-1 anim-fade-move" data-fade-from="right"><img src="assets/img/toe/vendors/luxury-hotel-lobby-woman.png" alt="T.O.E hospitality discovery"></figure>
+											<div class="customer-info anim-fade-move" data-fade-from="right" data-delay="0.05">
+												<div class="image-box">
+													<a href="discover.html"><img src="digitaal/images/resource/customer1.png" alt="T.O.E community"></a>
+												</div>
+												<div class="count-outer">
+													<div class="count-box"><span class="count-text" data-speed="3000" data-stop="1">0</span>k+</div>
+													<div class="count-title">places<br>to discover</div>
+												</div>
+											</div>
+										</div>
+										<div class="toe-banner-copy anim-fade-move">
+											<p>Print-to-digital discovery for places, people, services and opportunities across Nigeria.</p>
+											<a href="discover.html" class="theme-btn btn-style-four">
+												<span class="btn-title">Explore now</span>
+												<span class="dot-box"><span class="dot-item"></span></span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<section class="about-section-six">
+			<div class="anim-icons">
+				<div class="image-1 anim-fade-move" data-fade-from="right"><img src="digitaal/images/icons/theme-icon29.png" alt=""></div>
+				<div class="image-2 tm-gsap-img-parallax" data-fade-from="right"><img src="digitaal/images/icons/theme-icon30.png" alt=""></div>
+				<div class="image-3"><img src="digitaal/images/icons/shape-style64.png" alt=""></div>
+			</div>
+			<div class="container">
+				<div class="outer-box">
+					<div class="sec-title">
+						<span class="sub-title"><img class="icon-img" src="digitaal/images/icons/sub-title-shape.png" alt="">Who we are</span>
+						<h2 class="title anim-text-flip-move">Through Our Eyes makes local value easier to find <span class="color1">and easier to act on</span></h2>
+					</div>
+					<div class="row">
+						<div class="content-column col-lg-7">
+							<div class="inner-colmun">
+								<div class="content-box">
+									<div class="text anim-fade-move">T.O.E Guide is a publication and advertising network connecting people to businesses, services, events and opportunities one state at a time.</div>
+									<div class="user-info-box anim-fade-move">
+										<a href="about-us.html" class="theme-btn btn-style-four">
+											<span class="btn-title">Read more</span>
+											<span class="dot-box"><span class="dot-item"></span></span>
+										</a>
+										<div class="user-info">
+											<div class="thumb"><img src="assets/img/toe/toe-logo-transparent.png" alt="T.O.E"></div>
+											<div class="info">
+												<h6 class="name">T.O.E Guide</h6>
+												<span class="designation">Through Our Eyes</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="funfact-colmun col-lg-5">
+							<div class="inner-colmun">
+								<div class="funfact-block-two anim-fade-move" data-fade-from="left">
+									<div class="inner-box">
+										<div class="shape-icon"><i class="icon flaticon-scribble"></i></div>
+										<div class="count-box"><span class="count-text" data-speed="3000" data-stop="9">0</span></div>
+										<div class="text">core visibility services from publishing to QR discovery, listings, sponsorships and local service discovery.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        
+		<section class="services-section">
+			<div class="anim-icons">
+				<div class="image-1"><img src="digitaal/images/icons/shape-style15.png" alt=""></div>
+			</div>
+			<div class="container">
+				<div class="sec-title">
+					<span class="sub-title"><img class="icon-img" src="digitaal/images/icons/sub-title-shape.png" alt="">Services</span>
+					<h2 class="title title-image anim-text-flip-move">
+						We make offline attention <br>turn into <span class="color1"><img class="shape-image-1" src="digitaal/images/icons/title-image.png" alt=""> digital action</span>
+					</h2>
+				</div>
+				<div class="outer-box p-0">
+					<div class="swiper-outer">
+						<div class="swiper services-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="service-block anim-fade-move" data-fade-from="right" data-delay="0.15">
+										<div class="inner-box">
+											<div class="image-box">
+												<figure class="image"><img src="assets/img/toe/vendors/luxury-serviced-apartment-woman.png" alt="Publishing guides"><img src="assets/img/toe/vendors/luxury-serviced-apartment-woman.png" alt="Publishing guides"></figure>
+												<div class="icon-box"><img class="icon-img" src="digitaal/images/icons/theme-icon1.png" alt=""></div>
+											</div>
+											<div class="content-box"><h4 class="title"><a href="about-us.html">Publishing & Business Guides</a></h4><div class="text">Print and digital guides, directories, magazines and catalogues that help people discover what matters.</div></div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-block anim-fade-move" data-fade-from="right" data-delay="0.30">
+										<div class="inner-box">
+											<div class="image-box">
+												<figure class="image"><img src="assets/img/toe/vendors/luxury-restaurant-lounge-woman.png" alt="Advertising promotion"><img src="assets/img/toe/vendors/luxury-restaurant-lounge-woman.png" alt="Advertising promotion"></figure>
+												<div class="icon-box"><img class="icon-img" src="digitaal/images/icons/theme-icon2.png" alt=""></div>
+											</div>
+											<div class="content-box"><h4 class="title"><a href="about-us.html">Advertising & Promotion</a></h4><div class="text">Targeted visibility across print, digital, social campaigns and partner touchpoints.</div></div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-block anim-fade-move" data-fade-from="left" data-delay="0.45">
+										<div class="inner-box">
+											<div class="image-box">
+												<figure class="image"><img src="assets/img/toe/vendors/luxury-hotel-suite-arrival-woman.png" alt="Digital listing"><img src="assets/img/toe/vendors/luxury-hotel-suite-arrival-woman.png" alt="Digital listing"></figure>
+												<div class="icon-box"><img class="icon-img" src="digitaal/images/icons/theme-icon3.png" alt=""></div>
+											</div>
+											<div class="content-box"><h4 class="title"><a href="discover.html">Business Listing</a></h4><div class="text">Essential business details, contacts, location links and QR access in one place.</div></div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-block anim-fade-move" data-fade-from="left" data-delay="0.45">
+										<div class="inner-box">
+											<div class="image-box">
+												<figure class="image"><img src="assets/img/toe/vendors/bukola-private-chef.png" alt="Local services"><img src="assets/img/toe/vendors/bukola-private-chef.png" alt="Local services"></figure>
+												<div class="icon-box"><img class="icon-img" src="digitaal/images/icons/theme-icon1.png" alt=""></div>
+											</div>
+											<div class="content-box"><h4 class="title"><a href="discover.html">Local Service Discovery</a></h4><div class="text">Helpful vendors and service providers people can call, book or request instantly.</div></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-arry">
+						<button class="arry-prev swiper-arry-prev"><i class="fa-solid fa-chevron-left"></i></button>
+						<button class="arry-next swiper-arry-next"><i class="fa-solid fa-chevron-right"></i></button>
+					</div>
+				</div>
+				<div class="bottom-text anim-fade-move" data-fade-from="left">
+					<span>L.O.U.D</span>
+					<div class="text">Lifestyle, Offers, Urban & Digital Discovery.</div>
+					<a class="btn-link" href="signup.html">Make we L.O.U.D am?</a>
+				</div>
+			</div>
+		</section>
 
-		<!-- ====================
-		///// Scripts below /////
-		===================== -->
+		<section class="work-section">
+			<div class="anim-icons"><div class="image-1"><img src="digitaal/images/icons/dotted-map-4.png" alt=""></div></div>
+			<div class="marquee anim-fade-move">
+				<div class="marquee-group"><div class="text">Places <span class="color1">& People & Businesses</span></div></div>
+				<div aria-hidden="true" class="marquee-group"><div class="text">Places <span class="color1">& People & Businesses</span></div></div>
+			</div>
+			<div class="large-container">
+				<div class="outer-box">
+					<div class="row gx-50">
+						<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="work-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><div class="inner-box"><span class="icon"><img src="digitaal/images/resource/wa-sketch.png" alt=""></span><span class="count">Print</span><h4 class="title">Guides</h4></div></div></div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="work-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><div class="inner-box"><span class="icon"><img src="digitaal/images/resource/wa-photoshop.png" alt=""></span><span class="count">QR</span><h4 class="title">Access</h4></div></div></div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="work-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><div class="inner-box active"><span class="icon"><img src="digitaal/images/resource/wa-figma.png" alt=""></span><span class="count">Map</span><h4 class="title">Routes</h4></div></div></div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="work-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><div class="inner-box"><span class="icon"><img src="digitaal/images/resource/wa-invision.png" alt=""></span><span class="count">Call</span><h4 class="title">Leads</h4></div></div></div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="work-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><div class="inner-box"><span class="icon"><img src="digitaal/images/resource/wa-xd.png" alt=""></span><span class="count">List</span><h4 class="title">Vendors</h4></div></div></div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="work-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"><div class="inner-box"><span class="icon"><img src="digitaal/images/resource/wa-Illustration.png" alt=""></span><span class="count">Grow</span><h4 class="title">Brands</h4></div></div></div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-		<!-- Core JS -->
-		<script src="assets/vendor/jquery/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->
+		<section class="projects-section">
+			<div class="anim-icons">
+				<div class="image-1 tm-gsap-img-parallax"><img src="digitaal/images/icons/shape-style20.png" alt=""></div>
+				<div class="image-2 tm-gsap-img-parallax"><img src="digitaal/images/icons/shape-style21.png" alt=""></div>
+			</div>
+			<div class="container">
+				<div class="sec-title pb-5">
+					<div class="row content-row">
+						<div class="col-lg-6">
+							<span class="sub-title anim-text-flip-move"><img class="icon-img" src="digitaal/images/icons/sub-title-shape.png" alt="">Discover</span>
+							<h2 class="title anim-text-split-char">Explore the <span class="color1">T.O.E directory</span></h2>
+						</div>
+						<div class="col-lg-5 offset-lg-1"><div class="left-content"><div class="text anim-text-flip-move">Businesses use richer profile pages. Vendors use quick profile cards. Guests move straight to calls, WhatsApp, maps and booking.</div></div></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="project-block scroll-text anim-fade-move col-lg-6 col-md-6" data-fade-from="top"><div class="inner-box scroll-anim-top"><div class="image-box"><figure class="image"><a href="business-nordic-villa.html"><img src="assets/img/toe/vendors/luxury-restaurant-lounge-woman.png" alt="Nordic Villa Lounge"><img src="assets/img/toe/vendors/luxury-restaurant-lounge-woman.png" alt="Nordic Villa Lounge"></a></figure></div><div class="content-box"><h4 class="title"><a href="business-nordic-villa.html">Nordic Villa Lounge</a></h4><div class="text">Business - Eat & Drink</div></div></div></div>
+					<div class="project-block scroll-text anim-fade-move col-lg-5 offset-lg-1 col-md-6" data-fade-from="bottom" data-delay="0.25"><div class="inner-box scroll-anim-top"><div class="image-box"><figure class="image"><a href="business-elysian-suites.html"><img src="assets/img/toe/vendors/luxury-hotel-suite-arrival-woman.png" alt="Elysian Suites Abuja"><img src="assets/img/toe/vendors/luxury-hotel-suite-arrival-woman.png" alt="Elysian Suites Abuja"></a></figure></div><div class="content-box"><h4 class="title"><a href="business-elysian-suites.html">Elysian Suites</a></h4><div class="text">Business - Stay & Unwind</div></div></div></div>
+					<div class="project-block scroll-text anim-fade-move col-lg-5 col-md-6" data-fade-from="top"><div class="inner-box scroll-anim-top"><div class="image-box"><figure class="image"><a href="vendor-tunde-emmanuel.html"><img src="assets/img/toe/vendors/tunde-emmanuel-driver.png" alt="Tunde Emmanuel"><img src="assets/img/toe/vendors/tunde-emmanuel-driver.png" alt="Tunde Emmanuel"></a></figure></div><div class="content-box"><h4 class="title"><a href="vendor-tunde-emmanuel.html">Tunde Emmanuel</a></h4><div class="text">Vendor - Driver</div></div></div></div>
+					<div class="project-block scroll-text anim-fade-move col-lg-6 offset-lg-1 col-md-6" data-fade-from="bottom" data-delay="0.45"><div class="inner-box scroll-anim-top"><div class="image-box"><figure class="image"><a href="vendor-bukola-private-chef.html"><img src="assets/img/toe/vendors/bukola-private-chef.png" alt="Bukola Private Chef"><img src="assets/img/toe/vendors/bukola-private-chef.png" alt="Bukola Private Chef"></a></figure></div><div class="content-box"><h4 class="title"><a href="vendor-bukola-private-chef.html">Bukola Private Chef</a></h4><div class="text">Vendor - Private Chef</div></div></div></div>
+				</div>
+				<div class="btn-box anim-fade-move" data-fade-from="top">
+					<a href="discover.html" class="btn-link anim-fade-move" data-fade-from="top" data-ease="bounce">View all listings <img class="icon-img" src="digitaal/images/icons/theme-icon4.png" alt=""></a>
+				</div>
+			</div>
+		</section>
 
-		<!-- Libs and Plugins JS -->
-		<script src="assets/vendor/gsap/gsap.min.js"></script> <!-- GSAP JS (https://greensock.com/gsap/) -->
-		<script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script> <!-- GSAP ScrollToPlugin JS (https://greensock.com/scrolltoplugin/) -->
-		<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script> <!-- GSAP ScrollTrigger JS (https://greensock.com/scrolltrigger/) -->
+		<section class="video-section">
+			<div class="bg bg-image" style="background-image: url(digitaal/images/background/bg-video4.jpg)"></div>
+			<div class="container">
+				<div class="video-outer">
+					<a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now" data-fancybox="gallery" data-caption="">
+						<i class="icon fa-solid fa-play"></i>
+						<span class="ripple"></span>
+					</a>
+					<h2 class="title">From printed guide <br>to instant action</h2>
+				</div>
+			</div>
+		</section>
 
-		<script src="assets/vendor/smooth-scrollbar.js"></script> <!-- Smooth Scrollbar JS (https://github.com/idiotWu/smooth-scrollbar/) -->
-		<script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script> <!-- Swiper JS (https://swiperjs.com/) -->
-		<script src="assets/vendor/isotope/imagesloaded.pkgd.min.js"></script> <!-- imagesloaded JS (more info: https://imagesloaded.desandro.com/) -->
-		<script src="assets/vendor/isotope/isotope.pkgd.min.js"></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
-		<script src="assets/vendor/isotope/packery-mode.pkgd.min.js"></script> <!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
-		<script src="assets/vendor/lightgallery/js/lightgallery-all.min.js"></script> <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
-		<script src="assets/vendor/jquery.mousewheel.min.js"></script> <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
+		<section class="process-section">
+			<div class="anim-icons"><div class="image-1 tm-gsap-img-parallax"><img src="digitaal/images/icons/shape-style52.png" alt=""></div></div>
+			<div class="scroll-text"><div class="title-stroke-text text2 fadeInUpBig"><span>Our</span> Flow</div></div>
+			<div class="container">
+				<div class="outer-box">
+					<div class="row">
+						<div class="process-block col-xl-3 col-md-6"><div class="inner-box"><div class="title-box"><div class="text">Step 01</div></div><div class="content-box"><div class="icon-box"><img class="icon-img" src="digitaal/images/icons/theme-icon5.png" alt=""></div><h4 class="title"><a href="signup.html">Choose Route</a></h4><div class="text">Vendor or business onboarding starts with the right profile path.</div><div class="hover-lines"></div></div></div></div>
+						<div class="process-block col-xl-3 col-md-6"><div class="inner-box"><div class="title-box"><div class="text">Step 02</div></div><div class="content-box"><div class="icon-box"><img class="icon-img" src="digitaal/images/icons/theme-icon6.png" alt=""></div><h4 class="title"><a href="signup.html">Share Details</a></h4><div class="text">Add offer, location, media, contact and verification readiness.</div><div class="hover-lines"></div></div></div></div>
+						<div class="process-block col-xl-3 col-md-6"><div class="inner-box"><div class="title-box"><div class="text">Step 03</div></div><div class="content-box"><div class="icon-box"><img class="icon-img" src="digitaal/images/icons/theme-icon7.png" alt=""></div><h4 class="title"><a href="discover.html">Get Listed</a></h4><div class="text">Profiles appear in guide, QR and digital discovery surfaces.</div><div class="hover-lines"></div></div></div></div>
+						<div class="process-block col-xl-3 col-md-6"><div class="inner-box"><div class="title-box"><div class="text">Step 04</div></div><div class="content-box"><div class="icon-box"><img class="icon-img" src="digitaal/images/icons/theme-icon8.png" alt=""></div><h4 class="title"><a href="contact.html">Be Found</a></h4><div class="text">People call, map, WhatsApp, book or request what they need.</div><div class="hover-lines"></div></div></div></div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-		<!-- Template master JS -->
-		<script src="assets/js/theme.js"></script>
+		<section class="blog-section">
+			<div class="container">
+				<div class="sec-title">
+					<div class="row">
+						<div class="col-lg-7"><span class="sub-title wow fadeInUp"><img class="icon-img" src="digitaal/images/icons/sub-title-shape.png" alt=""> T.O.E Journal</span><h2 class="title wow fadeInUp">Guides for discovery, <br>visibility <span>& access</span></h2></div>
+						<div class="col-lg-5"><div class="text ps-lg-5 mt-lg-5">Editorial stories for places, people, services and brands that should be seen.</div></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="blog-block col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><div class="inner-box"><div class="image-box"><figure class="image"><a href="toe-blog.html"><img src="assets/img/toe/vendors/luxury-serviced-apartment-woman.png" alt="Guest services"><img src="assets/img/toe/vendors/luxury-serviced-apartment-woman.png" alt="Guest services"></a></figure></div><div class="content-box"><h4 class="title"><a href="toe-blog.html">Need groceries, laundry or cleaning during your stay?</a></h4><a class="btn-link-style1" href="toe-blog.html"><span class="btn-title">Read more</span> <i class="icon fa-light fa-arrow-down-right"></i></a></div></div></div>
+					<div class="blog-block col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><div class="inner-box"><div class="image-box"><figure class="image"><a href="toe-blog.html"><img src="assets/img/toe/vendors/luxury-restaurant-lounge-woman.png" alt="Restaurant discovery"><img src="assets/img/toe/vendors/luxury-restaurant-lounge-woman.png" alt="Restaurant discovery"></a></figure></div><div class="content-box"><h4 class="title"><a href="toe-blog.html">Where should guests eat tonight?</a></h4><a class="btn-link-style1" href="toe-blog.html"><span class="btn-title">Read more</span> <i class="icon fa-light fa-arrow-down-right"></i></a></div></div></div>
+					<div class="blog-block col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><div class="inner-box"><div class="image-box"><figure class="image"><a href="toe-blog.html"><img src="assets/img/toe/vendors/luxury-hotel-lobby-woman.png" alt="Hospitality partners"><img src="assets/img/toe/vendors/luxury-hotel-lobby-woman.png" alt="Hospitality partners"></a></figure></div><div class="content-box"><h4 class="title"><a href="toe-blog.html">Why hosts need better local recommendations.</a></h4><a class="btn-link-style1" href="toe-blog.html"><span class="btn-title">Read more</span> <i class="icon fa-light fa-arrow-down-right"></i></a></div></div></div>
+				</div>
+			</div>
+		</section>
 
+		<section class="cta-section-two">
+			<div class="anim-icons">
+				<div class="image-1 tm-gsap-animate-circle"><img src="digitaal/images/icons/shape-style23.png" alt=""></div>
+				<div class="image-2"><img src="digitaal/images/icons/dotted-map-5.png" alt=""></div>
+			</div>
+			<div class="container">
+				<div class="outer-box">
+					<div class="sec-title text-center">
+						<h2 class="title">Ready to be seen? <br><span class="color1">Make we L.O.U.D am.</span></h2>
+					</div>
+					<a href="signup.html" class="link-btn">
+						<span class="btn-title">Get Started</span>
+						<img class="icon" src="digitaal/images/icons/arrow-border.png" alt="">
+					</a>
+				</div>
+			</div>
+		</section>
 
+		<section class="clients-section">
+			<div class="container">
+				<div class="sec-title text-center"><h6 class="text"><span>Publishing • Advertising • Listings • QR • Local Discovery</span></h6></div>
+				<div class="carousel-outer">
+					<div class="swiper clients-carousel">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><div class="client-block"><div class="inner-box"><div class="image-box"><figure class="image"><a href="#"><img src="digitaal/images/resource/client1-1.png" alt=""></a></figure></div></div></div></div>
+							<div class="swiper-slide"><div class="client-block"><div class="inner-box"><div class="image-box"><figure class="image"><a href="#"><img src="digitaal/images/resource/client1-2.png" alt=""></a></figure></div></div></div></div>
+							<div class="swiper-slide"><div class="client-block"><div class="inner-box"><div class="image-box"><figure class="image"><a href="#"><img src="digitaal/images/resource/client1-3.png" alt=""></a></figure></div></div></div></div>
+							<div class="swiper-slide"><div class="client-block"><div class="inner-box"><div class="image-box"><figure class="image"><a href="#"><img src="digitaal/images/resource/client1-4.png" alt=""></a></figure></div></div></div></div>
+							<div class="swiper-slide"><div class="client-block"><div class="inner-box"><div class="image-box"><figure class="image"><a href="#"><img src="digitaal/images/resource/client1-5.png" alt=""></a></figure></div></div></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-	</body>
+		<footer class="main-footer footer-style-one overflow-hidden">
+			<div class="widgets-section">
+				<div class="anim-icons">
+					<div class="image-1 bounce-x"><img src="digitaal/images/icons/shape-style53.png" alt=""></div>
+					<div class="image-2 bounce-y"><img src="digitaal/images/icons/shape-style53.png" alt=""></div>
+				</div>
+				<div class="footer-middle">
+					<div class="container">
+						<div class="row">
+							<div class="footer-column col-lg-5">
+								<div class="footer-widget about-widget wow fadeInLeft">
+									<h1 class="title">Let’s Talk</h1>
+									<div class="widget-content">
+										<div class="text">Helping people see more. Helping businesses be seen.</div>
+										<div class="social-widget">
+											<ul class="social-icon-list1">
+												<li><a href="https://www.instagram.com/toeguide" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
+												<li><a href="https://www.tiktok.com/@toeguide" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="footer-column col-lg-2">
+								<div class="footer-widget links-widget col wow fadeInLeft" data-wow-delay="100ms">
+									<h5 class="widget-title">Quick Link</h5>
+									<div class="widget-content">
+										<ul class="user-links">
+											<li><a href="about-us.html">About</a></li>
+											<li><a href="discover.html">Discover</a></li>
+											<li><a href="signup.html">Get Started</a></li>
+											<li><a href="toe-blog.html">Blog</a></li>
+											<li><a href="contact.html">Contact</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="footer-column col-lg-5">
+								<div class="footer-widget subscribe-widget wow fadeInLeft" data-wow-delay="200ms">
+									<h5 class="text">For listings, campaigns and partnerships</h5>
+									<div class="subscribe-form-one">
+										<form action="contact.html">
+											<div class="form-group" style="position: relative">
+												<label for="email" class="sr-only">Email Address</label>
+												<input type="email" id="email" name="email" class="email" placeholder="Email Address">
+												<button type="submit" class="theme-btn" aria-label="Submit email"><i class="icon flaticon-paper-plane"></i></button>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="row">
+									<div class="footer-widget col wow fadeInLeft" data-wow-delay="400ms"><h5 class="widget-title">Phone</h5><div class="widget-content"><div class="text"><a href="tel:+2348101735088">08101735088</a></div></div></div>
+									<div class="footer-widget col wow fadeInLeft" data-wow-delay="400ms"><h5 class="widget-title">Email</h5><div class="widget-content"><div class="text"><a href="mailto:hello@toeguide.com">hello@toeguide.com</a></div></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container"><div class="inner-container justify-content-center"><div class="copyright-text">Copyright reserved by T.O.E Guide.</div></div></div>
+				</div>
+			</div>
+		</footer>
+	</div>
 
+	<script src="digitaal/js/jquery.js"></script>
+	<script src="digitaal/js/popper.min.js"></script>
+	<script src="digitaal/js/bootstrap.min.js"></script>
+	<script src="digitaal/js/jquery.fancybox.js"></script>
+	<script src="digitaal/js/jquery-ui.js"></script>
+	<script src="digitaal/js/gsap.js"></script>
+	<script src="digitaal/js/gsap.min.js"></script>
+	<script src="digitaal/js/bxslider.js"></script>
+	<script src="digitaal/js/mixitup.js"></script>
+	<script src="digitaal/js/ScrollTrigger.min.js"></script>
+	<script src="digitaal/js/splitType.js"></script>
+	<script src="digitaal/js/gsap-scroll-smoother.js"></script>
+	<script src="digitaal/js/ScrollSmoother.min.js"></script>
+	<script src="digitaal/js/gsap-scroll-to-plugin.js"></script>
+	<script src="digitaal/js/SplitText.min.js"></script>
+	<script src="digitaal/js/aos.js"></script>
+	<script src="digitaal/js/wow.js"></script>
+	<script src="digitaal/js/select2.min.js"></script>
+	<script src="digitaal/js/appear.js"></script>
+	<script src="digitaal/js/knob.js"></script>
+	<script src="digitaal/js/swiper.min.js"></script>
+	<script src="digitaal/js/custom-gsap.js"></script>
+	<script src="digitaal/js/jquery-scrolltofixed-min.js"></script>
+	<script src="digitaal/js/script.js"></script>
+</body>
 </html>
