@@ -554,6 +554,277 @@ body,
 	color: #071913;
 }
 
+.toe-onboarding-contact {
+	background:
+		linear-gradient(180deg, rgba(7, 25, 19, 0.98), rgba(12, 35, 25, 0.94)),
+		var(--theme-color-dark);
+}
+
+.toe-onboarding-contact .sec-title h2 {
+	font-size: clamp(38px, 4.6vw, 66px);
+	line-height: 1;
+	letter-spacing: 0;
+}
+
+.toe-onboarding-contact .sec-title .text {
+	color: rgba(248, 241, 231, 0.68);
+	font-size: 17px;
+	line-height: 1.55;
+}
+
+.toe-onboarding-routes {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px;
+	margin: 28px 0 34px;
+}
+
+.toe-onboarding-route {
+	position: relative;
+	min-height: 196px;
+	padding: 26px;
+	border: 1px solid rgba(248, 241, 231, 0.13);
+	border-radius: 18px;
+	background:
+		linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025)),
+		rgba(7, 25, 19, 0.86);
+	color: #f8f1e7;
+	text-align: left;
+	overflow: hidden;
+	transition: border-color 0.28s ease, background 0.28s ease, transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.toe-onboarding-route::before {
+	content: "";
+	position: absolute;
+	inset: auto 22px 20px auto;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 106, 42, 0.65);
+	background: rgba(255, 106, 42, 0);
+	transition: background 0.28s ease, transform 0.28s ease;
+}
+
+.toe-onboarding-route:hover,
+.toe-onboarding-route.is-active {
+	border-color: rgba(255, 106, 42, 0.68);
+	background:
+		linear-gradient(145deg, rgba(255, 106, 42, 0.16), rgba(248, 241, 231, 0.035)),
+		rgba(7, 25, 19, 0.92);
+	box-shadow: 0 18px 50px rgba(0, 0, 0, 0.26);
+	transform: translateY(-4px);
+}
+
+.toe-onboarding-route.is-active::before {
+	background: var(--theme-color1);
+	transform: scale(1.12);
+}
+
+.toe-route-kicker {
+	display: block;
+	margin-bottom: 12px;
+	color: var(--theme-color1);
+	font-size: 13px;
+	font-weight: 800;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+
+.toe-onboarding-route strong {
+	display: block;
+	margin-bottom: 12px;
+	font-size: clamp(22px, 2vw, 30px);
+	line-height: 1.05;
+}
+
+.toe-onboarding-route small {
+	display: block;
+	max-width: 92%;
+	color: rgba(248, 241, 231, 0.66);
+	font-size: 15px;
+	line-height: 1.45;
+}
+
+.toe-digitaal-form {
+	padding-top: 4px;
+}
+
+.toe-form-heading {
+	margin-bottom: 24px;
+}
+
+.toe-form-heading h3 {
+	margin-bottom: 8px;
+	color: #f8f1e7;
+	font-size: clamp(28px, 3vw, 44px);
+	line-height: 1.08;
+}
+
+.toe-form-heading p {
+	max-width: 720px;
+	color: rgba(248, 241, 231, 0.66);
+	font-size: 16px;
+	line-height: 1.55;
+}
+
+.toe-field-label,
+.toe-file-control label,
+.toe-onboarding-consent {
+	display: block;
+	margin-bottom: 10px;
+	color: rgba(248, 241, 231, 0.88);
+	font-size: 14px;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+}
+
+.toe-onboarding-contact .form-control {
+	min-height: 62px;
+	border: 1px solid rgba(248, 241, 231, 0.09);
+	border-radius: 10px;
+	background-color: rgba(248, 241, 231, 0.075);
+	color: #f8f1e7;
+	font-size: 16px;
+	transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.toe-onboarding-contact textarea.form-control {
+	min-height: 180px;
+	resize: vertical;
+}
+
+.toe-onboarding-contact select.form-control {
+	color: rgba(248, 241, 231, 0.78);
+}
+
+.toe-onboarding-contact select.form-control option {
+	background: #071913;
+	color: #f8f1e7;
+}
+
+.toe-onboarding-contact .form-control:focus {
+	border-color: rgba(255, 106, 42, 0.62);
+	background-color: rgba(248, 241, 231, 0.1);
+	box-shadow: 0 0 0 4px rgba(255, 106, 42, 0.08);
+	color: #f8f1e7;
+}
+
+.toe-onboarding-contact .form-control::placeholder {
+	color: rgba(248, 241, 231, 0.44);
+}
+
+.toe-verification-group {
+	margin: 26px 0;
+	padding: 26px;
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	border-radius: 18px;
+	background: rgba(255, 255, 255, 0.035);
+}
+
+.toe-verification-group h4 {
+	margin-bottom: 18px;
+	color: #f8f1e7;
+	font-size: clamp(22px, 2vw, 30px);
+	line-height: 1.1;
+}
+
+.toe-check-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.toe-check-grid label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 54px;
+	padding: 14px 16px;
+	border: 1px solid rgba(248, 241, 231, 0.1);
+	border-radius: 10px;
+	color: rgba(248, 241, 231, 0.76);
+	background: rgba(7, 25, 19, 0.44);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.toe-check-grid input,
+.toe-onboarding-consent input {
+	accent-color: var(--theme-color1);
+}
+
+.toe-file-control {
+	padding: 18px;
+	border: 1px solid rgba(248, 241, 231, 0.1);
+	border-radius: 14px;
+	background: rgba(7, 25, 19, 0.44);
+}
+
+.toe-file-control .form-control {
+	margin-top: 10px;
+	padding: 17px 18px;
+}
+
+.toe-onboarding-consent {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	margin: 28px 0 24px;
+	color: rgba(248, 241, 231, 0.78);
+	line-height: 1.45;
+}
+
+.toe-form-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+}
+
+.toe-success-message {
+	padding: 18px 20px;
+	border: 1px solid rgba(255, 106, 42, 0.36);
+	border-radius: 14px;
+	color: #f8f1e7;
+	background: rgba(255, 106, 42, 0.12);
+	font-weight: 700;
+}
+
+.toe-onboarding-aside {
+	position: sticky;
+	top: 120px;
+	padding: clamp(28px, 4vw, 44px);
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	border-radius: 20px;
+	background:
+		linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025)),
+		rgba(7, 25, 19, 0.72);
+}
+
+.toe-onboarding-aside .contact-details__info li .icon {
+	border-radius: 18px;
+	background-color: var(--theme-color1);
+}
+
+.toe-onboarding-aside .contact-details__info li .text h6,
+.toe-onboarding-aside .contact-details__info li .text a,
+.toe-onboarding-aside .contact-details__info li .text span {
+	color: #f8f1e7;
+}
+
+.toe-onboarding-aside .contact-details__info li .text span {
+	font-size: 16px;
+	line-height: 1.45;
+	color: rgba(248, 241, 231, 0.68);
+}
+
+.toe-map-section .map {
+	display: block;
+	height: 360px;
+	filter: saturate(0.72) contrast(1.02);
+}
+
 @media (max-width: 991px) {
 	.toe-header-cta {
 		display: none;
@@ -586,6 +857,17 @@ body,
 	.toe-modal-card img {
 		min-height: 260px;
 		max-height: 340px;
+	}
+
+	.toe-onboarding-routes,
+	.toe-check-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.toe-onboarding-aside {
+		position: relative;
+		top: auto;
+		margin-top: 36px;
 	}
 }
 
