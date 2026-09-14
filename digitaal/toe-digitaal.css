@@ -1,6 +1,6 @@
 :root {
-	--theme-color1: #d9f45f;
-	--theme-color13: #fd5b38;
+	--theme-color1: #ff6a2a;
+	--theme-color13: #ff6a2a;
 	--theme-color-dark: #071913;
 	--theme-color2: #101310;
 	--theme-color3: #0a0a0a;
@@ -51,6 +51,56 @@ body,
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.toe-banner .banner-slide .image-box .image-1,
+.service-block .image-box .image,
+.project-block .image-box .image,
+.blog-block .image-box .image,
+.video-section .bg,
+.video-section-two .video-outer {
+	overflow: hidden;
+	border-radius: 14px;
+}
+
+.toe-banner .banner-slide .image-box .image-1 {
+	aspect-ratio: 16 / 9;
+}
+
+.service-block .image-box .image {
+	aspect-ratio: 4 / 3;
+}
+
+.project-block.toe-business-card .image-box .image {
+	aspect-ratio: 4 / 3;
+}
+
+.project-block.toe-vendor-card .image-box .image {
+	aspect-ratio: 4 / 5;
+	max-height: 540px;
+}
+
+.blog-block .image-box .image {
+	aspect-ratio: 4 / 3;
+}
+
+.toe-work-icon {
+	background: rgba(255, 106, 42, 0.14);
+	border: 1px solid rgba(255, 106, 42, 0.25);
+	border-radius: 18px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 92px;
+	height: 92px;
+}
+
+.toe-work-icon img,
+.service-block .icon-box .icon-img,
+.process-block .icon-box .icon-img {
+	width: 58px;
+	height: 58px;
+	object-fit: contain;
 }
 
 .toe-banner-copy {
@@ -117,6 +167,96 @@ body,
 	color: #fff;
 }
 
+.toe-page-title-wrap {
+	position: relative;
+	padding: 190px 0 120px;
+	background: linear-gradient(135deg, rgba(7, 25, 19, 0.94), rgba(21, 50, 38, 0.8)), url("../assets/img/toe/generated/toe-hero-hospitality.jpg") center / cover no-repeat;
+	overflow: hidden;
+}
+
+.toe-page-title-wrap::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url("../assets/img/toe/toe-contour-bg.svg");
+	background-size: 1180px auto;
+	opacity: 0.25;
+	pointer-events: none;
+}
+
+.toe-page-title-wrap .container {
+	position: relative;
+	z-index: 1;
+}
+
+.toe-page-title-wrap h1 {
+	color: #f8f1e7;
+	font-size: clamp(64px, 10vw, 154px);
+	line-height: 0.9;
+	letter-spacing: 0;
+	margin: 0 0 22px;
+}
+
+.toe-page-title-wrap p {
+	color: rgba(248, 241, 231, 0.78);
+	max-width: 720px;
+	font-size: clamp(18px, 2vw, 26px);
+	line-height: 1.45;
+}
+
+.toe-about-image {
+	overflow: hidden;
+	border-radius: 18px;
+	aspect-ratio: 4 / 3;
+}
+
+.toe-about-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.toe-service-icon {
+	width: 72px;
+	height: 72px;
+	border-radius: 18px;
+	background: rgba(255, 106, 42, 0.12);
+	border: 1px solid rgba(255, 106, 42, 0.28);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 24px;
+}
+
+.toe-service-icon img {
+	width: 48px;
+	height: 48px;
+	object-fit: contain;
+}
+
+.toe-about-stat {
+	color: #f8f1e7;
+	font-size: clamp(42px, 7vw, 92px);
+	line-height: 1;
+	margin-bottom: 10px;
+}
+
+.toe-about-list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px;
+	margin-top: 34px;
+}
+
+.toe-about-list li {
+	list-style: none;
+	color: rgba(248, 241, 231, 0.78);
+	padding: 18px 20px;
+	border: 1px solid rgba(248, 241, 231, 0.13);
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.035);
+}
+
 @media (max-width: 991px) {
 	.toe-header-cta {
 		display: none;
@@ -128,6 +268,14 @@ body,
 
 	.toe-banner-copy .theme-btn {
 		margin-top: 18px;
+	}
+
+	.toe-page-title-wrap {
+		padding: 150px 0 90px;
+	}
+
+	.toe-about-list {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -141,5 +289,11 @@ body,
 
 	.toe-banner-copy p {
 		font-size: 16px;
+	}
+
+	.toe-banner .banner-slide .image-box .image-1,
+	.project-block.toe-business-card .image-box .image,
+	.project-block.toe-vendor-card .image-box .image {
+		border-radius: 10px;
 	}
 }

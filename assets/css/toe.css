@@ -4,7 +4,7 @@
 	--toe-green-deep: #06140f;
 	--toe-ivory: #f8f1e7;
 	--toe-champagne: #c6a15b;
-	--toe-burnt-orange: #e86f37;
+	--toe-burnt-orange: #ff6a2a;
 }
 
 @keyframes toe-contour-drift {
@@ -1509,7 +1509,7 @@ textarea.tt-form-control {
 .toe-blog-card img {
 	overflow: hidden;
 	border: 1px solid rgba(248, 241, 231, 0.14);
-	border-radius: 10px;
+	border-radius: 14px;
 	background: var(--toe-green-deep);
 }
 
@@ -1625,7 +1625,7 @@ textarea.tt-form-control {
 	margin-bottom: 34px;
 	overflow: hidden;
 	border: 1px solid rgba(248, 241, 231, 0.14);
-	border-radius: 10px;
+	border-radius: 14px;
 	background: var(--toe-green-deep);
 }
 
@@ -1706,7 +1706,7 @@ textarea.tt-form-control {
 	aspect-ratio: 4 / 5;
 	overflow: hidden;
 	border: 1px solid rgba(248, 241, 231, 0.14);
-	border-radius: 10px;
+	border-radius: 14px;
 	background: var(--toe-green-deep);
 }
 
@@ -1883,7 +1883,7 @@ textarea.tt-form-control {
 	gap: 0;
 	min-height: 360px;
 	border: 1px solid rgba(248, 241, 231, 0.14);
-	border-radius: 10px;
+	border-radius: 14px;
 	overflow: hidden;
 	background: rgba(15, 37, 28, 0.78);
 	color: var(--toe-ivory);
@@ -2159,14 +2159,20 @@ textarea.tt-form-control {
 }
 
 .toe-discover-portfolio .pgi-image-holder {
-	border-radius: 8px;
+	border-radius: 14px;
 	overflow: hidden;
 	background: rgba(248, 241, 231, 0.08);
 }
 
 .toe-discover-portfolio .pgi-image,
 .toe-discover-portfolio .pgi-video-wrap {
+	aspect-ratio: 4 / 3;
 	background: rgba(248, 241, 231, 0.08);
+}
+
+.toe-discover-portfolio .toe-vendor-item .pgi-image,
+.toe-discover-portfolio .toe-vendor-item .pgi-video-wrap {
+	aspect-ratio: 4 / 5;
 }
 
 .toe-discover-portfolio .pgi-image img {
