@@ -694,32 +694,50 @@ textarea.tt-form-control {
 	overflow: hidden;
 	display: flex;
 	align-items: center;
-	padding: 150px 0 88px;
-	background: var(--toe-green-deep);
+	padding: 140px 0 76px;
+	background:
+		radial-gradient(circle at 72% 14%, rgba(232, 111, 55, 0.18), transparent 22%),
+		radial-gradient(circle at 12% 82%, rgba(198, 161, 91, 0.16), transparent 26%),
+		var(--toe-green-deep);
 }
 
 .toe-ogoni-bg {
 	position: absolute;
 	inset: -8%;
 	background:
-		linear-gradient(90deg, rgba(6, 20, 15, 0.98) 0%, rgba(6, 20, 15, 0.86) 46%, rgba(6, 20, 15, 0.52) 100%),
+		linear-gradient(90deg, rgba(6, 20, 15, 0.98) 0%, rgba(6, 20, 15, 0.88) 44%, rgba(6, 20, 15, 0.46) 100%),
 		url("../img/toe/toe-contour-reference.png") center/cover;
-	opacity: 0.98;
-	animation: toe-contour-drift 24s ease-in-out infinite alternate;
+	opacity: 1;
+	animation: toe-contour-drift 15s ease-in-out infinite alternate;
+}
+
+.toe-ogoni-hero::after {
+	content: "L.O.U.D";
+	position: absolute;
+	right: -0.05em;
+	bottom: -0.2em;
+	z-index: 1;
+	color: rgba(248, 241, 231, 0.035);
+	font-family: "Syne", sans-serif;
+	font-size: clamp(92px, 24vw, 390px);
+	font-weight: 800;
+	line-height: 0.8;
+	letter-spacing: 0;
+	pointer-events: none;
 }
 
 .toe-ogoni-inner {
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	display: grid;
-	grid-template-columns: minmax(360px, 0.86fr) minmax(420px, 1fr);
-	gap: clamp(34px, 6vw, 92px);
+	grid-template-columns: minmax(330px, 0.75fr) minmax(430px, 1fr);
+	gap: clamp(34px, 5vw, 82px);
 	align-items: center;
 	width: 100%;
 }
 
 .toe-ogoni-copy {
-	max-width: 760px;
+	max-width: 640px;
 }
 
 .toe-ogoni-mark {
@@ -731,32 +749,56 @@ textarea.tt-form-control {
 .toe-ogoni-copy h1 {
 	margin: 0;
 	color: var(--toe-ivory);
-	font-size: clamp(54px, 7.4vw, 116px);
-	line-height: 0.94;
+	font-size: clamp(76px, 10.4vw, 164px);
+	line-height: 0.82;
 	letter-spacing: 0;
 }
 
 .toe-ogoni-text {
-	max-width: 620px;
-	margin: 30px 0 0;
-	color: rgba(248, 241, 231, 0.78);
-	font-size: clamp(16px, 1.35vw, 21px);
-	line-height: 1.65;
+	max-width: 520px;
+	margin: 28px 0 0;
+	color: rgba(248, 241, 231, 0.8);
+	font-size: clamp(17px, 1.35vw, 22px);
+	line-height: 1.45;
+}
+
+.toe-ogoni-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 24px;
+}
+
+.toe-ogoni-tags span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 32px;
+	padding: 0 13px;
+	border: 1px solid rgba(248, 241, 231, 0.16);
+	border-radius: 999px;
+	background: rgba(248, 241, 231, 0.055);
+	color: rgba(248, 241, 231, 0.82);
+	font-size: 11px;
+	font-weight: 900;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
 }
 
 .toe-ogoni-showcase {
 	position: relative;
-	min-height: 620px;
+	min-height: 600px;
 }
 
 .toe-ogoni-card {
 	position: absolute;
 	overflow: hidden;
 	margin: 0;
-	border: 1px solid rgba(248, 241, 231, 0.12);
-	border-radius: 14px;
+	border: 1px solid rgba(248, 241, 231, 0.16);
+	border-radius: 18px;
 	background: rgba(6, 20, 15, 0.72);
-	box-shadow: 0 28px 90px rgba(0, 0, 0, 0.36);
+	box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
+	transform: translateZ(0);
 }
 
 .toe-ogoni-card img {
@@ -764,7 +806,13 @@ textarea.tt-form-control {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	filter: saturate(0.86) contrast(1.04) brightness(0.78);
+	filter: saturate(0.96) contrast(1.06) brightness(0.78);
+	transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.toe-ogoni-card:hover img {
+	transform: scale(1.055);
+	filter: saturate(1.05) contrast(1.08) brightness(0.84);
 }
 
 .toe-ogoni-card figcaption {
@@ -796,38 +844,39 @@ textarea.tt-form-control {
 }
 
 .toe-ogoni-card-large {
-	top: 90px;
-	right: 2%;
-	width: min(58vw, 660px);
-	height: 430px;
+	top: 84px;
+	right: 0;
+	width: min(56vw, 640px);
+	height: 420px;
 }
 
 .toe-ogoni-card-wide {
 	top: 0;
 	left: 0;
-	width: min(50vw, 560px);
-	height: 220px;
+	width: min(44vw, 510px);
+	height: 205px;
 }
 
 .toe-ogoni-card-small {
-	right: 18%;
+	right: 14%;
 	bottom: 0;
-	width: min(34vw, 390px);
-	height: 300px;
+	width: min(30vw, 345px);
+	height: 280px;
 }
 
 .toe-ogoni-badge {
 	position: absolute;
 	z-index: 4;
 	top: 18px;
-	right: 18%;
+	right: 16%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 132px;
 	height: 132px;
-	border: 2px solid var(--toe-burnt-orange);
+	border: 2px solid rgba(232, 111, 55, 0.92);
 	border-radius: 50%;
+	background: rgba(6, 20, 15, 0.82);
 	color: var(--toe-burnt-orange);
 	font-family: "Syne", sans-serif;
 	font-size: 16px;
@@ -836,7 +885,7 @@ textarea.tt-form-control {
 	text-align: center;
 	text-transform: uppercase;
 	transform: rotate(-10deg);
-	box-shadow: 0 0 40px rgba(232, 111, 55, 0.28);
+	box-shadow: 0 0 46px rgba(232, 111, 55, 0.32);
 }
 
 .toe-ogoni-arrow {
@@ -856,8 +905,10 @@ textarea.tt-form-control {
 	position: relative;
 	z-index: 3;
 	margin-top: -1px;
-	padding: 42px 0;
-	background: var(--toe-green);
+	padding: 34px 0;
+	background:
+		linear-gradient(90deg, rgba(232, 111, 55, 0.1), transparent 34%),
+		var(--toe-green);
 }
 
 .toe-ogoni-feature-wrap {
@@ -871,8 +922,8 @@ textarea.tt-form-control {
 }
 
 .toe-ogoni-feature-wrap article {
-	min-height: 190px;
-	padding: 28px;
+	min-height: 160px;
+	padding: 24px;
 	background: rgba(6, 20, 15, 0.74);
 }
 
@@ -881,7 +932,7 @@ textarea.tt-form-control {
 	margin-bottom: 10px;
 	color: var(--toe-ivory);
 	font-family: "Syne", sans-serif;
-	font-size: clamp(20px, 1.8vw, 28px);
+	font-size: clamp(22px, 2vw, 34px);
 	line-height: 1.08;
 }
 
@@ -2411,14 +2462,25 @@ textarea.tt-form-control {
 	}
 
 	.toe-ogoni-copy h1 {
-		font-size: clamp(42px, 13vw, 62px);
-		line-height: 0.98;
+		font-size: clamp(58px, 19vw, 86px);
+		line-height: 0.86;
 	}
 
 	.toe-ogoni-text {
 		margin-top: 22px;
 		font-size: 16px;
 		line-height: 1.55;
+	}
+
+	.toe-ogoni-tags {
+		gap: 7px;
+		margin-top: 18px;
+	}
+
+	.toe-ogoni-tags span {
+		min-height: 28px;
+		padding: 0 10px;
+		font-size: 10px;
 	}
 
 	.toe-ogoni-showcase {
