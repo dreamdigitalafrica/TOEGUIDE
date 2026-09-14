@@ -1354,6 +1354,73 @@ body,
 	gap: 24px;
 }
 
+.toe-business-news-details {
+	background:
+		linear-gradient(180deg, rgba(7, 25, 19, 0.98), rgba(18, 55, 39, 0.9)),
+		var(--theme-color-dark);
+}
+
+.toe-business-news-details .blog-details__img {
+	overflow: hidden;
+}
+
+.toe-business-news-details .blog-details__img img {
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+.toe-business-news-details .blog-details__title,
+.toe-business-news-details .sidebar__title,
+.toe-business-news-details .comment-one .comment-one__content h3 {
+	color: #f8f1e7;
+}
+
+.toe-business-news-details .blog-details__text-2,
+.toe-business-news-details .sidebar__comments-text-box p,
+.toe-business-news-details .sidebar__post .sidebar__post-list .sidebar__post-content h3 a,
+.toe-business-news-details .sidebar__category-list li a,
+.toe-business-news-details .sidebar__tags-list a {
+	color: rgba(248, 241, 231, 0.72);
+}
+
+.toe-business-news-details .sidebar__post,
+.toe-business-news-details .sidebar__category,
+.toe-business-news-details .sidebar__tags,
+.toe-business-news-details .sidebar__comments,
+.toe-business-news-details .sidebar__search-form input[type=search],
+.toe-business-news-details .blog-details__tags a,
+.toe-business-news-details .blog-details__social-list a,
+.toe-business-news-details .nav-links > div > a {
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	background:
+		linear-gradient(145deg, rgba(248, 241, 231, 0.075), rgba(248, 241, 231, 0.025)),
+		rgba(7, 25, 19, 0.78);
+}
+
+.toe-business-news-details .sidebar__category-list li.active a,
+.toe-business-news-details .sidebar__category-list li a:hover {
+	background: #f8f1e7;
+	color: #071913;
+}
+
+.toe-business-news-details .sidebar__post .sidebar__post-list .sidebar__post-image {
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.toe-business-news-details .sidebar__post .sidebar__post-list .sidebar__post-image > img {
+	aspect-ratio: 1;
+	height: 80px;
+	object-fit: cover;
+}
+
+.toe-business-detail-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+	margin-top: 34px;
+}
+
 @media (max-width: 991px) {
 	.toe-header-cta {
 		display: none;
