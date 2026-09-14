@@ -20,33 +20,39 @@ body,
 }
 
 .preloader {
+	--toe-loader-w: clamp(118px, 18vw, 158px);
+	--toe-loader-h: calc(var(--toe-loader-w) * 0.9944);
 	background-color: var(--theme-color-dark);
 }
 
 .preloader::after {
 	background-image: url("../assets/img/toe/toe-loader-logo.png") !important;
-	background-size: contain;
+	background-size: 100% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 132px;
-	height: 132px;
-	margin-left: -66px;
-	margin-top: -66px;
+	width: var(--toe-loader-w);
+	height: var(--toe-loader-h);
+	margin-left: calc(var(--toe-loader-w) / -2);
+	margin-top: calc(var(--toe-loader-h) / -2);
 	animation: toe-loader-breathe 1.9s ease-in-out infinite !important;
+	transform-origin: center;
+	will-change: transform, opacity;
 	z-index: 2;
 }
 
 .preloader::before {
 	content: "" !important;
 	left: 50%;
+	right: auto;
 	top: 50%;
-	width: 132px;
-	height: 132px;
-	margin-left: -66px;
-	margin-top: -66px;
+	width: var(--toe-loader-w);
+	height: var(--toe-loader-h);
+	margin-left: calc(var(--toe-loader-w) / -2);
+	margin-top: calc(var(--toe-loader-h) / -2);
 	background-repeat: no-repeat;
-	filter: drop-shadow(0 0 11px rgba(255, 106, 42, 0.44));
-	animation: toe-digitaal-loader-fill 1.65s ease-in-out infinite;
+	filter: drop-shadow(0 0 12px rgba(255, 106, 42, 0.5));
+	animation: toe-digitaal-loader-fill 1.8s cubic-bezier(0.42, 0, 0.2, 1) infinite;
+	will-change: background, filter;
 	z-index: 1;
 }
 
@@ -110,51 +116,51 @@ body,
 @keyframes toe-digitaal-loader-fill {
 	0%, 8%, 100% {
 		background:
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 18.0% 15.7% / 6.8% 8.5% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 26.5% 10.7% / 8.3% 10.0% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 36.9% 7.0% / 10.6% 12.7% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 49.3% 4.2% / 13.7% 15.5% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 64.8% 5.3% / 16.8% 18.4% no-repeat;
 	}
 	12%, 26% {
 		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 18.0% 15.7% / 6.8% 8.5% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 26.5% 10.7% / 8.3% 10.0% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 36.9% 7.0% / 10.6% 12.7% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 49.3% 4.2% / 13.7% 15.5% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 64.8% 5.3% / 16.8% 18.4% no-repeat;
 	}
 	30%, 44% {
 		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 18.0% 15.7% / 6.8% 8.5% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 26.5% 10.7% / 8.3% 10.0% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 36.9% 7.0% / 10.6% 12.7% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 49.3% 4.2% / 13.7% 15.5% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 64.8% 5.3% / 16.8% 18.4% no-repeat;
 	}
 	48%, 62% {
 		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 18.0% 15.7% / 6.8% 8.5% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 26.5% 10.7% / 8.3% 10.0% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 36.9% 7.0% / 10.6% 12.7% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 49.3% 4.2% / 13.7% 15.5% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 64.8% 5.3% / 16.8% 18.4% no-repeat;
 	}
 	66%, 80% {
 		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
-			radial-gradient(ellipse at center, transparent 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 18.0% 15.7% / 6.8% 8.5% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 26.5% 10.7% / 8.3% 10.0% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 36.9% 7.0% / 10.6% 12.7% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 49.3% 4.2% / 13.7% 15.5% no-repeat,
+			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 64.8% 5.3% / 16.8% 18.4% no-repeat;
 	}
 	84%, 96% {
 		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 20.8% 19.7% / 6.7% 9.2% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 30.6% 15.8% / 7.8% 10.8% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 42.9% 14.2% / 10.3% 12.1% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 56.1% 11.9% / 12.4% 14.1% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 64%, transparent 70%) 71.9% 14.8% / 15.2% 17.1% no-repeat;
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 18.0% 15.7% / 6.8% 8.5% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 26.5% 10.7% / 8.3% 10.0% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 36.9% 7.0% / 10.6% 12.7% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 49.3% 4.2% / 13.7% 15.5% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 64.8% 5.3% / 16.8% 18.4% no-repeat;
 	}
 }
 
@@ -768,6 +774,22 @@ body,
 .toe-listing-card .ui-btn:hover {
 	background-color: #f8f1e7;
 	color: #071913;
+}
+
+.toe-pricing-section .pricing-block-three,
+.toe-pricing-section .pricing-block-three .inner-box {
+	height: 100%;
+}
+
+.toe-pricing-section .pricing-block-three .inner-box .price-box .price {
+	font-size: clamp(34px, 2.55vw, 46px);
+	line-height: 1.05;
+	letter-spacing: 0;
+	white-space: nowrap;
+}
+
+.toe-pricing-section .pricing-block-three .inner-box .text {
+	line-height: 1.7;
 }
 
 .toe-modal {
