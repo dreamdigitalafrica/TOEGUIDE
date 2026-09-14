@@ -332,12 +332,22 @@ body,
 }
 
 .about-section-six .user-info .thumb {
+	width: 74px;
+	height: 74px;
+	min-width: 74px;
 	background: rgba(255, 255, 255, 0.08);
 }
 
 .about-section-six .user-info .thumb img {
 	object-fit: contain;
-	padding: 8px;
+	padding: 13px;
+	transform: none;
+}
+
+.about-section-six .user-info .name {
+	margin-bottom: 0;
+	font-size: 20px;
+	line-height: 1.1;
 }
 
 .services-section .service-block .content-box .text,
