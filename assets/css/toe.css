@@ -76,8 +76,12 @@ body,
 .ptr-prel-image {
 	position: relative;
 	z-index: 2;
-	max-height: 94px;
-	width: auto;
+	width: 104px;
+	height: 104px;
+	max-height: none;
+	object-fit: contain;
+	object-position: center;
+	padding: 8px;
 }
 
 .ptr-prel-content {
@@ -172,8 +176,11 @@ body,
 
 .tt-logo img {
 	width: 60px;
-	height: auto;
+	height: 60px;
 	max-height: none;
+	object-fit: contain;
+	object-position: center;
+	padding: 4px;
 }
 
 #tt-header,
@@ -218,9 +225,11 @@ body,
 .toe-nav-brand img {
 	display: block;
 	width: 54px;
-	height: auto;
+	height: 54px;
 	max-height: 54px;
 	object-fit: contain;
+	object-position: center;
+	padding: 3px;
 }
 
 .toe-main-nav {

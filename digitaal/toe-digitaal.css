@@ -19,17 +19,98 @@ body,
 	display: none !important;
 }
 
+.preloader {
+	background-color: var(--theme-color-dark);
+}
+
 .preloader::after {
-	background-image: url("../assets/img/toe/toe-logo-transparent.png") !important;
-	background-size: 84px auto;
+	background-image: url("../assets/img/toe/toe-logo-padded.png") !important;
+	background-size: 92px 92px;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: none !important;
+	z-index: 1;
+}
+
+.preloader::before {
+	content: "" !important;
+	left: 50%;
+	top: 50%;
+	width: 110px;
+	height: 110px;
+	margin-left: -55px;
+	margin-top: -70px;
+	background-repeat: no-repeat;
+	animation: toe-digitaal-loader-fill 1.45s steps(1, end) infinite;
+	z-index: 2;
 }
 
 .toe-digitaal-header .logo img,
 .sticky-header .logo img,
 .mobile-menu .nav-logo img {
 	width: 62px;
+	height: 62px;
 	max-height: 62px;
 	object-fit: contain;
+	object-position: center;
+	padding: 4px;
+}
+
+.toe-digitaal-header .logo,
+.sticky-header .logo,
+.mobile-menu .nav-logo {
+	overflow: visible;
+}
+
+@keyframes toe-digitaal-loader-fill {
+	0%, 10%, 100% {
+		background:
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 34% 20% / 10% 10% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 45% 17% / 12% 12% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 57% 15% / 14% 14% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 70% 17% / 16% 16% no-repeat;
+	}
+	12%, 28% {
+		background:
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 34% 20% / 10% 10% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 45% 17% / 12% 12% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 57% 15% / 14% 14% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 70% 17% / 16% 16% no-repeat;
+	}
+	30%, 46% {
+		background:
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 34% 20% / 10% 10% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 45% 17% / 12% 12% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 57% 15% / 14% 14% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 70% 17% / 16% 16% no-repeat;
+	}
+	48%, 64% {
+		background:
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 34% 20% / 10% 10% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 45% 17% / 12% 12% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 57% 15% / 14% 14% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 70% 17% / 16% 16% no-repeat;
+	}
+	66%, 82% {
+		background:
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 34% 20% / 10% 10% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 45% 17% / 12% 12% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 57% 15% / 14% 14% no-repeat,
+			radial-gradient(ellipse at center, transparent 58%, transparent 64%) 70% 17% / 16% 16% no-repeat;
+	}
+	84%, 98% {
+		background:
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 24% 24% / 8% 8% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 34% 20% / 10% 10% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 45% 17% / 12% 12% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 57% 15% / 14% 14% no-repeat,
+			radial-gradient(ellipse at center, var(--theme-color1) 58%, transparent 64%) 70% 17% / 16% 16% no-repeat;
+	}
 }
 
 .toe-digitaal-header .header-lower .inner-container {
@@ -207,7 +288,7 @@ body,
 .toe-page-title-wrap {
 	position: relative;
 	padding: 190px 0 120px;
-	background: linear-gradient(135deg, rgba(7, 25, 19, 0.94), rgba(21, 50, 38, 0.8)), url("../assets/img/toe/generated/toe-hero-hospitality.jpg") center / cover no-repeat;
+	background: linear-gradient(135deg, rgba(7, 25, 19, 0.94), rgba(21, 50, 38, 0.8)), url("../assets/img/toe/generated/toe-header-hospitality-lobby.jpg") center / cover no-repeat;
 	overflow: hidden;
 }
 
