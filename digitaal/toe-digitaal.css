@@ -1298,6 +1298,47 @@ body,
 	transform: translateY(-2px);
 }
 
+.toe-legal-copy {
+	display: grid;
+	gap: 18px;
+	padding: clamp(26px, 4vw, 46px);
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	border-radius: 18px;
+	background:
+		linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
+		rgba(7, 25, 19, 0.86);
+	box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+}
+
+.toe-legal-copy .toe-legal-updated {
+	margin: 0 0 4px;
+	color: var(--theme-color1);
+	font-size: 13px;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.toe-legal-copy h4 {
+	margin: 16px 0 0;
+	color: #f8f1e7;
+	font-size: clamp(21px, 1.5vw, 28px);
+	line-height: 1.18;
+	letter-spacing: 0;
+}
+
+.toe-legal-copy p {
+	margin: 0;
+	color: rgba(248, 241, 231, 0.73);
+	font-size: clamp(15px, 1vw, 17px);
+	line-height: 1.76;
+}
+
+.toe-legal-copy a {
+	color: var(--theme-color1);
+	font-weight: 800;
+}
+
 .toe-services-page,
 .toe-explore-section {
 	position: relative;
