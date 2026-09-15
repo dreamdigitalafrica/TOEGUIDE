@@ -213,6 +213,8 @@ module.exports = {
   getSupabase,
   publicSubmissionRow,
   requireAdmin,
+  isPrivateFileField,
+  safeName,
   send,
   uploadFiles,
   value,

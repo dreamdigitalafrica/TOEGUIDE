@@ -51,6 +51,23 @@ function normalizeSubmission(fields) {
   };
 }
 
+function parseUploadedFiles(fields) {
+  const raw = value(fields.uploaded_files);
+  if (!raw) return null;
+  try {
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" ? parsed : null;
+  } catch (error) {
+    error.statusCode = 400;
+    error.message = "Uploaded file details could not be read. Please choose the files again and resubmit.";
+    throw error;
+  }
+}
+
+function flattenUploadedFiles(uploaded) {
+  return Object.values(uploaded || {}).flatMap((items) => Array.isArray(items) ? items : []);
+}
+
 function firstPublicImage(files) {
   for (const items of Object.values(files || {})) {
     const found = (items || []).find((item) => item.public_url);
@@ -96,6 +113,7 @@ module.exports = async function handler(req, res) {
     const supabase = getSupabase();
     const { fields, files } = await parseForm(req);
     const payload = normalizeSubmission(fields);
+    const preuploadedFiles = parseUploadedFiles(fields);
 
     const { data: submission, error } = await supabase
       .from("form_submissions")
@@ -104,7 +122,9 @@ module.exports = async function handler(req, res) {
       .single();
     if (error) throw error;
 
-    const { uploaded, mediaRows } = await uploadFiles(supabase, files, submission.submission_type, submission.id);
+    const { uploaded, mediaRows } = preuploadedFiles
+      ? { uploaded: preuploadedFiles, mediaRows: flattenUploadedFiles(preuploadedFiles) }
+      : await uploadFiles(supabase, files, submission.submission_type, submission.id);
     const listing = await createListing(supabase, { ...submission, files: uploaded }, uploaded);
 
     if (mediaRows.length) {
