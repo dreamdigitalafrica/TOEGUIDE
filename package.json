@@ -1,0 +1,14 @@
+{
+  "name": "toe-guide-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.116.0",
+    "formidable": "3.5.4",
+    "googleapis": "181.0.0"
+  }
+}

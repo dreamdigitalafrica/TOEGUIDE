@@ -115,6 +115,7 @@
 								<h3>Onboarding request</h3>
 								<p id="toe-route-note">Vendor onboarding is lighter. Share your service, contact details and a valid means of identification so T.O.E can review your listing.</p>
 							</div>
+							<input type="hidden" name="form_context" id="toe-form-context" value="vendor">
 							<input type="hidden" name="listing_type" id="toe-listing-type" value="Vendor quick listing">
 
 							<div class="row">
@@ -278,11 +279,13 @@
 	<script src="digitaal/js/custom-gsap.js"></script>
 	<script src="digitaal/js/jquery-scrolltofixed-min.js"></script>
 	<script src="digitaal/js/script.js"></script>
+	<script src="assets/js/toe-forms.js"></script>
 	<script>
 		(function () {
 			var routeButtons = Array.prototype.slice.call(document.querySelectorAll(".toe-onboarding-route"));
 			var form = document.getElementById("toe-signup-form");
 			var note = document.getElementById("toe-route-note");
+			var formContext = document.getElementById("toe-form-context");
 			var listingType = document.getElementById("toe-listing-type");
 			var nameLabel = document.getElementById("toe-name-label");
 			var areaLabel = document.getElementById("toe-area-label");
@@ -290,6 +293,7 @@
 			function setRoute(route) {
 				form.hidden = false;
 				form.dataset.route = route;
+				formContext.value = route;
 				routeButtons.forEach(function (button) {
 					var active = button.dataset.route === route;
 					button.classList.toggle("is-active", active);
@@ -319,11 +323,6 @@
 				button.addEventListener("click", function () {
 					setRoute(button.dataset.route);
 				});
-			});
-
-			form.addEventListener("submit", function (event) {
-				event.preventDefault();
-				form.querySelector(".toe-success-message").hidden = false;
 			});
 		})();
 	</script>
