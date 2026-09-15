@@ -29,6 +29,31 @@
 	}
 }
 
+@keyframes toe-loader-dot-1 {
+	0%, 10%, 100% { opacity: 0; transform: scale(0.45); }
+	12%, 88% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes toe-loader-dot-2 {
+	0%, 28%, 100% { opacity: 0; transform: scale(0.45); }
+	30%, 88% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes toe-loader-dot-3 {
+	0%, 46%, 100% { opacity: 0; transform: scale(0.45); }
+	48%, 88% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes toe-loader-dot-4 {
+	0%, 64%, 100% { opacity: 0; transform: scale(0.45); }
+	66%, 88% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes toe-loader-dot-5 {
+	0%, 78%, 100% { opacity: 0; transform: scale(0.45); }
+	80%, 88% { opacity: 1; transform: scale(1); }
+}
+
 body,
 #body-inner,
 #scroll-container,
@@ -50,79 +75,103 @@ body,
 
 .ptr-prel-image {
 	position: relative;
-	z-index: 1;
-	width: clamp(118px, 16vw, 168px);
-	height: calc(clamp(118px, 16vw, 168px) * 0.9934);
+	z-index: 2;
+	width: 110px;
+	height: 110px;
 	max-height: none;
 	object-fit: contain;
 	object-position: center;
 	padding: 0;
-	animation: toe-legacy-loader-breathe 2.15s ease-in-out infinite;
-	transform-origin: center;
 }
 
 .ptr-prel-content {
 	position: relative;
 	display: inline-block;
-	width: clamp(118px, 16vw, 168px);
-	height: calc(clamp(118px, 16vw, 168px) * 0.9934);
 }
 
 .ptr-prel-content::before {
 	content: "";
 	position: absolute;
-	z-index: 2;
-	inset: 0;
-	pointer-events: none;
-	background: linear-gradient(180deg, #ff8246 0%, var(--toe-burnt-orange) 48%, #e9541b 100%);
-	-webkit-mask: url("../img/toe/toe-loader-logo.png") center / contain no-repeat;
-	mask: url("../img/toe/toe-loader-logo.png") center / contain no-repeat;
-	clip-path: inset(100% 0 0 0);
-	filter: drop-shadow(0 0 16px rgba(255, 106, 42, 0.45));
-	animation: toe-legacy-logo-mask-fill 2.15s cubic-bezier(0.42, 0, 0.2, 1) infinite;
-	will-change: clip-path, opacity;
-}
-
-.ptr-prel-content::after {
-	content: none;
-	position: absolute;
 	z-index: 3;
 	inset: 0;
 	pointer-events: none;
+	background:
+		radial-gradient(ellipse at center, var(--toe-burnt-orange) 61%, transparent 64%) 19.8% 16.5% / 4.1% 3.9% no-repeat,
+		radial-gradient(ellipse at center, var(--toe-burnt-orange) 61%, transparent 64%) 26.5% 14.4% / 5.4% 5.2% no-repeat,
+		radial-gradient(ellipse at center, var(--toe-burnt-orange) 61%, transparent 64%) 34.2% 12.4% / 6.6% 6.3% no-repeat,
+		radial-gradient(ellipse at center, var(--toe-burnt-orange) 61%, transparent 64%) 43.4% 10.3% / 7.8% 7.6% no-repeat,
+		radial-gradient(ellipse at center, var(--toe-burnt-orange) 61%, transparent 64%) 54.8% 9.6% / 9.6% 9.1% no-repeat;
+	animation: toe-loader-dot-5 1.6s linear infinite;
 }
 
-@keyframes toe-legacy-loader-breathe {
-	0%, 100% {
-		opacity: 0.88;
-		transform: scale(1);
-	}
-	50% {
-		opacity: 1;
-		transform: scale(1.025);
-	}
+.ptr-prel-content::after {
+	content: "";
+	position: absolute;
+	z-index: 4;
+	inset: 0;
+	pointer-events: none;
+	background:
+		radial-gradient(ellipse at center, var(--toe-burnt-orange) 61%, transparent 64%) 19.8% 16.5% / 4.1% 3.9% no-repeat,
+		radial-gradient(ellipse at center, transparent 61%, transparent 64%) 26.5% 14.4% / 5.4% 5.2% no-repeat;
+	animation: toe-loader-dot-1 1.6s linear infinite;
 }
 
-@keyframes toe-legacy-logo-mask-fill {
-	0%, 100% {
-		clip-path: inset(100% 0 0 0);
-		opacity: 0.68;
-	}
-	18% {
-		clip-path: inset(72% 0 0 0);
-		opacity: 0.82;
-	}
-	42% {
-		clip-path: inset(34% 0 0 0);
-		opacity: 0.96;
-	}
-	68% {
-		clip-path: inset(0 0 0 0);
-		opacity: 1;
-	}
-	86% {
-		clip-path: inset(0 0 0 0);
-		opacity: 0.9;
-	}
+.ptr-prel-content::before,
+.ptr-prel-content::after {
+	content: none;
+}
+
+.toe-loader-dot {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	border-radius: 50%;
+	background: var(--toe-burnt-orange);
+	pointer-events: none;
+	opacity: 0;
+	transform: scale(0.5);
+	transform-origin: center;
+	box-shadow: 0 0 12px rgba(185, 106, 80, 0.48);
+}
+
+.toe-loader-dot:nth-child(2) {
+	left: 24%;
+	top: 24%;
+	width: 8%;
+	height: 8%;
+	animation: toe-loader-dot-1 1.55s linear infinite;
+}
+
+.toe-loader-dot:nth-child(3) {
+	left: 32.5%;
+	top: 20.5%;
+	width: 9%;
+	height: 9%;
+	animation: toe-loader-dot-2 1.55s linear infinite;
+}
+
+.toe-loader-dot:nth-child(4) {
+	left: 43%;
+	top: 17%;
+	width: 11%;
+	height: 11%;
+	animation: toe-loader-dot-3 1.55s linear infinite;
+}
+
+.toe-loader-dot:nth-child(5) {
+	left: 55.5%;
+	top: 14.5%;
+	width: 13%;
+	height: 13%;
+	animation: toe-loader-dot-4 1.55s linear infinite;
+}
+
+.toe-loader-dot:nth-child(6) {
+	left: 69%;
+	top: 15%;
+	width: 15.5%;
+	height: 15.5%;
+	animation: toe-loader-dot-5 1.55s linear infinite;
 }
 
 .tt-logo img {
