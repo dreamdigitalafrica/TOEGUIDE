@@ -697,9 +697,18 @@ body,
 }
 
 .toe-listing-card .image {
-	aspect-ratio: 4 / 3;
+	display: block;
+	width: 100%;
+	height: clamp(260px, 18vw, 340px);
+	aspect-ratio: auto;
 	background: rgba(248, 241, 231, 0.08);
 	overflow: hidden;
+}
+
+.toe-listing-card .image a {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .toe-listing-card .image img {
@@ -708,6 +717,8 @@ body,
 	object-fit: cover;
 	object-position: center;
 	filter: saturate(0.95) brightness(0.88);
+	transform: scale(1.08);
+	transform-origin: center;
 }
 
 .toe-business-listing .content {
@@ -716,7 +727,8 @@ body,
 }
 
 .toe-vendor-listing .image {
-	aspect-ratio: 4 / 4.45;
+	height: clamp(280px, 20vw, 360px);
+	aspect-ratio: auto;
 }
 
 .toe-vendor-listing .content {
