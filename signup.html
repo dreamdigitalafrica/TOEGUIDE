@@ -104,9 +104,9 @@
 								<small>Drivers, chefs, cleaners, errand assistants, domestic support and individual service providers.</small>
 							</button>
 							<button class="toe-onboarding-route" type="button" data-route="business" aria-controls="toe-signup-form" aria-expanded="false">
-								<span class="toe-route-kicker">Business owner</span>
-								<strong>Registered company or venue</strong>
-								<small>Hotels, restaurants, lounges, apartments, boutiques, spas and hospitality brands.</small>
+								<span class="toe-route-kicker">Distributor route</span>
+								<strong>Business listing partner</strong>
+								<small>Business category, L.O.U.D partnership and QR code access.</small>
 							</button>
 						</div>
 
@@ -119,24 +119,12 @@
 							<input type="hidden" name="listing_type" id="toe-listing-type" value="Vendor quick listing">
 
 							<div class="row">
-								<div class="col-sm-6"><div class="mb-3"><label class="toe-field-label" for="toe-name" id="toe-name-label">Vendor name</label><input id="toe-name" name="business_name" class="form-control" type="text" placeholder="Enter name" required></div></div>
+								<div class="col-sm-6"><div class="mb-3"><label class="toe-field-label" for="toe-name" id="toe-name-label">Full name</label><input id="toe-name" name="business_name" class="form-control" type="text" placeholder="Enter name" required></div></div>
 								<div class="col-sm-6">
 									<div class="mb-3">
 										<label class="toe-field-label" for="toe-category">Category</label>
 										<select id="toe-category" class="form-control" name="category" required>
 											<option value="">Choose category</option>
-											<option>Driver / transport</option>
-											<option>Private chef / cook</option>
-											<option>Nail technician</option>
-											<option>Hair stylist</option>
-											<option>Cleaning / housekeeping</option>
-											<option>Laundry / ironing</option>
-											<option>Errands / grocery shopping</option>
-											<option>Home & domestic support</option>
-											<option>Market assistant</option>
-											<option>Painter / handyman</option>
-											<option>Clothing amendment / alterations</option>
-											<option>Beauty & grooming</option>
 										</select>
 									</div>
 								</div>
@@ -144,12 +132,16 @@
 
 							<div class="row">
 								<div class="col-sm-6"><div class="mb-3"><label class="toe-field-label" for="toe-contact">Contact person</label><input id="toe-contact" name="contact_name" class="form-control" type="text" placeholder="Enter contact name" required></div></div>
-								<div class="col-sm-6"><div class="mb-3"><label class="toe-field-label" for="toe-phone">WhatsApp / phone number</label><input id="toe-phone" name="phone" class="form-control" type="tel" placeholder="Enter phone number" required></div></div>
+								<div class="col-sm-6"><div class="mb-3"><label class="toe-field-label" for="toe-phone">Phone number / WhatsApp</label><input id="toe-phone" name="phone" class="form-control" type="tel" placeholder="Enter phone number" required></div></div>
 							</div>
 
 							<div class="row">
-								<div class="col-sm-6"><div class="mb-3"><label class="toe-field-label" for="toe-email">Email address</label><input id="toe-email" name="email" class="form-control required email" type="email" placeholder="Enter email" required></div></div>
-								<div class="col-sm-6"><div class="mb-3"><label class="toe-field-label" for="toe-area" id="toe-area-label">Base area</label><input id="toe-area" name="area" class="form-control" type="text" placeholder="Maitama, Wuse 2, Asokoro..." required></div></div>
+								<div class="col-sm-6"><div class="mb-3"><label class="toe-field-label" for="toe-email">Email</label><input id="toe-email" name="email" class="form-control required email" type="email" placeholder="Enter email" required></div></div>
+								<div class="col-sm-6"><div class="mb-3"><label class="toe-field-label" for="toe-resident-state">Resident state</label><input id="toe-resident-state" name="resident_state" class="form-control" type="text" placeholder="Enter resident state" required></div></div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-6"><div class="mb-3"><label class="toe-field-label" for="toe-area" id="toe-area-label">Work station/location</label><input id="toe-area" name="area" class="form-control" type="text" placeholder="Maitama, Wuse 2, Asokoro..." required></div></div>
 							</div>
 
 							<div class="row toe-business-only" hidden>
@@ -164,27 +156,21 @@
 
 							<div class="toe-verification-group toe-social-follow">
 								<h4>Follow T.O.E on social media</h4>
-								<p>Before submitting, follow T.O.E so you can see listing updates, campaign features and discovery opportunities.</p>
+								<p>Follow us on social media and send a message "I'm in".</p>
 								<div class="toe-social-actions">
 									<a href="https://www.instagram.com/toeguide" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Follow Instagram</a>
 									<a href="https://www.tiktok.com/@toeguide" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i> Follow TikTok</a>
 								</div>
 								<div class="toe-check-grid">
-									<label><input type="checkbox" name="social_follow" value="Instagram followed" required> I followed T.O.E on Instagram</label>
-									<label><input type="checkbox" name="social_follow" value="TikTok followed" required> I followed T.O.E on TikTok</label>
+									<label><input type="checkbox" name="social_follow" value="Instagram followed and messaged I'm in" required> I followed T.O.E on Instagram and sent "I'm in"</label>
+									<label><input type="checkbox" name="social_follow" value="TikTok followed and messaged I'm in" required> I followed T.O.E on TikTok and sent "I'm in"</label>
 								</div>
 							</div>
 
 							<div class="toe-verification-group toe-vendor-only">
-								<h4>Vendor verification</h4>
-								<div class="toe-check-grid">
-									<label><input type="checkbox" name="vendor_verify" value="Government ID"> Government ID ready</label>
-									<label><input type="checkbox" name="vendor_verify" value="Profile photo"> Profile photo ready</label>
-									<label><input type="checkbox" name="vendor_verify" value="Customer references"> Customer references</label>
-									<label><input type="checkbox" name="vendor_verify" value="Photos ready"> Service photos ready</label>
-								</div>
+								<h4>Document</h4>
 								<div class="row">
-									<div class="col-sm-6"><div class="mb-3 toe-file-control"><label>Upload valid ID <input class="form-control" type="file" name="vendor_id" accept=".jpg,.jpeg,.png,.pdf"></label></div></div>
+									<div class="col-sm-6"><div class="mb-3 toe-file-control"><label>Upload NIN / Driver's license <input class="form-control" type="file" name="vendor_id" accept=".jpg,.jpeg,.png,.pdf"></label></div></div>
 									<div class="col-sm-6"><div class="mb-3 toe-file-control"><label>Upload service photos <input class="form-control" type="file" name="vendor_media" accept=".jpg,.jpeg,.png,.pdf" multiple></label></div></div>
 								</div>
 							</div>
@@ -226,9 +212,7 @@
 							</div>
 							<ul class="list-unstyled contact-details__info">
 								<li><div class="icon"><span class="fal fa-user-check"></span></div><div class="text"><h6 class="mb-1">Vendor route</h6><span>ID, service details, contact number and photos.</span></div></li>
-								<li><div class="icon"><span class="fal fa-building"></span></div><div class="text"><h6 class="mb-1">Business route</h6><span>CAC, address, owner ID, map link and brand media.</span></div></li>
-								<li><div class="icon"><span class="fal fa-envelope"></span></div><div class="text"><h6 class="mb-1">Need help?</h6><a href="mailto:hello@toeguide.com">hello@toeguide.com</a></div></li>
-								<li><div class="icon"><span class="fa-classic fa-light fa-phone-plus"></span></div><div class="text"><h6 class="mb-1">Call T.O.E</h6><a href="tel:+2348101735088">08101735088</a></div></li>
+								<li><div class="icon"><span class="fal fa-building"></span></div><div class="text"><h6 class="mb-1">Distributor route</h6><span>Business category, L.O.U.D partnership and QR code.</span></div></li>
 							</ul>
 						</div>
 					</div>
@@ -246,7 +230,7 @@
 				<div class="footer-middle">
 					<div class="container"><div class="row">
 						<div class="footer-column col-lg-5"><div class="footer-widget about-widget wow fadeInLeft"><h1 class="title">Let’s Talk</h1><div class="widget-content"><div class="text">Helping people see more. Helping businesses be seen.</div><div class="social-widget"><ul class="social-icon-list1"><li><a href="https://www.instagram.com/toeguide" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li><li><a href="https://www.tiktok.com/@toeguide" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a></li></ul></div></div></div></div>
-						<div class="footer-column col-lg-2"><div class="footer-widget links-widget col wow fadeInLeft" data-wow-delay="100ms"><h5 class="widget-title">Quick Link</h5><div class="widget-content"><ul class="user-links"><li><a href="index.html">Home</a></li><li><a href="about-us.html">About</a></li><li><a href="discover.html">Discover</a></li><li><a href="services.html">Services</a></li><li><a href="toe-plan.html">T.O.E Plan</a></li><li><a href="explore.html">Explore</a></li><li><a href="signup.html">Get Started</a></li><li><a href="contact.html">Contact</a></li></ul></div></div></div>
+						<div class="footer-column col-lg-2"><div class="footer-widget links-widget col wow fadeInLeft" data-wow-delay="100ms"><h5 class="widget-title">Quick Link</h5><div class="widget-content"><ul class="user-links"><li><a href="index.html">Home</a></li><li><a href="about-us.html">About</a></li><li><a href="discover.html">Discover</a></li><li><a href="services.html">Services</a></li><li><a href="toe-plan.html">T.O.E Plan</a></li><li><a href="explore.html">Explore</a></li><li><a href="signup.html">Get Started</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-use.html">Terms of Use</a></li></ul></div></div></div>
 						<div class="footer-column col-lg-5"><div class="footer-widget subscribe-widget wow fadeInLeft" data-wow-delay="200ms"><h5 class="text">For listings, campaigns and partnerships</h5><div class="subscribe-form-one"><form action="contact.html"><div class="form-group" style="position: relative"><label for="email" class="sr-only">Email Address</label><input type="email" id="email" name="email" class="email" placeholder="Email Address"><button type="submit" class="theme-btn" aria-label="Submit email"><i class="icon flaticon-paper-plane"></i></button></div></form></div></div><div class="row"><div class="footer-widget col wow fadeInLeft" data-wow-delay="400ms"><h5 class="widget-title">Phone</h5><div class="widget-content"><div class="text"><a href="tel:+2348101735088">08101735088</a></div></div></div><div class="footer-widget col wow fadeInLeft" data-wow-delay="400ms"><h5 class="widget-title">Email</h5><div class="widget-content"><div class="text"><a href="mailto:hello@toeguide.com">hello@toeguide.com</a></div></div></div></div></div>
 					</div></div>
 				</div>
@@ -289,11 +273,75 @@
 			var listingType = document.getElementById("toe-listing-type");
 			var nameLabel = document.getElementById("toe-name-label");
 			var areaLabel = document.getElementById("toe-area-label");
+			var categorySelect = document.getElementById("toe-category");
+			var vendorCategories = [
+				"Driver / transport",
+				"Private chef / cook",
+				"Nail technician",
+				"Hair stylist",
+				"Cleaning / housekeeping",
+				"Laundry / ironing",
+				"Errands / grocery shopping",
+				"Home & domestic support",
+				"Market assistant",
+				"Painter / handyman",
+				"Clothing amendment / alterations",
+				"Beauty & grooming"
+			];
+			var businessCategories = [
+				"Hospitality",
+				"Food & Dining",
+				"Travel & Tourism",
+				"Transport & Mobility",
+				"Shopping & Retail",
+				"Fashion & Beauty",
+				"Health & Wellness",
+				"Entertainment & Nightlife",
+				"Events",
+				"Sports & Recreation",
+				"Real Estate & Property",
+				"Construction & Home",
+				"Professional Services",
+				"Business Services",
+				"Financial Services",
+				"Technology & Telecommunications",
+				"Education & Training",
+				"Media & Publishing",
+				"Advertising & Marketing",
+				"Creative Services",
+				"Automotive",
+				"Logistics & Delivery",
+				"Home & Domestic Services",
+				"Personal Services",
+				"Family & Childcare",
+				"Security",
+				"Agriculture",
+				"Manufacturing",
+				"Government & Public Services",
+				"Nonprofit & Community",
+				"Arts & Culture",
+				"Wedding & Lifestyle",
+				"Tourist Attractions",
+				"Religious Organisations",
+				"Other Businesses"
+			];
+
+			function setCategoryOptions(route) {
+				var categories = route === "business" ? businessCategories : vendorCategories;
+				categorySelect.innerHTML = '<option value="">Choose category</option>';
+				categories.forEach(function (category) {
+					var option = document.createElement("option");
+					option.textContent = category;
+					option.value = category;
+					categorySelect.appendChild(option);
+				});
+			}
 
 			function setRoute(route) {
 				form.hidden = false;
 				form.dataset.route = route;
 				formContext.value = route;
+				setCategoryOptions(route);
 				routeButtons.forEach(function (button) {
 					var active = button.dataset.route === route;
 					button.classList.toggle("is-active", active);
@@ -306,15 +354,15 @@
 					item.hidden = route !== "business";
 				});
 				if (route === "business") {
-					note.textContent = "Business onboarding requires stronger verification, including company registration, address details and supporting documents for review.";
+					note.textContent = "Share your business category, L.O.U.D partnership interest and QR code listing details for T.O.E review.";
 					listingType.value = "Business profile";
 					nameLabel.textContent = "Business name";
-					areaLabel.textContent = "Business area";
+					areaLabel.textContent = "Work station/location";
 				} else {
-					note.textContent = "Vendor onboarding is lighter. Share your service, contact details and a valid means of identification so T.O.E can review your listing.";
+					note.textContent = "Share your personal service details, location and NIN or driver's license for T.O.E review.";
 					listingType.value = "Vendor quick listing";
-					nameLabel.textContent = "Vendor name";
-					areaLabel.textContent = "Base area";
+					nameLabel.textContent = "Full name";
+					areaLabel.textContent = "Work station/location";
 				}
 				form.scrollIntoView({ behavior: "smooth", block: "start" });
 			}
@@ -324,6 +372,7 @@
 					setRoute(button.dataset.route);
 				});
 			});
+			setCategoryOptions("vendor");
 		})();
 	</script>
 </body>

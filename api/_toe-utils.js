@@ -45,6 +45,20 @@ function values(input) {
   return Array.isArray(input) ? input.filter(Boolean) : [input].filter(Boolean);
 }
 
+function payloadValue(payload, key) {
+  if (!payload || typeof payload !== "object") return "";
+  const item = payload[key];
+  if (Array.isArray(item)) return item[0] || "";
+  return item || "";
+}
+
+function submissionAreaText(submission) {
+  const residentState = payloadValue(submission.raw_payload, "resident_state");
+  const location = submission.area || payloadValue(submission.raw_payload, "area");
+  if (residentState && location) return `${residentState} | ${location}`;
+  return residentState || location || "";
+}
+
 function safeName(name) {
   return String(name || "upload")
     .toLowerCase()
@@ -144,7 +158,7 @@ function publicSubmissionRow(submission, uploadedFiles) {
     submission.contact_name || "",
     submission.phone || "",
     submission.email || "",
-    submission.area || "",
+    submissionAreaText(submission),
     submission.business_address || "",
     submission.maps || "",
     submission.description || "",
