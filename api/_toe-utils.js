@@ -126,7 +126,7 @@ async function appendSheetRow(row, tabName) {
   await client.sheets.spreadsheets.values.append({
     spreadsheetId: client.sheetId,
     range: `${tabName}!A:Z`,
-    valueInputOption: "USER_ENTERED",
+    valueInputOption: "RAW",
     insertDataOption: "INSERT_ROWS",
     requestBody: { values: [row] }
   });
