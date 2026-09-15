@@ -17,6 +17,7 @@ function parseForm(req) {
     multiples: true,
     keepExtensions: true,
     allowEmptyFiles: true,
+    minFileSize: 0,
     maxFileSize: 15 * 1024 * 1024
   });
 
