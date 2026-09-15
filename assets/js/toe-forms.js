@@ -61,10 +61,10 @@
     return supabaseClientPromise;
   }
 
-  function createTextFormData(form, fileEntries) {
+  function createTextFormData(form) {
     var data = new FormData(form);
-    fileEntries.forEach(function (entry) {
-      if (entry.input.name) data.delete(entry.input.name);
+    Array.prototype.slice.call(form.querySelectorAll("input[type='file']")).forEach(function (input) {
+      if (input.name) data.delete(input.name);
     });
     return data;
   }
@@ -133,7 +133,7 @@
       var originalText = button ? button.textContent.trim() : "";
       var fileEntries = collectFileEntries(form);
       var route = form.dataset.route || "vendor";
-      var data = createTextFormData(form, fileEntries);
+      var data = createTextFormData(form);
       if (form.id === "toe-signup-form") {
         data.set("form_context", route || data.get("listing_type") || "vendor");
       }

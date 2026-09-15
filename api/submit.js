@@ -16,6 +16,7 @@ function parseForm(req) {
   const form = formidable({
     multiples: true,
     keepExtensions: true,
+    allowEmptyFiles: true,
     maxFileSize: 15 * 1024 * 1024
   });
 
