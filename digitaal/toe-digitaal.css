@@ -20,21 +20,21 @@ body,
 }
 
 .preloader {
-	--toe-loader-w: clamp(118px, 18vw, 158px);
+	--toe-loader-w: clamp(112px, 12vw, 164px);
 	--toe-loader-h: calc(var(--toe-loader-w) * 0.9934);
 	background-color: var(--theme-color-dark);
 }
 
 .preloader::after {
 	background-image: url("../assets/img/toe/toe-loader-logo.png") !important;
-	background-size: 100% 100%;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: var(--toe-loader-w);
 	height: var(--toe-loader-h);
 	margin-left: calc(var(--toe-loader-w) / -2);
 	margin-top: calc(var(--toe-loader-h) / -2);
-	animation: toe-loader-breathe 1.9s ease-in-out infinite !important;
+	animation: toe-loader-breathe 2.1s ease-in-out infinite !important;
 	transform-origin: center;
 	will-change: transform, opacity;
 	z-index: 2;
@@ -49,11 +49,14 @@ body,
 	height: var(--toe-loader-h);
 	margin-left: calc(var(--toe-loader-w) / -2);
 	margin-top: calc(var(--toe-loader-h) / -2);
-	background-repeat: no-repeat;
-	filter: drop-shadow(0 0 12px rgba(255, 106, 42, 0.5));
-	animation: toe-digitaal-loader-fill 1.8s cubic-bezier(0.42, 0, 0.2, 1) infinite;
-	will-change: background, filter;
-	z-index: 1;
+	background: linear-gradient(180deg, #ff8a50 0%, var(--theme-color1) 52%, #dd4d18 100%);
+	-webkit-mask: url("../assets/img/toe/toe-loader-logo.png") center / contain no-repeat;
+	mask: url("../assets/img/toe/toe-loader-logo.png") center / contain no-repeat;
+	clip-path: inset(100% 0 0 0);
+	filter: drop-shadow(0 0 14px rgba(255, 106, 42, 0.42));
+	animation: toe-digitaal-loader-fill 2.1s cubic-bezier(0.42, 0, 0.2, 1) infinite;
+	will-change: clip-path, opacity;
+	z-index: 3;
 }
 
 .toe-digitaal-header .logo img,
@@ -114,53 +117,21 @@ body,
 }
 
 @keyframes toe-digitaal-loader-fill {
-	0%, 8%, 100% {
-		background:
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 18.33% 16.13% / 6.04% 7.85% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 27.11% 11.05% / 7.14% 9.61% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 37.76% 7.40% / 9.55% 11.82% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 50.27% 4.75% / 12.62% 14.59% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 65.75% 5.75% / 15.59% 17.24% no-repeat;
+	0%, 100% {
+		clip-path: inset(100% 0 0 0);
+		opacity: 0.7;
 	}
-	12%, 26% {
-		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 18.33% 16.13% / 6.04% 7.85% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 27.11% 11.05% / 7.14% 9.61% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 37.76% 7.40% / 9.55% 11.82% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 50.27% 4.75% / 12.62% 14.59% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 65.75% 5.75% / 15.59% 17.24% no-repeat;
+	18% {
+		clip-path: inset(72% 0 0 0);
+		opacity: 0.86;
 	}
-	30%, 44% {
-		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 18.33% 16.13% / 6.04% 7.85% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 27.11% 11.05% / 7.14% 9.61% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 37.76% 7.40% / 9.55% 11.82% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 50.27% 4.75% / 12.62% 14.59% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 65.75% 5.75% / 15.59% 17.24% no-repeat;
+	42% {
+		clip-path: inset(36% 0 0 0);
+		opacity: 0.96;
 	}
-	48%, 62% {
-		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 18.33% 16.13% / 6.04% 7.85% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 27.11% 11.05% / 7.14% 9.61% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 37.76% 7.40% / 9.55% 11.82% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 50.27% 4.75% / 12.62% 14.59% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 65.75% 5.75% / 15.59% 17.24% no-repeat;
-	}
-	66%, 80% {
-		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 18.33% 16.13% / 6.04% 7.85% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 27.11% 11.05% / 7.14% 9.61% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 37.76% 7.40% / 9.55% 11.82% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 50.27% 4.75% / 12.62% 14.59% no-repeat,
-			radial-gradient(ellipse at center, transparent 67%, transparent 74%) 65.75% 5.75% / 15.59% 17.24% no-repeat;
-	}
-	84%, 96% {
-		background:
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 18.33% 16.13% / 6.04% 7.85% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 27.11% 11.05% / 7.14% 9.61% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 37.76% 7.40% / 9.55% 11.82% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 50.27% 4.75% / 12.62% 14.59% no-repeat,
-			radial-gradient(ellipse at center, var(--theme-color1) 98%, transparent 100%) 65.75% 5.75% / 15.59% 17.24% no-repeat;
+	68%, 88% {
+		clip-path: inset(0 0 0 0);
+		opacity: 1;
 	}
 }
 
@@ -1337,6 +1308,150 @@ body,
 .toe-legal-copy a {
 	color: var(--theme-color1);
 	font-weight: 800;
+}
+
+.toe-team-details-page .team-details {
+	background:
+		linear-gradient(180deg, rgba(7, 25, 19, 0.98), rgba(9, 32, 23, 0.94)),
+		url("../assets/img/toe/toe-contour-bg.svg") center / 1100px auto repeat;
+}
+
+.toe-vendor-team-details .team-details__top-img {
+	overflow: hidden;
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	border-radius: 22px;
+	background: rgba(248, 241, 231, 0.06);
+}
+
+.toe-vendor-team-details .team-details__top-img img {
+	aspect-ratio: 4 / 5;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 22px;
+}
+
+.toe-vendor-team-details .team-details__big-text {
+	right: -166px;
+	background-color: var(--theme-color1);
+	color: #071913;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+}
+
+.toe-vendor-team-details .team-details__top-name,
+.toe-vendor-team-details .team-details__bottom-left-title {
+	color: #f8f1e7;
+	letter-spacing: 0;
+}
+
+.toe-vendor-team-details .team-details__top-name {
+	font-size: clamp(36px, 5.2vw, 78px);
+	line-height: 0.96;
+}
+
+.toe-vendor-team-details .team-details__top-name .text-theme-colored1 {
+	display: block;
+	margin-top: 14px;
+	font-size: clamp(15px, 1.15vw, 20px);
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.toe-vendor-team-details .team-details__text-1,
+.toe-vendor-team-details .team-details__text-2,
+.toe-vendor-team-details .team-details__bottom-left-text,
+.toe-vendor-team-details .team-details-contact .text {
+	color: rgba(248, 241, 231, 0.7) !important;
+}
+
+.toe-vendor-team-details .info-outer-box {
+	align-items: stretch !important;
+	gap: 0 !important;
+	padding: 0 !important;
+	margin-bottom: 28px !important;
+	border: 1px solid rgba(248, 241, 231, 0.14) !important;
+	border-radius: 18px;
+	overflow: hidden;
+	background: rgba(248, 241, 231, 0.035);
+}
+
+.toe-vendor-team-details .info-left,
+.toe-vendor-team-details .info-right {
+	width: 50%;
+	padding: clamp(20px, 2.5vw, 30px);
+}
+
+.toe-vendor-team-details .info-right {
+	border-left: 1px solid rgba(248, 241, 231, 0.12);
+}
+
+.toe-vendor-team-details .team-details-contact .title,
+.toe-vendor-team-details .team-details__progress-title {
+	color: #f8f1e7 !important;
+}
+
+.toe-vendor-team-details .team-details-contact .title {
+	color: var(--theme-color1) !important;
+	font-size: 13px !important;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.toe-vendor-team-details .team-details__social a {
+	background-color: var(--theme-color1);
+	color: #071913;
+}
+
+.toe-vendor-team-details .team-details__social a:hover {
+	background-color: #f8f1e7;
+	color: #071913;
+}
+
+.toe-vendor-team-details .team-details__bottom {
+	padding: clamp(28px, 4vw, 46px);
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	border-radius: 22px;
+	background: rgba(7, 25, 19, 0.72);
+}
+
+.toe-vendor-team-details .team-details__bottom .form-control,
+.toe-vendor-team-details .team-details__bottom textarea {
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	border-radius: 10px;
+	background-color: rgba(248, 241, 231, 0.075);
+	color: #f8f1e7;
+}
+
+.toe-vendor-team-details .team-details__progress .bar {
+	background-color: rgba(248, 241, 231, 0.12);
+}
+
+.toe-vendor-team-details .team-details__progress .bar-inner {
+	background-color: var(--theme-color1);
+}
+
+@media (max-width: 991.98px) {
+	.toe-vendor-team-details .team-details__top-left,
+	.toe-vendor-team-details .team-details__top-right {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.toe-vendor-team-details .info-outer-box {
+		display: grid !important;
+	}
+
+	.toe-vendor-team-details .info-left,
+	.toe-vendor-team-details .info-right {
+		width: 100%;
+	}
+
+	.toe-vendor-team-details .info-right {
+		border-left: 0;
+		border-top: 1px solid rgba(248, 241, 231, 0.12);
+	}
 }
 
 .toe-services-page,
