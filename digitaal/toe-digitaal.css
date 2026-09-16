@@ -453,11 +453,21 @@ body,
 }
 
 .funfact-block-two .inner-box .shape-icon {
-	display: none !important;
+	position: absolute;
+	right: -18%;
+	bottom: -22%;
+	z-index: 0;
+	width: min(54vw, 560px);
+	height: min(54vw, 560px);
+	opacity: 0.13;
+	pointer-events: none;
 }
 
-.funfact-block-two .inner-box .shape-icon .icon {
-	display: none;
+.funfact-block-two .inner-box .shape-icon img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 .funfact-block-two .inner-box .shape-icon::before {
@@ -1337,6 +1347,120 @@ body,
 .toe-legal-copy a {
 	color: var(--theme-color1);
 	font-weight: 800;
+}
+
+.toe-legal-faqs {
+	position: relative;
+	background:
+		linear-gradient(180deg, rgba(7, 25, 19, 0.98), rgba(8, 31, 23, 0.94)),
+		url("../assets/img/toe/toe-contour-bg.svg") center / 1120px auto repeat;
+}
+
+.toe-legal-faqs .sec-title {
+	max-width: 940px;
+	margin: 0 auto 54px;
+}
+
+.toe-legal-faqs .sec-title .text {
+	max-width: 860px;
+	margin: 18px auto 0;
+	color: rgba(248, 241, 231, 0.72);
+}
+
+.toe-legal-faqs .toe-legal-updated {
+	margin: 18px 0 0;
+	color: var(--theme-color1);
+	font-size: 13px;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.toe-legal-faqs .accordion-box {
+	display: grid;
+	gap: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.toe-legal-faqs .accordion.block {
+	margin: 0;
+	overflow: hidden;
+	border: 1px solid rgba(248, 241, 231, 0.12);
+	border-radius: 18px;
+	background:
+		linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)),
+		rgba(7, 25, 19, 0.88);
+	box-shadow: 0 18px 54px rgba(0, 0, 0, 0.18);
+}
+
+.toe-legal-faqs .accordion.block .acc-btn {
+	padding: 24px 58px 24px 26px;
+	color: #f8f1e7;
+	font-size: clamp(18px, 1.25vw, 22px);
+	font-weight: 800;
+	line-height: 1.24;
+	letter-spacing: 0;
+}
+
+.toe-legal-faqs .accordion.block .acc-btn .icon {
+	right: 24px;
+	color: var(--theme-color1);
+}
+
+.toe-legal-faqs .accordion.block .acc-content .content {
+	padding: 0 26px 26px;
+}
+
+.toe-legal-faqs .accordion.block .text,
+.toe-legal-faqs .accordion.block .text p,
+.toe-legal-faqs .accordion.block .text li {
+	color: rgba(248, 241, 231, 0.72);
+	font-size: clamp(15px, 1vw, 17px);
+	line-height: 1.75;
+}
+
+.toe-legal-faqs .accordion.block .text p {
+	margin: 0 0 14px;
+}
+
+.toe-legal-faqs .accordion.block .text p:last-child {
+	margin-bottom: 0;
+}
+
+.toe-legal-faqs .accordion.block .text ul {
+	margin: 0 0 14px;
+	padding-left: 20px;
+}
+
+.toe-legal-faqs .accordion.block .text a {
+	color: var(--theme-color1);
+	font-weight: 800;
+}
+
+.toe-agree-box {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	max-width: 760px;
+	margin: 42px auto 0;
+	padding: 22px 24px;
+	border: 1px solid rgba(255, 106, 42, 0.36);
+	border-radius: 18px;
+	background: rgba(255, 106, 42, 0.12);
+	color: #f8f1e7;
+	font-size: clamp(16px, 1vw, 18px);
+	font-weight: 800;
+	line-height: 1.45;
+	cursor: pointer;
+}
+
+.toe-agree-box input {
+	flex: 0 0 auto;
+	width: 22px;
+	height: 22px;
+	margin-top: 2px;
+	accent-color: var(--theme-color1);
 }
 
 .toe-team-details-page .team-details {
