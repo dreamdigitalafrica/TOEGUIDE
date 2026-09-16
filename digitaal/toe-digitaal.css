@@ -453,14 +453,7 @@ body,
 }
 
 .funfact-block-two .inner-box .shape-icon {
-	position: absolute;
-	right: -18%;
-	bottom: -22%;
-	z-index: 0;
-	width: min(54vw, 560px);
-	height: min(54vw, 560px);
-	opacity: 0.13;
-	pointer-events: none;
+	display: none !important;
 }
 
 .funfact-block-two .inner-box .shape-icon img {
